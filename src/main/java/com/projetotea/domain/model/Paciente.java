@@ -30,7 +30,6 @@ public class Paciente {
     private OffsetDateTime dataCadastro;
 
 
-
     @OneToMany(mappedBy = "paciente")
     private List<Atendimento> atendimentos;
 

@@ -3,7 +3,10 @@ package com.projetotea.domain.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.util.Date;
 import java.util.UUID;
 
 @Entity
@@ -16,7 +19,14 @@ public class Atendimento {
 
     private String codigo;
 
-    private LocalDateTime dataHora;
+    @Column(name = "data_atendimento", nullable = false)
+    private LocalDate dataAtendimento;
+
+    @Column(name = "hora_inicio", nullable = false)
+    private LocalTime horaInicio;
+
+    @Column(name = "hora_fim", nullable = false)
+    private LocalTime horaFim;
 
     private String observacoes;
 
