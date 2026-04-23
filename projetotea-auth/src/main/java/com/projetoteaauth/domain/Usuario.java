@@ -1,12 +1,13 @@
 package com.projetoteaauth.domain;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
 
 
 @Entity
 @Data
+
 public class Usuario {
 
     @Id
@@ -15,6 +16,8 @@ public class Usuario {
     private String email;
     private String senha;
 
+    @Column(name = "categoria")
+    @Enumerated(EnumType.STRING)
     private CategoriaUsuario categoriaUsuario;
 
 
