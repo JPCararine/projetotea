@@ -29,9 +29,14 @@ public class Paciente {
 
     private OffsetDateTime dataCadastro;
 
+    @ManyToMany
+    private List<Usuario> usuario;
+
 
     @OneToMany(mappedBy = "paciente")
     private List<Atendimento> atendimentos;
+    @Enumerated(EnumType.STRING)
+    private GeneroPaciente genero;
 
 
 
