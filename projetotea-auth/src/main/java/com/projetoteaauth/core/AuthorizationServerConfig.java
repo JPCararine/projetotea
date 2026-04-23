@@ -46,4 +46,6 @@ public class AuthorizationServerConfig {
         return http.formLogin(customizer -> customizer.loginPage("/login")).build();
     }
 
+
+
 }
