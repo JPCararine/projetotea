@@ -13,7 +13,6 @@ import java.time.OffsetDateTime;
 import java.util.List;
 
 @Data
-@Builder
 public class UsuarioDTO {
 
     private Long id;

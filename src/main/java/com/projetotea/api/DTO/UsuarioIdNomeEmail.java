@@ -3,6 +3,8 @@ package com.projetotea.api.DTO;
 import com.projetotea.api.DTO.CategoriaUsuario.CategoriaUsuarioDTO;
 import lombok.Data;
 
+import java.time.OffsetDateTime;
+
 @Data
 public class UsuarioIdNomeEmail {
 
@@ -11,6 +13,8 @@ public class UsuarioIdNomeEmail {
     private String nome;
 
     private String email;
+
+    private OffsetDateTime dataCadastro;
 
     private CategoriaUsuarioDTO categoria;
 }
