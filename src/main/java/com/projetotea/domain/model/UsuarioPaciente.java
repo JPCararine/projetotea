@@ -2,6 +2,7 @@ package com.projetotea.domain.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.Generated;
 
@@ -9,6 +10,7 @@ import lombok.Generated;
 @Entity
 @Table(name = "paciente_usuario")
 @AllArgsConstructor
+@Builder
 public class UsuarioPaciente {
 
     @Id
@@ -20,6 +22,10 @@ public class UsuarioPaciente {
 
     @ManyToOne
     private Paciente paciente;
+
+
+
+
 
     public UsuarioPaciente() {
     }
