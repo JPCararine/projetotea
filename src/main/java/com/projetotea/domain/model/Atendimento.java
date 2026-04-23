@@ -2,6 +2,7 @@ package com.projetotea.domain.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -32,7 +33,7 @@ public class Atendimento {
 
     @Enumerated(EnumType.STRING)
     private StatusAtendimento status;
-
+    @CreationTimestamp
     private LocalDateTime dataCriacao;
 
     private LocalDateTime dataCancelamento;
