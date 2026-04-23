@@ -12,14 +12,14 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/usuarios/{usuarioId}/pacientes")
+@RequestMapping("/usuarios")
 @RequiredArgsConstructor
 public class PacienteController {
 
     private final UsuarioPacienteService usuarioPacienteService;
 
-    @GetMapping
-    public ResponseEntity<List<PacienteDTO>> findAll(@PathVariable Long usuarioId) {
-       return ResponseEntity.ok(usuarioPacienteService.findAll(usuarioId));
+    @GetMapping("/pacientes")
+    public ResponseEntity<List<PacienteDTO>> findAll() {
+       return ResponseEntity.ok(usuarioPacienteService.findAll());
    }
 }
