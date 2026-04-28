@@ -5,10 +5,12 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Data
@@ -27,16 +29,17 @@ public class Paciente {
 
     private String telefone;
 
+    @CreationTimestamp
     private OffsetDateTime dataCadastro;
-
-    @ManyToMany
-    private List<Usuario> usuario;
 
 
     @OneToMany(mappedBy = "paciente")
     private List<Atendimento> atendimentos;
     @Enumerated(EnumType.STRING)
     private GeneroPaciente genero;
+
+    @OneToMany(mappedBy = "paciente")
+    private Set<UsuarioPaciente> usuarios;
 
 
 

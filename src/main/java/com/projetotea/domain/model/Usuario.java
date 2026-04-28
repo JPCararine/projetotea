@@ -9,6 +9,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Builder
@@ -30,15 +31,15 @@ public class Usuario {
     @CreationTimestamp
     private OffsetDateTime dataCadastro;
 
-    @ManyToMany
-    private List<Paciente> pacientes;
-
 
     @Enumerated(EnumType.STRING)
     private CategoriaUsuario categoria;
 
     @OneToMany(mappedBy = "usuario")
     private List<Atendimento> atendimentos;
+
+    @OneToMany(mappedBy = "usuario")
+    private Set<UsuarioPaciente> pacientes;
 
     public Usuario() {
 

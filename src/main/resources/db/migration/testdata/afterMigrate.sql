@@ -22,16 +22,16 @@ insert into usuario (id, nome, email, senha, categoria, data_cadastro) values
                                                                            (3, 'Carlos Lima', 'carlos@email.com', '$2a$10$Y3gHr1/yp7RSkOxhfMiN6O/psn9tX2pEOosJI6w5xem8Fn.aIBcOi', 'PROFISSIONAL', current_timestamp()),
                                                                            (4, 'Ana Paula', 'ana@email.com', '$2a$10$Y3gHr1/yp7RSkOxhfMiN6O/psn9tX2pEOosJI6w5xem8Fn.aIBcOi', 'FAMILIAR', current_timestamp());
 
-insert into paciente_usuario (paciente_id, usuario_id, tipo) values
+insert into paciente_usuario (paciente_id, usuario_id, tipo_relacao) values
                                                                  (1, 1, 'PROFISSIONAL'),
                                                                  (1, 2, 'FAMILIAR');
 
 
-insert into paciente_usuario (paciente_id, usuario_id, tipo) values
+insert into paciente_usuario (paciente_id, usuario_id, tipo_relacao) values
                                                                  (2, 3, 'PROFISSIONAL'),
                                                                  (2, 2, 'FAMILIAR');
 
 
-insert into paciente_usuario (paciente_id, usuario_id, tipo) values
+insert into paciente_usuario (paciente_id, usuario_id, tipo_relacao) values
                                                                  (3, 1, 'PROFISSIONAL'),
                                                                  (3, 4, 'FAMILIAR');

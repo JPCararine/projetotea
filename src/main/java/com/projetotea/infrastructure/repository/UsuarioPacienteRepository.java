@@ -10,6 +10,8 @@ import java.util.List;
 
 public interface UsuarioPacienteRepository extends JpaRepository<UsuarioPaciente, Long> {
 
+    boolean existsByUsuarioIdAndPacienteId(Long usuarioId, Long pacienteId);
+
     @Query("select pu.paciente from UsuarioPaciente pu where pu.usuario.id = :usuarioId")
     List<Paciente> findPacientesByUsuarioId(Long usuarioId);
 }

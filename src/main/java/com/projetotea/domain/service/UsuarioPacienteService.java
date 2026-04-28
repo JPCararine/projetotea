@@ -6,8 +6,11 @@ import com.projetotea.api.DTO.UsuarioDTO;
 import com.projetotea.api.assembler.PacienteDTOAssembler;
 import com.projetotea.api.assembler.PacienteDTODisassembler;
 import com.projetotea.core.security.TeaSecurity;
+import com.projetotea.domain.exception.JaVinculado;
+import com.projetotea.domain.exception.PacienteNotFoundException;
 import com.projetotea.domain.exception.UsuarioNotFoundException;
 import com.projetotea.domain.model.Paciente;
+import com.projetotea.domain.model.TipoRelacao;
 import com.projetotea.domain.model.Usuario;
 import com.projetotea.domain.model.UsuarioPaciente;
 import com.projetotea.infrastructure.repository.PacienteRepository;
@@ -42,13 +45,18 @@ public class UsuarioPacienteService {
     public PacienteDTO cadastroPaciente(PacienteInputDTO pacienteInputDTO) {
         Usuario usuario = buscarUsuarioOuFalhar(teaSecurity.getUsuarioId());
 
-        Paciente paciente = pacienteDTODisassembler.toEntity(pacienteInputDTO);
 
-        Paciente pacienteSalvo = pacienteRepository.save(paciente);
 
-        vincularPaciente(usuario, pacienteSalvo);
+        Paciente paciente = pacienteRepository
+                .findByCpf(pacienteInputDTO.getCpf())
+                .orElseGet(() -> {
+                    Paciente novo = pacienteDTODisassembler.toEntity(pacienteInputDTO);
+                    return pacienteRepository.save(novo);
+                });
+        
+        vincularPaciente(usuario, paciente);
 
-        return pacienteDTOAssembler.toDTO(pacienteSalvo);
+        return pacienteDTOAssembler.toDTO(paciente);
     }
 
     public Usuario buscarUsuarioOuFalhar(Long id) {
@@ -56,12 +64,18 @@ public class UsuarioPacienteService {
                 .orElseThrow(() -> new UsuarioNotFoundException());
 
     }
-
+    @Transactional
     public void vincularPaciente(Usuario usuario, Paciente paciente) {
 
+        boolean jaExiste = usuarioPacienteRepository.existsByUsuarioIdAndPacienteId(usuario.getId(), paciente.getId());
+
+        if(jaExiste) {
+            throw new JaVinculado();
+        }
         UsuarioPaciente usuarioPaciente = UsuarioPaciente.builder()
                 .usuario(usuario)
                 .paciente(paciente)
+                .tipoRelacao(TipoRelacao.valueOf(usuario.getCategoria().name()))
                 .build();
 
         usuarioPacienteRepository.save(usuarioPaciente);

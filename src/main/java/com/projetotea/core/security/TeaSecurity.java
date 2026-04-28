@@ -12,8 +12,7 @@ import org.springframework.web.server.ResponseStatusException;
 @Component
 public class TeaSecurity {
 
-    @Autowired
-    private UsuarioPacienteService usuarioPacienteService;
+    
 
     public Authentication getAuthentication() {
         return SecurityContextHolder.getContext().getAuthentication();

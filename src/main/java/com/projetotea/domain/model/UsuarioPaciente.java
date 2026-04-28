@@ -17,14 +17,17 @@ public class UsuarioPaciente {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "usuario_id")
     private Usuario usuario;
 
-    @ManyToOne
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "paciente_id")
     private Paciente paciente;
 
+    @Enumerated(EnumType.STRING)
 
-
+    private TipoRelacao tipoRelacao;
 
 
     public UsuarioPaciente() {
