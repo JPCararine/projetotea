@@ -5,10 +5,12 @@ import com.projetotea.api.DTO.PacienteInputDTO;
 import com.projetotea.domain.service.UsuarioPacienteService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+import org.springframework.data.domain.Pageable;
+
 
 @RestController
 @RequestMapping("pacientes")
@@ -18,8 +20,8 @@ public class UsuarioPacienteController {
         private final UsuarioPacienteService usuarioPacienteService;
 
         @GetMapping
-        public ResponseEntity<List<PacienteDTO>> findAll() {
-            return ResponseEntity.ok(usuarioPacienteService.findAll());
+        public ResponseEntity<Page<PacienteDTO>> findAll(Pageable pageable) {
+            return ResponseEntity.ok(usuarioPacienteService.findAll(pageable));
         }
         @PostMapping
         public ResponseEntity<PacienteDTO> cadastroPaciente(@RequestBody @Valid PacienteInputDTO pacienteInputDTO) {
