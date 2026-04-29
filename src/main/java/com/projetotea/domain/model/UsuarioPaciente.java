@@ -26,7 +26,6 @@ public class UsuarioPaciente {
     private Paciente paciente;
 
     @Enumerated(EnumType.STRING)
-
     private TipoRelacao tipoRelacao;
 
 

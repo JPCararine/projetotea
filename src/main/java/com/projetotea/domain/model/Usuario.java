@@ -35,7 +35,7 @@ public class Usuario {
     @Enumerated(EnumType.STRING)
     private CategoriaUsuario categoria;
 
-    @OneToMany(mappedBy = "usuario")
+    @ManyToMany(mappedBy = "usuarios")
     private List<Atendimento> atendimentos;
 
     @OneToMany(mappedBy = "usuario")
