@@ -7,6 +7,7 @@ import com.projetotea.api.assembler.AtendimentoDTOAssembler;
 import com.projetotea.api.assembler.AtendimentoDTODisassembler;
 import com.projetotea.core.security.TeaSecurity;
 import com.projetotea.domain.exception.HorarioEmConflitoException;
+import com.projetotea.domain.exception.NegocioException;
 import com.projetotea.domain.exception.PacienteNotFoundException;
 import com.projetotea.domain.exception.UsuarioNotFoundException;
 import com.projetotea.domain.model.Atendimento;
@@ -79,6 +80,9 @@ public class AtendimentoService {
         );
         if(existe) {
             throw new HorarioEmConflitoException();
+        }
+        if (!atendimento.getHoraInicio().isBefore(atendimento.getHoraFim())) {
+            throw new NegocioException("Hora início deve ser antes da hora fim");
         }
     }
 }
