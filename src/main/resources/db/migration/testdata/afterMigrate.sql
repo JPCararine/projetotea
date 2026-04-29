@@ -3,6 +3,8 @@ set foreign_key_checks = 0;
 delete from usuario;
 delete from paciente_usuario;
 delete from paciente;
+delete from atendimento;
+delete from atendimento_usuario;
 
 set foreign_key_checks = 1;
 
