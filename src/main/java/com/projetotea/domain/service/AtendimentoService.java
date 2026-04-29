@@ -20,10 +20,13 @@ import com.projetotea.infrastructure.repository.UsuarioRepository;
 import com.projetotea.infrastructure.spec.AtendimentoSpec;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import org.springframework.cglib.core.Local;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -40,8 +43,9 @@ public class AtendimentoService {
 
 
     public Page<AtendimentoResponseDTO> buscarComFiltro(AtendimentoFiltroDTO filtro, Pageable pageable) {
+        Long usuarioId = teaSecurity.getUsuarioId();
         return atendimentoRepository.findAll(
-                AtendimentoSpec.comFiltros(filtro), pageable)
+                AtendimentoSpec.comFiltros(filtro, usuarioId), pageable)
                 .map(atendimentoDTOAssembler::toResponseDTO);
     }
     @Transactional
@@ -75,14 +79,31 @@ public class AtendimentoService {
         return atendimentoDTOAssembler.toResponseDTO(salvo);
     }
     public void checarHorario(Atendimento atendimento) {
-        var existe = atendimentoRepository.existsByDataAtendimentoAndHoraInicioLessThanAndHoraFimGreaterThan(
-                atendimento.getDataAtendimento(), atendimento.getHoraFim(), atendimento.getHoraInicio()
-        );
-        if(existe) {
-            throw new HorarioEmConflitoException();
-        }
+
         if (!atendimento.getHoraInicio().isBefore(atendimento.getHoraFim())) {
             throw new NegocioException("Hora início deve ser antes da hora fim");
         }
+        if(atendimento.getDataAtendimento().isBefore(LocalDate.now())){
+            throw new NegocioException("Data não pode estar no passado");
+        }
+        if(atendimento.getDataAtendimento().isEqual(LocalDate.now())
+                && atendimento.getHoraInicio().isBefore(LocalTime.now())) {
+            throw new NegocioException("Hora não pode estar no passado");
+        }
+        boolean conflitoPaciente = atendimentoRepository.existsConflitoPaciente(
+                atendimento.getDataAtendimento(), atendimento.getHoraFim(),
+                atendimento.getHoraInicio(), atendimento.getPaciente().getId()
+        );
+
+        boolean conflitoUsuarios = atendimentoRepository.existsConflitoUsuarios(
+                atendimento.getDataAtendimento(), atendimento.getHoraFim(),
+                atendimento.getHoraInicio(), atendimento.getUsuarios().stream()
+                        .map(Usuario::getId)
+                        .toList());
+        if(conflitoUsuarios || conflitoPaciente) {
+            throw new HorarioEmConflitoException();
+        }
+
+
     }
 }
