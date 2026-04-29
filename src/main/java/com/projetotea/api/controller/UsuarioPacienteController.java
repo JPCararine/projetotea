@@ -1,18 +1,23 @@
 package com.projetotea.api.controller;
 
-import com.projetotea.api.DTO.AtendimentoAgendadosDTO;
-import com.projetotea.api.DTO.PacienteDTO;
-import com.projetotea.api.DTO.PacienteInputDTO;
+
+import com.projetotea.api.DTO.*;
+import com.projetotea.domain.model.StatusAtendimento;
+import com.projetotea.domain.service.AtendimentoService;
 import com.projetotea.domain.service.UsuarioPacienteService;
-import com.projetotea.infrastructure.repository.filter.AtendimentoFilter;
-import com.projetotea.infrastructure.service.AtendimentoServiceImpl;
+
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import org.springframework.data.domain.Pageable;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.List;
 
 
 @RestController
@@ -21,16 +26,28 @@ import org.springframework.data.domain.Pageable;
 public class UsuarioPacienteController {
 
         private final UsuarioPacienteService usuarioPacienteService;
-        private final AtendimentoServiceImpl atendimentoService;
+        private final AtendimentoService atendimentoService;
 
         @GetMapping
         public ResponseEntity<Page<PacienteDTO>> findAll(Pageable pageable) {
             return ResponseEntity.ok(usuarioPacienteService.findAll(pageable));
         }
         @GetMapping("/atendimentos")
-        public ResponseEntity<Page<AtendimentoAgendadosDTO>> listar(AtendimentoFilter filter, Pageable pageable,
-                                                    @RequestParam(required = false, defaultValue = "-03:00") String timeOffSet) {
-            return ResponseEntity.ok(atendimentoService.consultaAtendimentos(filter, timeOffSet, pageable));
+        public ResponseEntity<Page<AtendimentoResponseDTO>> listar(
+                @RequestParam(required = false) List<StatusAtendimento> status,
+                @RequestParam(required = false) List<Long> pacienteIds,
+                @RequestParam(required = false) LocalDate dataInicio,
+                @RequestParam(required = false) LocalDate dataFim,
+                @RequestParam(required = false) LocalTime horaInicio,
+                @RequestParam(required = false) LocalTime horaFim,
+                Pageable pageable
+        ) {
+            var filtro = new AtendimentoFiltroDTO(status, horaInicio, horaFim, dataInicio, dataFim, pacienteIds);
+            return ResponseEntity.ok(atendimentoService.buscarComFiltro(filtro, pageable));
+        }
+        @PostMapping("/atendimentos")
+        public ResponseEntity<AtendimentoResponseDTO> criar(@RequestBody @Valid AtendimentoInputDTO atendimentoInputDTO) {
+            return new ResponseEntity<>(atendimentoService.criar(atendimentoInputDTO), HttpStatus.CREATED);
         }
         @PostMapping
         public ResponseEntity<PacienteDTO> cadastroPaciente(@RequestBody @Valid PacienteInputDTO pacienteInputDTO) {

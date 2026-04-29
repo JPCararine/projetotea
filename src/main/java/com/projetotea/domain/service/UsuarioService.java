@@ -9,6 +9,7 @@ import com.projetotea.domain.exception.EmailJaExistente;
 import com.projetotea.domain.exception.UsuarioNotFoundException;
 import com.projetotea.domain.model.Usuario;
 import com.projetotea.infrastructure.repository.UsuarioRepository;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -35,7 +36,7 @@ public class UsuarioService {
         Usuario usuario = buscarUsuarioOuFalhar(id);
         return usuarioDTOAssembler.toDTO(usuario);
     }
-
+    @Transactional
     public UsuarioIdNomeEmail create(UsuarioInputDTO usuarioInputDTO) {
         checarEmail(usuarioInputDTO.getEmail(), null);
         Usuario usuario = usuarioDTODisassembler.toEntity(usuarioInputDTO);
