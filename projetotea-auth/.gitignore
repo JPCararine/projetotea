@@ -32,4 +32,6 @@ build/
 ### VS Code ###
 .vscode/
 
+.env
+
 projetotea-auth/src/main/resources/keystores/*.jks

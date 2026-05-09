@@ -120,11 +120,11 @@ public class AuthorizationServerConfig {
 
             var keyStore = KeyStore.getInstance("PKCS12");
             keyStore.load(resource.getInputStream(),
-                    jwtKeyStoreProperties.getPassword().toCharArray());
+                    jwtKeyStoreProperties.getPassword().trim().toCharArray());
 
             var privateKey = (RSAPrivateKey) keyStore.getKey(
                     jwtKeyStoreProperties.getKeypairAlias(),
-                    jwtKeyStoreProperties.getPassword().toCharArray()
+                    jwtKeyStoreProperties.getPassword().trim().toCharArray()
             );
 
             var publicKey = (RSAPublicKey) keyStore.getCertificate(

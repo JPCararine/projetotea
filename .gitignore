@@ -51,10 +51,9 @@ replay_pid*
 # ===== VS Code =====
 .vscode/
 
-# ===== Ambiente =====
 .env
 
-# ===== Segurança (IMPORTANTÍSSIMO) =====
+
 *.jks
 keystores/
 
