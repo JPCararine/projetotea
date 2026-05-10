@@ -52,6 +52,7 @@ replay_pid*
 .vscode/
 
 .env
+flyway.conf
 
 
 *.jks
