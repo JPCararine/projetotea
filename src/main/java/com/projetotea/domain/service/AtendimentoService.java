@@ -3,6 +3,7 @@ package com.projetotea.domain.service;
 import com.projetotea.api.DTO.AtendimentoFiltroDTO;
 import com.projetotea.api.DTO.AtendimentoInputDTO;
 import com.projetotea.api.DTO.AtendimentoResponseDTO;
+import com.projetotea.api.DTO.UsuarioIdInputDTO;
 import com.projetotea.api.assembler.AtendimentoDTOAssembler;
 import com.projetotea.api.assembler.AtendimentoDTODisassembler;
 import com.projetotea.core.security.TeaSecurity;
@@ -28,7 +29,9 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Service
 @RequiredArgsConstructor
@@ -50,19 +53,7 @@ public class AtendimentoService {
     }
     @Transactional
     public AtendimentoResponseDTO criar(AtendimentoInputDTO atendimentoInputDTO) {
-        Usuario usuarioLogado = usuarioRepository.findById(teaSecurity.getUsuarioId())
-                .orElseThrow(() -> new UsuarioNotFoundException());
-
-        List<Usuario> usuarios = new ArrayList<>();
-        usuarios.add(usuarioLogado);
-
-        if(atendimentoInputDTO.getUsuarios() != null) {
-            atendimentoInputDTO.getUsuarios().stream()
-                    .map(u -> usuarioRepository.findById(u.getId())
-                            .orElseThrow(() -> new UsuarioNotFoundException()))
-                    .filter(u -> !u.getId().equals(usuarioLogado.getId()))
-                    .forEach(usuarios::add);
-        }
+        Set<Usuario> usuarios = checarUsuarioAtendimento(atendimentoInputDTO);
         Paciente paciente = pacienteRepository.findById(atendimentoInputDTO.getPaciente().getId())
                 .orElseThrow(() -> new PacienteNotFoundException());
 
@@ -105,5 +96,28 @@ public class AtendimentoService {
         }
 
 
+    }
+
+    public Set<Usuario> checarUsuarioAtendimento(AtendimentoInputDTO dto) {
+        Usuario usuarioLogado = findUserOrNot(teaSecurity.getUsuarioId());
+        Set<Usuario> usuarios = new HashSet<>();
+        usuarios.add(usuarioLogado);
+        if(dto.getUsuarios() != null) {
+            List<Long> ids = dto.getUsuarios().stream()
+                    .map(u -> u.getId())
+                    .toList();
+            List<Usuario> usuariosEncontrados = usuarioRepository.findAllById(ids);
+
+            usuariosEncontrados.stream()
+                    .filter(u -> !u.getId().equals(usuarioLogado))
+                    .forEach(usuarios::add);
+
+        }
+        return usuarios;
+    }
+    public Usuario findUserOrNot(Long id) {
+
+        return usuarioRepository.findById(id)
+                .orElseThrow(() -> new UsuarioNotFoundException());
     }
 }

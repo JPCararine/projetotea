@@ -41,6 +41,9 @@ public class Usuario {
     @OneToMany(mappedBy = "usuario")
     private Set<UsuarioPaciente> pacientes;
 
+    @OneToMany(mappedBy = "usuario")
+    private List<Assinatura> assinaturas;
+
     public Usuario() {
 
     }

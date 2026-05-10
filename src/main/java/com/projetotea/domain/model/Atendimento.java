@@ -9,6 +9,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 import java.util.UUID;
 
 @Entity
@@ -50,7 +51,7 @@ public class Atendimento {
             joinColumns = @JoinColumn(name = "atendimento_id"),
             inverseJoinColumns = @JoinColumn(name = "usuario_id")
     )
-    private List<Usuario> usuarios;
+    private Set<Usuario> usuarios;
 
     @PrePersist
     private void gerarCodigo() {
