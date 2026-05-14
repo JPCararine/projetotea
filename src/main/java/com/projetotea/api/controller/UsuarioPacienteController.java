@@ -36,25 +36,7 @@ public class UsuarioPacienteController {
         public ResponseEntity<Page<PacienteDTO>> findAll(Pageable pageable) {
             return ResponseEntity.ok(pacienteService.findAll(pageable));
         }
-        @GetMapping("/atendimentos")
-        @CheckSecurity.Atendimento.PodeListar
-        public ResponseEntity<Page<AtendimentoResponseDTO>> listar(
-                @RequestParam(required = false) List<StatusAtendimento> status,
-                @RequestParam(required = false) List<Long> pacienteIds,
-                @RequestParam(required = false) LocalDate dataInicio,
-                @RequestParam(required = false) LocalDate dataFim,
-                @RequestParam(required = false) LocalTime horaInicio,
-                @RequestParam(required = false) LocalTime horaFim,
-                Pageable pageable
-        ) {
-            var filtro = new AtendimentoFiltroDTO(status, horaInicio, horaFim, dataInicio, dataFim, pacienteIds);
-            return ResponseEntity.ok(atendimentoService.buscarComFiltro(filtro, pageable));
-        }
-        @PostMapping("/atendimentos")
-        @CheckSecurity.Atendimento.PodeCriarAtendimento
-        public ResponseEntity<AtendimentoResponseDTO> criar(@RequestBody @Valid AtendimentoInputDTO atendimentoInputDTO) {
-            return new ResponseEntity<>(atendimentoService.criar(atendimentoInputDTO), HttpStatus.CREATED);
-        }
+        
         @PostMapping
         @CheckSecurity.Paciente.PodeCadastrar
         public ResponseEntity<PacienteDTO> cadastroPaciente(@RequestBody @Valid PacienteInputDTO pacienteInputDTO) {

@@ -30,7 +30,7 @@
         <java.version>17</java.version>
     </properties>
 
-    <!-- ✅ dependencyManagement FORA do <dependencies> -->
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -43,7 +43,7 @@
         </dependencies>
     </dependencyManagement>
 
-    <!-- ✅ Um único bloco <dependencies> -->
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
