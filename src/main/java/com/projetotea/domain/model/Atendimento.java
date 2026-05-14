@@ -36,13 +36,14 @@ public class Atendimento {
     @Enumerated(EnumType.STRING)
     private StatusAtendimento status;
     @CreationTimestamp
-    private LocalDate dataCriacao;
+    private LocalDateTime dataCriacao;
 
-    private LocalDate dataCancelamento;
+    private LocalDateTime dataCancelamento;
 
-    private LocalDate dataFinalizado;
+    private LocalDateTime dataFinalizado;
 
-    @ManyToOne
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "paciente_id", nullable = false)
     private Paciente paciente;
 
     @ManyToMany

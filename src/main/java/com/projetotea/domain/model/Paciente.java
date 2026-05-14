@@ -20,7 +20,7 @@ public class Paciente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    @Column(nullable = false)
     private String nome;
 
     private LocalDate dataNascimento;
@@ -35,6 +35,7 @@ public class Paciente {
 
     @OneToMany(mappedBy = "paciente")
     private List<Atendimento> atendimentos;
+    @Column(nullable = false)
     @Enumerated(EnumType.STRING)
     private GeneroPaciente genero;
 

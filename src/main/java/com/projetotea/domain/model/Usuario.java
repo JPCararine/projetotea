@@ -21,17 +21,17 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-
+    @Column(nullable = false)
     private String nome;
-
+    @Column(nullable = false, unique = true)
     private String email;
-
+    @Column(nullable = false)
     private String senha;
 
     @CreationTimestamp
     private OffsetDateTime dataCadastro;
 
-
+    @Column(nullable = false)
     @Enumerated(EnumType.STRING)
     private CategoriaUsuario categoria;
 
