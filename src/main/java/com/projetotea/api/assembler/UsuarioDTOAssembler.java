@@ -2,6 +2,7 @@ package com.projetotea.api.assembler;
 
 import com.projetotea.api.DTO.UsuarioDTO;
 import com.projetotea.api.DTO.UsuarioIdNomeEmail;
+import com.projetotea.api.DTO.UsuarioResumo;
 import com.projetotea.domain.model.Usuario;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,5 +19,8 @@ public class UsuarioDTOAssembler {
     }
     public UsuarioIdNomeEmail toIdNomeEmailDTO(Usuario usuario) {
         return modelMapper.map(usuario, UsuarioIdNomeEmail.class);
+    }
+    public UsuarioResumo toResumoDTO(Usuario usuario) {
+        return modelMapper.map(usuario, UsuarioResumo.class);
     }
 }

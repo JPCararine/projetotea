@@ -28,6 +28,7 @@ public class AtendimentoInputDTO {
     @Valid
     private PacienteIdInputDTO paciente;
     @Valid
+    @NotNull
     private List<UsuarioIdInputDTO> usuarios;
 
 
