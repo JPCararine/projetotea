@@ -16,4 +16,6 @@ public interface UsuarioPacienteRepository extends JpaRepository<UsuarioPaciente
 
     @Query("select pu.paciente from UsuarioPaciente pu where pu.usuario.id = :usuarioId")
     Page<Paciente> findPacientesByUsuarioId(Long usuarioId, Pageable pageable);
+
+    long countByUsuarioId(Long usuarioId);
 }
