@@ -25,7 +25,7 @@ public class AtendimentoController {
 
     private final AtendimentoService atendimentoService;
 
-    @GetMapping
+    @GetMapping("/me")
     @CheckSecurity.Atendimento.PodeListar
     public ResponseEntity<Page<AtendimentoResponseDTO>> listar(
             @RequestParam(required = false) List<StatusAtendimento> status,
