@@ -39,6 +39,11 @@ public class AtendimentoController {
         var filtro = new AtendimentoFiltroDTO(status, horaInicio, horaFim, dataInicio, dataFim, pacienteIds);
         return ResponseEntity.ok(atendimentoService.buscarComFiltro(filtro, pageable));
     }
+    @GetMapping("/{atendimentoId}")
+    @CheckSecurity.Atendimento.PodeListar
+    public ResponseEntity<AtendimentoResponseDTO> buscarPorId(@PathVariable Long atendimentoId) {
+        return ResponseEntity.ok(atendimentoService.buscarPorId(atendimentoId));
+    }
     @PostMapping
     @CheckSecurity.Atendimento.PodeCriarAtendimento
     public ResponseEntity<AtendimentoResponseDTO> criar(@RequestBody @Valid AtendimentoInputDTO atendimentoInputDTO) {

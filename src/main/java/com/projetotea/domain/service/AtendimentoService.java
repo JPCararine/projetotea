@@ -7,10 +7,7 @@ import com.projetotea.api.DTO.UsuarioIdInputDTO;
 import com.projetotea.api.assembler.AtendimentoDTOAssembler;
 import com.projetotea.api.assembler.AtendimentoDTODisassembler;
 import com.projetotea.core.security.TeaSecurity;
-import com.projetotea.domain.exception.HorarioEmConflitoException;
-import com.projetotea.domain.exception.NegocioException;
-import com.projetotea.domain.exception.PacienteNotFoundException;
-import com.projetotea.domain.exception.UsuarioNotFoundException;
+import com.projetotea.domain.exception.*;
 import com.projetotea.domain.model.Atendimento;
 import com.projetotea.domain.model.Paciente;
 import com.projetotea.domain.model.StatusAtendimento;
@@ -51,6 +48,16 @@ public class AtendimentoService {
                 AtendimentoSpec.comFiltros(filtro, usuarioId), pageable)
                 .map(atendimentoDTOAssembler::toResponseDTO);
     }
+    public AtendimentoResponseDTO buscarPorId(Long atendimentoId) {
+        Long usuarioId = teaSecurity.getUsuarioId();
+
+        Atendimento atendimento = atendimentoRepository
+                .findByIdAndUsuariosId(atendimentoId, usuarioId)
+                .orElseThrow(() -> new AtendimentoNotFoundException(atendimentoId));
+
+        return atendimentoDTOAssembler.toResponseDTO(atendimento);
+    }
+
     @Transactional
     public AtendimentoResponseDTO criar(AtendimentoInputDTO atendimentoInputDTO) {
         Set<Usuario> usuarios = checarUsuarioAtendimento(atendimentoInputDTO);
