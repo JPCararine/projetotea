@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/assinatura")
+@RequestMapping("/assinaturas")
 @AllArgsConstructor
 public class AssinaturaController {
 
     private final AssinaturaService assinaturaService;
 
-    @GetMapping
+    @GetMapping("/me")
     public ResponseEntity<List<AssinaturaDTO>> findAssinatura() {
         return ResponseEntity.ok(assinaturaService.listAll());
     }

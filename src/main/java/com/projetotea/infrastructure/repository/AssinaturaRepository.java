@@ -15,7 +15,7 @@ public interface AssinaturaRepository extends JpaRepository<Assinatura, Long> {
 
     Optional<Assinatura> findByUsuarioIdAndStatus(Long usuarioId, StatusAssinatura status);
 
-    List<Assinatura> findByStatusAndDataFimBefore(StatusAssinatura status, OffsetDateTime now);
+    boolean existsByUsuarioIdAndStatus(Long usuarioId, StatusAssinatura status);
 
     @Modifying
     @Query("UPDATE Assinatura a SET a.status = :novoStatus WHERE a.status = :statusAtual AND a.dataFim < :now")

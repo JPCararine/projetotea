@@ -20,10 +20,10 @@ public class AssinaturaValidationService {
 
     public void validarAssinatura(Usuario usuario) {
 
-        Assinatura assinatura = assinaturaRepository.findByUsuarioIdAndStatus(usuario.getId(), StatusAssinatura.ATIVA)
-                .orElse(null);
+        boolean assinaturaAtiva = assinaturaRepository.existsByUsuarioIdAndStatus(
+                usuario.getId(), StatusAssinatura.ATIVA);
 
-        if(assinatura != null) {
+        if(assinaturaAtiva) {
             return;
         }
 

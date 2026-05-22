@@ -30,6 +30,7 @@ public class AssinaturaService {
     private final UsuarioRepository usuarioRepository;
     private final AssinaturaDTOAssembler assembler;
 
+
     public List<AssinaturaDTO> listAll() {
         Long usuarioId = teaSecurity.getUsuarioId();
 
@@ -52,6 +53,10 @@ public class AssinaturaService {
         Assinatura assinaturaAtiva = assinaturaRepository.findByUsuarioIdAndStatus(usuarioId, StatusAssinatura.ATIVA)
                 .orElse(null);
 
+        OffsetDateTime dataFim = plano.getDuracaoDias() == null
+                ? null
+                : now.plusDays(plano.getDuracaoDias());
+
         if (assinaturaAtiva != null && assinaturaAtiva.getPlano().getId().equals(plano.getId())) {
             throw new NegocioException("Você já possui esse plano ativo");
         }
@@ -62,7 +67,7 @@ public class AssinaturaService {
                 .plano(plano)
                 .status(StatusAssinatura.ATIVA)
                 .dataInicio(now)
-                .dataFim(now.plusDays(plano.getDuracaoDias()))
+                .dataFim(dataFim)
                 .build();
 
         return assembler.toDTO(assinaturaRepository.save(assinatura));
