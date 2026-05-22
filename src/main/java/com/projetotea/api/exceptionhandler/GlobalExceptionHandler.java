@@ -12,6 +12,7 @@ import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.*;
 import org.springframework.http.converter.HttpMessageNotReadableException;
+import org.springframework.security.authorization.AuthorizationDeniedException;
 import org.springframework.web.HttpMediaTypeNotAcceptableException;
 import org.springframework.web.HttpMediaTypeNotSupportedException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -126,6 +127,21 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
                 status,
                 request
         );
+    }
+    @ExceptionHandler(AuthorizationDeniedException.class)
+    public ResponseEntity<?> handleAuthorizationDeniedException(
+            AuthorizationDeniedException ex,
+            WebRequest request) {
+
+        HttpStatus status = HttpStatus.FORBIDDEN;
+
+        Problem problem = createProblemBuilder(
+                status,
+                ProblemType.SEM_PERMISSAO,
+                "Você não possui permissão para acessar esse recurso.").build();
+
+        return handleExceptionInternal(ex, problem, new HttpHeaders(), status, request);
+
     }
 
 

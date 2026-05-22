@@ -27,7 +27,9 @@ public enum ProblemType {
 
     ENTIDADE_EM_USO("Entidade em uso", "/entidade-em-uso"),
 
-    REQUISICAO_INVALIDA("Requisição inválida", "/requisicao-invalida");
+    REQUISICAO_INVALIDA("Requisição inválida", "/requisicao-invalida"),
+
+    SEM_PERMISSAO("Acesso negado", "/acesso-negado");
 
 
 
