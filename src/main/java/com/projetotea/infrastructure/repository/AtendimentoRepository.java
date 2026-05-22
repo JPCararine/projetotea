@@ -48,6 +48,7 @@ public interface AtendimentoRepository extends JpaRepository<Atendimento, Long>,
             List<Long> usuariosIds
     );
 
+    @EntityGraph(attributePaths = {"paciente", "usuarios"})
     Optional<Atendimento> findByIdAndUsuariosId(Long atendimentoId, Long usuarioId);
 
 }

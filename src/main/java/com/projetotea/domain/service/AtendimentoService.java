@@ -25,10 +25,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @Service
 @RequiredArgsConstructor
@@ -112,11 +109,18 @@ public class AtendimentoService {
         if(dto.getUsuarios() != null) {
             List<Long> ids = dto.getUsuarios().stream()
                     .map(u -> u.getId())
+                    .filter(Objects::nonNull)
+                    .distinct()
                     .toList();
             List<Usuario> usuariosEncontrados = usuarioRepository.findAllById(ids);
 
+            if (usuariosEncontrados.size() != ids.size()) {
+                throw new NegocioException("Um ou mais usuários informados não existem.");
+            }
+
+
             usuariosEncontrados.stream()
-                    .filter(u -> !u.getId().equals(usuarioLogado))
+                    .filter(u -> !u.getId().equals(usuarioLogado.getId()))
                     .forEach(usuarios::add);
 
         }
