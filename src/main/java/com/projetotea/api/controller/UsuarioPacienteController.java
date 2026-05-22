@@ -28,10 +28,9 @@ import java.util.List;
 public class UsuarioPacienteController {
 
         private final CadastroPacienteService cadastroPacienteService;
-        private final AtendimentoService atendimentoService;
         private final PacienteService pacienteService;
 
-        @GetMapping
+        @GetMapping("/me")
         @CheckSecurity.Paciente.PodeListar
         public ResponseEntity<Page<PacienteDTO>> findAll(Pageable pageable) {
             return ResponseEntity.ok(pacienteService.findAll(pageable));
