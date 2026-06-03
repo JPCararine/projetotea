@@ -1,0 +1,2 @@
+ALTER TABLE assinatura
+MODIFY COLUMN data_inicio DATETIME(6) NULL;
