@@ -1,7 +1,6 @@
 package com.projetotea.api.DTO;
 
-import com.projetotea.domain.model.StatusAssinatura;
-import jakarta.persistence.Column;
+import com.projetotea.payment.domain.enums.StatusAssinatura;
 import lombok.Data;
 
 import java.time.OffsetDateTime;

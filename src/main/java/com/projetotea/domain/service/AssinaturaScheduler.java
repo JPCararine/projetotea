@@ -1,7 +1,6 @@
 package com.projetotea.domain.service;
 
-import com.projetotea.domain.model.Assinatura;
-import com.projetotea.domain.model.StatusAssinatura;
+import com.projetotea.payment.domain.enums.StatusAssinatura;
 import com.projetotea.infrastructure.repository.AssinaturaRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
@@ -9,7 +8,6 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import java.time.OffsetDateTime;
-import java.util.List;
 
 @Service
 @RequiredArgsConstructor

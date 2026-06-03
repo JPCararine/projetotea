@@ -1,10 +1,7 @@
-package com.projetotea.domain.service;
+package com.projetotea.payment.domain.service;
 
-import com.projetotea.api.DTO.PacienteInputDTO;
 import com.projetotea.domain.exception.NegocioException;
-import com.projetotea.domain.model.Assinatura;
-import com.projetotea.domain.model.CategoriaUsuario;
-import com.projetotea.domain.model.StatusAssinatura;
+import com.projetotea.payment.domain.enums.StatusAssinatura;
 import com.projetotea.domain.model.Usuario;
 import com.projetotea.infrastructure.repository.AssinaturaRepository;
 import com.projetotea.infrastructure.repository.UsuarioPacienteRepository;

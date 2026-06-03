@@ -1,5 +1,6 @@
 package com.projetotea.domain.model;
 
+import com.projetotea.payment.domain.model.Assinatura;
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -27,6 +28,8 @@ public class Plano {
 
     @Column(name = "duracao_dias")
     private Integer duracaoDias;
+
+    private String abacatePayProductId;
 
     private Boolean ativo;
 

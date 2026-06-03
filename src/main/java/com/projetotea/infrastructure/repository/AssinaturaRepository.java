@@ -1,7 +1,7 @@
 package com.projetotea.infrastructure.repository;
 
-import com.projetotea.domain.model.Assinatura;
-import com.projetotea.domain.model.StatusAssinatura;
+import com.projetotea.payment.domain.model.Assinatura;
+import com.projetotea.payment.domain.enums.StatusAssinatura;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -24,4 +24,6 @@ public interface AssinaturaRepository extends JpaRepository<Assinatura, Long> {
                            @Param("now") OffsetDateTime now);
 
     List<Assinatura> findByUsuarioId(Long usuarioId);
+
+    Optional<Assinatura> findByGatewayCheckoutId(String gatewayCheckoutId);
 }

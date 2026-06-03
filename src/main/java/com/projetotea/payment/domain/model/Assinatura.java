@@ -1,5 +1,9 @@
-package com.projetotea.domain.model;
+package com.projetotea.payment.domain.model;
 
+import com.projetotea.domain.model.FormaPagamento;
+import com.projetotea.domain.model.Plano;
+import com.projetotea.domain.model.Usuario;
+import com.projetotea.payment.domain.enums.StatusAssinatura;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -33,8 +37,12 @@ public class Assinatura {
     @JoinColumn(nullable = false)
     private Plano plano;
 
-    @CreationTimestamp
-    @Column(name = "data_inicio", nullable = false)
+    @Enumerated(EnumType.STRING)
+    private FormaPagamento formaPagamento;
+
+    private String gatewayCheckoutId;
+
+    @Column(name = "data_inicio")
     private OffsetDateTime dataInicio;
     @Column(name = "data_fim")
     private OffsetDateTime dataFim;
