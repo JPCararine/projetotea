@@ -1,5 +1,6 @@
 package com.projetotea.domain.model;
 
+import com.projetotea.payment.domain.model.Assinatura;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -8,8 +9,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.validator.constraints.br.CPF;
 
-import java.time.LocalDate;
 import java.time.OffsetDateTime;
 import java.util.List;
 import java.util.Set;
@@ -34,6 +35,12 @@ public class Usuario {
     private String email;
     @Column(nullable = false)
     private String senha;
+
+    private String customerId;
+
+    private String cpf;
+
+    private String telefone;
 
     @CreationTimestamp
     private OffsetDateTime dataCadastro;

@@ -12,14 +12,20 @@ import com.projetotea.domain.model.Usuario;
 import com.projetotea.infrastructure.repository.UsuarioRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.*;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.List;
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 @ExtendWith(org.mockito.junit.jupiter.MockitoExtension.class)
 class UsuarioServiceTest {
@@ -57,7 +63,14 @@ class UsuarioServiceTest {
 
     @Test
     void create_happyPath_deveSalvarComSenhaHash() {
-        UsuarioInputDTO input = new UsuarioInputDTO("João", "a@a.com", "123", CategoriaUsuarioInputDTO.PROFISSIONAL);
+        UsuarioInputDTO input = new UsuarioInputDTO(
+                "Joao",
+                "a@a.com",
+                "123",
+                "52998224725",
+                "11999999999",
+                CategoriaUsuarioInputDTO.PROFISSIONAL
+        );
 
         Usuario entity = new Usuario();
         Usuario saved = new Usuario(); saved.setId(10L);
@@ -80,12 +93,13 @@ class UsuarioServiceTest {
     @Test
     void create_quandoEmailExiste_deveLancar() {
         UsuarioInputDTO input = new UsuarioInputDTO(
-                "João",
+                "Joao",
                 "dup@a.com",
                 "123",
+                "52998224725",
+                "11999999999",
                 CategoriaUsuarioInputDTO.PROFISSIONAL
         );
-        input.setEmail("dup@a.com");
 
         Usuario existente = new Usuario(); existente.setId(1L);
         when(usuarioRepository.findByEmail("dup@a.com")).thenReturn(Optional.of(existente));

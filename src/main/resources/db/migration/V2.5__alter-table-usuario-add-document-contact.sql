@@ -1,0 +1,3 @@
+ALTER TABLE usuario
+    ADD COLUMN cpf VARCHAR(255) NULL,
+    ADD COLUMN telefone VARCHAR(255) NULL;
