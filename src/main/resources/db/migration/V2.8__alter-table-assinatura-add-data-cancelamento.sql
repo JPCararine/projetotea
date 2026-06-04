@@ -1,0 +1,1 @@
+ALTER TABLE assinatura ADD COLUMN data_cancelamento DATETIME NULL;

@@ -26,4 +26,8 @@ public interface AssinaturaRepository extends JpaRepository<Assinatura, Long> {
     List<Assinatura> findByUsuarioId(Long usuarioId);
 
     Optional<Assinatura> findByGatewayCheckoutId(String gatewayCheckoutId);
+
+    Optional<Assinatura> findByGatewaySubsId(String gatewaySubsId);
+
+    Optional<Assinatura> findByExternalId(String externalId);
 }

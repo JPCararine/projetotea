@@ -1,0 +1,1 @@
+ALTER TABLE assinatura ADD COLUMN gateway_subs_id VARCHAR(255) NULL;

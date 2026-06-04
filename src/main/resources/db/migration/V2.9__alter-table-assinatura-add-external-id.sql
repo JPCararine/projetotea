@@ -1,0 +1,1 @@
+ALTER TABLE assinatura ADD COLUMN external_id VARCHAR(255) NULL;

@@ -42,10 +42,17 @@ public class Assinatura {
 
     private String gatewayCheckoutId;
 
+    private String gatewaySubsId;
+
+    private String externalId;
+
     @Column(name = "data_inicio")
     private OffsetDateTime dataInicio;
     @Column(name = "data_fim")
     private OffsetDateTime dataFim;
+
+    @Column(name = "data_cancelamento")
+    private OffsetDateTime dataCancelamento;
 
     @Enumerated(EnumType.STRING)
     private StatusAssinatura status;
