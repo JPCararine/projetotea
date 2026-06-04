@@ -5,6 +5,7 @@ import com.projetotea.infrastructure.repository.AssinaturaRepository;
 import com.projetotea.payment.domain.model.Assinatura;
 import com.projetotea.payment.gateway.abacatepay.dto.response.webhook.AbacatePayWebhookCheckout;
 import com.projetotea.payment.gateway.abacatepay.dto.response.webhook.AbacatePayWebhookEventDTO;
+import com.projetotea.payment.gateway.abacatepay.dto.response.webhook.AbacatePayWebhookSubscription;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -12,25 +13,43 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class AbacatePayWebhookService {
 
-    private final AssinaturaRepository assinaturaRepository;
     private final AssinaturaPagamentoService assinaturaPagamentoService;
+    private final AssinaturaService assinaturaService;
 
     public void processar(AbacatePayWebhookEventDTO payload) {
 
-        AbacatePayWebhookCheckout checkout = payload.data().checkout();
-
-        if (!"checkout.completed".equals(payload.event())) {
+        if (payload == null || payload.data() == null || payload.event() == null) {
             return;
         }
 
-        if (!"PAID".equals(checkout.status())) {
+        if ("checkout.completed".equals(payload.event())) {
+            assinaturaPagamentoService.processarCheckout(
+                    payload.data().checkout(),
+                    payload.data().subscription()
+            );
+            return;
+        }
+        if("subscription.completed".equals(payload.event())) {
+            assinaturaPagamentoService.vincularSubscriptionViaWebhook(
+                    payload.data().checkout(),
+                    payload.data().subscription());
             return;
         }
 
-        Assinatura assinatura = assinaturaRepository
-                .findByGatewayCheckoutId(checkout.id())
-                .orElseThrow(AssinaturaNotFoundException::new);
+        if ("subscription.cancelled".equals(payload.event())) {
+            processarCancelamento(payload.data().subscription());
+        }
+    }
+    private void processarCancelamento(AbacatePayWebhookSubscription subscription) {
 
-        assinaturaPagamentoService.confirmarAssinatura(assinatura.getId());
+        if (subscription == null) {
+            return;
+        }
+
+        if (!"CANCELLED".equals(subscription.status())) {
+            return;
+        }
+
+        assinaturaService.confirmarCancelamentoViaWebhook(subscription);
     }
 }

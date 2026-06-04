@@ -8,6 +8,9 @@ import com.projetotea.infrastructure.repository.AssinaturaRepository;
 import com.projetotea.payment.domain.model.Assinatura;
 import com.projetotea.payment.domain.enums.StatusAssinatura;
 import com.projetotea.payment.gateway.abacatepay.AbacatePayClient;
+import com.projetotea.payment.gateway.abacatepay.dto.response.checkout.AbacatePayBillResponse;
+import com.projetotea.payment.gateway.abacatepay.dto.response.webhook.AbacatePayWebhookCheckout;
+import com.projetotea.payment.gateway.abacatepay.dto.response.webhook.AbacatePayWebhookSubscription;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -22,14 +25,37 @@ public class AssinaturaPagamentoService {
     private final AbacatePayClient client;
     private final AssinaturaDTOAssembler assembler;
 
-    @Transactional
-    public AssinaturaDTO confirmarAssinatura(Long assinaturaId) {
 
-        Assinatura assinatura = assinaturaRepository.findById(assinaturaId)
+    @Transactional
+    public void processarCheckout(
+            AbacatePayWebhookCheckout checkout,
+            AbacatePayWebhookSubscription subscription
+    ) {
+
+        if (checkout == null) {
+            return;
+        }
+
+        if (!"PAID".equals(checkout.status())) {
+            return;
+        }
+
+        Assinatura assinatura = assinaturaRepository.findByExternalId(checkout.externalId())
                 .orElseThrow(AssinaturaNotFoundException::new);
 
+        assinatura.setGatewayCheckoutId(checkout.id());
+
+        if (subscription != null) {
+            assinatura.setGatewaySubsId(subscription.id());
+        }
+
+        ativarAssinatura(assinatura);
+    }
+
+    private void ativarAssinatura(Assinatura assinatura) {
+
         if (assinatura.getStatus() == StatusAssinatura.ATIVA) {
-            return assembler.toDTO(assinatura);
+            return;
         }
 
         Plano plano = assinatura.getPlano();
@@ -38,18 +64,34 @@ public class AssinaturaPagamentoService {
 
         assinatura.setDataInicio(now);
 
-        if(plano.getDuracaoDias() == null) {
+        if (plano.getDuracaoDias() == null) {
             assinatura.setDataFim(null);
         } else {
             assinatura.setDataFim(now.plusDays(plano.getDuracaoDias()));
         }
 
         assinatura.setStatus(StatusAssinatura.ATIVA);
-
-        return assembler.toDTO(assinaturaRepository.save(assinatura));
     }
 
 
+    @Transactional
+    public void vincularSubscriptionViaWebhook(
+            AbacatePayWebhookCheckout checkout,
+            AbacatePayWebhookSubscription subscription
+    ) {
+        if (checkout == null || subscription == null) {
+            return;
+        }
+
+        Assinatura assinatura = assinaturaRepository
+                .findByExternalId(checkout.externalId())
+                .orElseThrow(AssinaturaNotFoundException::new);
+
+        assinatura.setGatewayCheckoutId(checkout.id());
+        if (assinatura.getGatewaySubsId() == null) {
+            assinatura.setGatewaySubsId(subscription.id());
+        }
+    }
 
 
 }

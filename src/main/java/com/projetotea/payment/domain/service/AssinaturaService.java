@@ -20,7 +20,13 @@ import com.projetotea.payment.gateway.abacatepay.AbacatePayClient;
 import com.projetotea.payment.gateway.abacatepay.dto.request.AbacatePayBillItemRequest;
 import com.projetotea.payment.gateway.abacatepay.dto.request.AbacatePayBillRequest;
 import com.projetotea.payment.gateway.abacatepay.dto.request.AbacatePayCustomerRequest;
+import com.projetotea.payment.gateway.abacatepay.dto.request.AbacatePaySubscriptionCancel;
+import com.projetotea.payment.gateway.abacatepay.dto.response.AbacatePayResponse;
+import com.projetotea.payment.gateway.abacatepay.dto.response.checkout.AbacatePayBillResponse;
+import com.projetotea.payment.gateway.abacatepay.dto.response.checkout.AbacatePayFineResponse;
 import com.projetotea.payment.gateway.abacatepay.dto.response.checkout.AssinaturaCheckoutResponse;
+import com.projetotea.payment.gateway.abacatepay.dto.response.subscription.AbacatePaySubscriptionResponse;
+import com.projetotea.payment.gateway.abacatepay.dto.response.webhook.AbacatePayWebhookSubscription;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -65,9 +71,13 @@ public class AssinaturaService {
                 .orElse(null);
 
 
-        if (assinaturaAtiva != null && assinaturaAtiva.getPlano().getId().equals(plano.getId())) {
-            throw new NegocioException("Você já possui esse plano ativo");
+        if(assinaturaAtiva != null) {
+            if (assinaturaAtiva.getPlano().getId().equals(plano.getId())) {
+                throw new NegocioException("Você já possui esse plano ativo");
+            }
+            throw new NegocioException("Você já possui uma assinatura ativa");
         }
+
 
         if (assinaturaPendente != null && assinaturaPendente.getPlano().getId().equals(plano.getId())
                 && assinaturaPendente.getFormaPagamento() == assinaturaRequest.getFormaPagamento()) {
@@ -119,28 +129,71 @@ public class AssinaturaService {
                 ))
                 .build();
 
-        var response = client.postCheckout(checkoutRequest);
 
-        assinatura.setGatewayCheckoutId(response.data().id());
+        String urlPagamento;
+
+
+        if (plano.getDuracaoDias() == null) {
+            AbacatePayBillResponse response = client.postCheckout(checkoutRequest);
+
+            assinatura.setExternalId(response.data().externalId());
+
+            urlPagamento = response.data().url();
+
+        } else {
+
+            AbacatePaySubscriptionResponse response = client.postSubscription(checkoutRequest);
+
+            assinatura.setExternalId(response.data().externalId());
+
+            urlPagamento = response.data().url();
+        }
+
+
 
 
         return new AssinaturaCheckoutResponse(
                 assinatura.getId(),
-                response.data().url()
+                urlPagamento
         );
     }
-
-    public Assinatura cancelar() {
+    @Transactional
+    public void cancelar() {
 
         Long usuarioId = teaSecurity.getUsuarioId();
 
         Assinatura assinatura = assinaturaRepository.findByUsuarioIdAndStatus(usuarioId, StatusAssinatura.ATIVA)
                 .orElseThrow(() -> new AssinaturaNotFoundException());
 
+        if (assinatura.getGatewaySubsId() == null) {
+            throw new NegocioException("Essa assinatura não possui uma subscription ativa no gateway.");
+        }
+
+        var cancelRequest = AbacatePaySubscriptionCancel.builder()
+                        .id(assinatura.getGatewaySubsId())
+                                .build();
+
+        client.cancelSubscription(cancelRequest);
+
+
+        assinatura.setStatus(StatusAssinatura.CANCELAMENTO_SOLICITADO);
+
+        assinaturaRepository.save(assinatura);
+    }
+
+    @Transactional
+    public void confirmarCancelamentoViaWebhook(AbacatePayWebhookSubscription subscription) {
+
+        Assinatura assinatura = assinaturaRepository
+                .findByGatewaySubsId(subscription.id())
+                .orElseThrow(AssinaturaNotFoundException::new);
+
+        if (assinatura.getStatus() == StatusAssinatura.CANCELADA) {
+            return;
+        }
 
         assinatura.setStatus(StatusAssinatura.CANCELADA);
-
-        return assinaturaRepository.save(assinatura);
+        assinatura.setDataCancelamento(subscription.canceledAt());
     }
 
 
