@@ -28,4 +28,11 @@ public class AssinaturaController {
     public ResponseEntity<AssinaturaCheckoutResponse> create(@RequestBody @Valid AssinaturaRequest assinaturaRequest) {
         return new ResponseEntity<>(assinaturaService.criar(assinaturaRequest), HttpStatus.CREATED);
     }
+
+    @PostMapping("/cancelar")
+    public ResponseEntity<Void> cancelar() {
+        assinaturaService.cancelar();
+
+        return ResponseEntity.noContent().build();
+    }
 }
