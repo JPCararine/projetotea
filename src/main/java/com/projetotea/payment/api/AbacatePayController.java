@@ -37,10 +37,13 @@ public class AbacatePayController {
             @RequestParam("webhookSecret") String webhookSecret,
             @RequestBody AbacatePayWebhookEventDTO payload
             ) {
+
         validator.validarSecret(webhookSecret);
         System.out.println(payload);
         abacatePayWebhookService.processar(payload);
 
         return ResponseEntity.ok().build();
     }
+
+
 }
