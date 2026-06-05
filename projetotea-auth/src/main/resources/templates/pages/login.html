@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar | Projeto TEA</title>
+    <link rel="stylesheet" th:href="@{/css/auth.css}" href="/css/auth.css">
+</head>
+<body>
+<main class="auth-shell">
+    <section class="auth-hero">
+        <div class="auth-brand">
+            <div class="auth-brand__mark">TEA</div>
+            <div>
+                <p class="auth-brand__eyebrow">Projeto TEA</p>
+                <h1>Entrada segura para a equipe clínica</h1>
+            </div>
+        </div>
+
+        <p class="auth-hero__lead">
+            Use a autenticação centralizada para manter a sessão protegida e o acesso consistente
+            com o restante da plataforma.
+        </p>
+
+        <div class="auth-hero__stats">
+            <article>
+                <span>OAuth2</span>
+                <strong>Login centralizado</strong>
+            </article>
+            <article>
+                <span>OIDC</span>
+                <strong>Fluxo seguro</strong>
+            </article>
+            <article>
+                <span>UI</span>
+                <strong>Visual integrado</strong>
+            </article>
+        </div>
+    </section>
+
+    <section class="auth-panel">
+        <div class="auth-card">
+            <header class="auth-card__header">
+                <span class="auth-badge">Acesso ao sistema</span>
+                <h2>Entrar</h2>
+                <p>Use seu e-mail e senha para continuar.</p>
+            </header>
+
+            <form class="auth-form" method="post" th:action="@{/login}" action="/login">
+                <label class="auth-field">
+                    <span>E-mail</span>
+                    <input type="email" name="username" autocomplete="email" placeholder="voce@empresa.com" required>
+                </label>
+
+                <label class="auth-field">
+                    <span>Senha</span>
+                    <input type="password" name="password" autocomplete="current-password" placeholder="Digite sua senha" required>
+                </label>
+
+                <div class="auth-row">
+                    <label class="auth-check">
+                        <input type="checkbox" name="remember-me">
+                        <span>Manter conectado</span>
+                    </label>
+                    <a class="auth-link" href="#">Esqueci minha senha</a>
+                </div>
+
+                <button class="auth-button" type="submit">Entrar</button>
+            </form>
+
+            <footer class="auth-card__footer">
+                <span>Não tem conta?</span>
+                <a class="auth-link" href="/register">Criar conta</a>
+            </footer>
+        </div>
+    </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | Projeto TEA</title>
+    <link rel="stylesheet" th:href="@{/css/auth.css}" href="/css/auth.css">
+</head>
+<body>
+<main class="auth-shell">
+    <section class="auth-hero auth-hero--register">
+        <div class="auth-brand">
+            <div class="auth-brand__mark">TEA</div>
+            <div>
+                <p class="auth-brand__eyebrow">Projeto TEA</p>
+                <h1>Criar conta para acesso à plataforma</h1>
+            </div>
+        </div>
+
+        <p class="auth-hero__lead">
+            O cadastro segue a mesma linguagem visual do login, com foco em clareza e leitura rápida.
+        </p>
+
+        <div class="auth-hero__stats">
+            <article>
+                <span>Perfil</span>
+                <strong>Equipe ou responsável</strong>
+            </article>
+            <article>
+                <span>Fluxo</span>
+                <strong>Registro guiado</strong>
+            </article>
+            <article>
+                <span>UX</span>
+                <strong>Consistência visual</strong>
+            </article>
+        </div>
+    </section>
+
+    <section class="auth-panel">
+        <div class="auth-card">
+            <header class="auth-card__header">
+                <span class="auth-badge">Novo acesso</span>
+                <h2>Criar conta</h2>
+                <p>Preencha os dados para iniciar o acesso ao sistema.</p>
+            </header>
+
+            <form class="auth-form" method="post" action="#" novalidate>
+                <label class="auth-field">
+                    <span>Nome completo</span>
+                    <input type="text" name="nome" autocomplete="name" placeholder="Seu nome completo">
+                </label>
+
+                <label class="auth-field">
+                    <span>E-mail</span>
+                    <input type="email" name="email" autocomplete="email" placeholder="voce@empresa.com">
+                </label>
+
+                <label class="auth-field">
+                    <span>Senha</span>
+                    <input type="password" name="senha" autocomplete="new-password" placeholder="Crie uma senha">
+                </label>
+
+                <label class="auth-field">
+                    <span>Confirmar senha</span>
+                    <input type="password" name="confirmarSenha" autocomplete="new-password" placeholder="Repita a senha">
+                </label>
+
+                <button class="auth-button" type="button">Criar conta</button>
+            </form>
+
+            <footer class="auth-card__footer">
+                <span>Já tem uma conta?</span>
+                <a class="auth-link" href="/login">Voltar para o login</a>
+            </footer>
+        </div>
+    </section>
+</main>
+</body>
+</html>
