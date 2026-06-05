@@ -1,0 +1,2493 @@
+{
+  "titulo": "Transcrição organizada por níveis e categorias",
+  "schema_version": "1.0",
+  "campos": [
+    "nivel",
+    "categoria",
+    "numero",
+    "competencia",
+    "descricao"
+  ],
+  "niveis": [
+    {
+      "nivel": 1,
+      "categorias": [
+        {
+          "nome": "Comunicação Receptiva",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Localiza os sons voltando-se para fonte sonora.",
+              "descricao": "Demonstra consciência do som virando os olhos e a cabeça."
+            },
+            {
+              "numero": 2,
+              "competencia": "Olha para sons vocais lúdicos (vibração da língua com ruído, assobio).",
+              "descricao": "Demonstra consciência do som tornando-se mais ativo, virando os olhos e a cabeça para a pessoa."
+            },
+            {
+              "numero": 3,
+              "competencia": "Responde à voz, voltando-se para a pessoa.",
+              "descricao": "Demonstra consciência da voz ao virar os olhos e cabeça para a pessoa."
+            },
+            {
+              "numero": 4,
+              "competencia": "Olha para as imagens indicadas à medida que o adulto aponta para as imagens de um livro.",
+              "descricao": "Segue quando adulto aponta para imagem, com o olhar e/ou gesto (p.e. tocar ou apontar a imagem)."
+            },
+            {
+              "numero": 5,
+              "competencia": "Segue um ponto proximal para colocar objetos em recipientes, peças de puzzle, etc.",
+              "descricao": "Responde ao ponto proximal olhando e colocando o objeto na localização indicada pelo adulto."
+            },
+            {
+              "numero": 6,
+              "competencia": "Olha quando lhe mostram um objeto e dizem: “... (nome), olha”.",
+              "descricao": "Vira os olhos e a cabeça na direção do objeto."
+            },
+            {
+              "numero": 7,
+              "competencia": "Olha para o parceiro quando chamado pelo nome.",
+              "descricao": "Vira os olhos e a cabeça em direção ao parceiro."
+            },
+            {
+              "numero": 8,
+              "competencia": "Segue um ponto proximal de um objeto ou localização.",
+              "descricao": "Vira a cabeça para o objeto ou localização."
+            },
+            {
+              "numero": 9,
+              "competencia": "Segue um ponto distal para recuperar um brinquedo.",
+              "descricao": "Aproxima-se e pega o objeto."
+            },
+            {
+              "numero": 10,
+              "competencia": "Olha, alcança ou sorri em resposta aos gestos e voz dos adultos em jogos sociais.",
+              "descricao": "Assiste e responde a uma ou mais tomadas de vez. Os jogos sociais incluem o “Cadê?”, “Formiguinha” e Cócegas."
+            },
+            {
+              "numero": 11,
+              "competencia": "Olha, alcança, sorri e/ou gesticula em resposta à linguagem/gestos dos adultos em canções.",
+              "descricao": "O mesmo que no item anterior. Presta atenção e responde durante canções a um ou mais versos."
+            },
+            {
+              "numero": 12,
+              "competencia": "Responde interrompendo ações momentaneamente em resposta a palavras inibitórias (p.e., \"Não\", \"Para\").",
+              "descricao": "Interrompe uma atividade contínua quando dito \"Não\", \"Para\", ou demonstra consciência, fazendo uma pausa temporária, virando os olhos e a cabeça para o adulto, ou mostrando angústia (p.e. chorando)."
+            },
+            {
+              "numero": 13,
+              "competencia": "Dá o objeto pedido verbalmente quando combinado com a mão estendida de um adulto.",
+              "descricao": "Responde ao gesto e à fala do adulto, colocando ou tentando colocar o objeto na mão do adulto."
+            },
+            {
+              "numero": 14,
+              "competencia": "Executa uma instrução de rotina de uma etapa envolvendo ações corporais combinadas com pistas verbais/gestuais (p.e.,\"Senta\", \"Vem aqui\", \"Guarda\").",
+              "descricao": "Realiza a ação com pistas verbais/gestuais. Tem de executar pelo menos cinco ações na primeira oportunidade. Os exemplos incluem o adulto repetir a instrução, usar verbos para destacar a ação (p.e., bater na cadeira para sentar; segurar o balde para guardar), ou ajudar a criança parcialmente durante a ação."
+            },
+            {
+              "numero": 15,
+              "competencia": "Executa uma instrução verbal de rotina envolvendo ações corporais sem acompanhamento do gesto (p.e., \"Senta\", \"Vem aqui\", \"Guarda\").",
+              "descricao": "Executa a ação sem os gestos ou orientação física do adulto. O adulto pode repetir as instruções uma segunda vez, sem a pista gestual."
+            }
+          ]
+        },
+        {
+          "nome": "Comunicação Expressiva",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Usa o alcance dirigido para fazer pedidos.",
+              "descricao": "Tenta alcançar o objeto desejado que está nas mãos do adulto para indicar o pedido. O gesto não precisa ser acompanhado pelo contato visual ou vocalizações/palavras. Não inclui o aproximar para agarrar."
+            },
+            {
+              "numero": 2,
+              "competencia": "Vocaliza com intenção.",
+              "descricao": "Vocaliza em conjunto com o contato visual e/ou gesto (p.e. tentar alcançar) para pedir um item ou objeto desejado."
+            },
+            {
+              "numero": 3,
+              "competencia": "\"Pede\" ajuda entregando um objeto ao adulto.",
+              "descricao": "Indica que precisa de ajuda oferecendo ou colocando o objeto na mão do adulto, verbalizando ou olhando para o adulto. O gesto não precisa ser acompanhado pelo contato visual ou emissões orais."
+            },
+            {
+              "numero": 4,
+              "competencia": "Toma a vez vocalizando com o parceiro de comunicação.",
+              "descricao": "Balbucia e/ou vocaliza com contato visual em pelo menos dois turnos."
+            },
+            {
+              "numero": 5,
+              "competencia": "Exprime recusa afastando um objeto ou devolvendo o objeto à outra pessoa.",
+              "descricao": "O gesto não precisa ser acompanhado pelo contato visual ou emissões. Considere outros gestos convencionais (balançar a cabeça, sinal de \"acabou\") ou emissões (\"não\")."
+            },
+            {
+              "numero": 6,
+              "competencia": "Aponta para um sítio próximo para pedir objetos desejados.",
+              "descricao": "Toca ou aponta para o objeto a 15-30 cm com o dedo indicador (a mão não está aberta) para indicar o pedido. O objeto pode estar na mão do adulto ou ao alcance da criança."
+            },
+            {
+              "numero": 7,
+              "competencia": "Estabelece contato visual para obter um objeto desejado quando o adulto bloqueia o acesso/retém objeto desejado.",
+              "descricao": "Vira a cabeça e os olhos para o adulto e faz contato visual por 1-2 segundos, com ou sem gesto (p.e. alcançar, agarrar) para solicitar o objeto. O contato visual e os gestos não precisam ser acompanhados por emissões."
+            },
+            {
+              "numero": 8,
+              "competencia": "Aponta para indicar uma escolha entre dois objetos.",
+              "descricao": "O adulto segura dois objetos, um em cada mão. A criança toca ou aponta para o objeto desejado com o dedo indicador (a mão não está aberta). O gesto não precisa ser acompanhado pelo contato visual ou emissões."
+            },
+            {
+              "numero": 9,
+              "competencia": "Combina a vocalização e o olhar para pedidos intencionais.",
+              "descricao": "Vira a cabeça e os olhos para o adulto e faz contato visual enquanto vocaliza para pedir o objeto desejado. A vocalização pode ser uma aproximação. P.e.: \"ooh\" para bola e \"ih\" para ir."
+            },
+            {
+              "numero": 10,
+              "competencia": "Aponta para um sítio distante para pedir objetos desejados.",
+              "descricao": "Usa o dedo indicador (a mão não está aberta) para apontar para o objeto desejado, 90 cm ou mais de distância da criança."
+            },
+            {
+              "numero": 11,
+              "competencia": "Aponta para um lugar distante para indicar uma escolha entre dois objetos.",
+              "descricao": "O adulto segura dois objetos, um em cada mão, mas fora do alcance da criança e dizendo o nome de cada objeto. A criança aponta para o objeto desejado que está longe do seu alcance com o dedo indicador (a mão não está aberta). O gesto não precisa ser acompanhado pelo contato visual ou emissões."
+            },
+            {
+              "numero": 12,
+              "competencia": "Vocaliza com balbucios reduplicados CVCV (não necessariamente aproximações de palavras).",
+              "descricao": "Os exemplos incluem \"ba-ba\", \"ma-ma\". A vocalização não precisa ser acompanhada de contato visual ou gesto."
+            },
+            {
+              "numero": 13,
+              "competencia": "Produz cinco ou mais consoantes em vocalizações espontâneas.",
+              "descricao": "As vocalizações ocorrem com ou sem modelo verbal do adulto. As vocalizações durante o jogo contam."
+            },
+            {
+              "numero": 14,
+              "competencia": "Produz CVCV com sequências CV diferentes (balbucio diversificado).",
+              "descricao": "Os exemplos incluem \"ba-bu\", \"ma-vu\" e sequências de jargão."
+            }
+          ]
+        },
+        {
+          "nome": "Competências Sociais",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Aceita breves atividades sociais sensoriais e o toque",
+              "descricao": "A criança não mostra evitamento, desistência ou afeto negativo."
+            },
+            {
+              "numero": 2,
+              "competencia": "Usa a ajuda motora para iniciar ou continuar uma rotina social sensorial.",
+              "descricao": "As ajudas motoras incluem: alcançar, imitar o movimento do adulto, entregar um item ou objeto ao adulto. Não precisa ser acompanhada de contato visual."
+            },
+            {
+              "numero": 3,
+              "competencia": "Segue brevemente a outra pessoa com contato visual.",
+              "descricao": "Atenta ao olhar e mantém o contato visual com a outra pessoa por 2 segundos."
+            },
+            {
+              "numero": 4,
+              "competencia": "Mantém o envolvimento em rotinas sociais sensoriais por 2 minutos.",
+              "descricao": "Mostra interesse na rotina social sensorial abordando, observando ou participando ativamente e solicitando a continuação da rotina através do contato visual, gestos (p.e. alcançando, imitando o movimento do adulto) ou vocalizando."
+            },
+            {
+              "numero": 5,
+              "competencia": "Responde a objetos/atividades preferidos com o olhar, alcance, sorrisos e movimentos.",
+              "descricao": "A resposta não precisa ser acompanhada de contato visual."
+            },
+            {
+              "numero": 6,
+              "competencia": "Observa e interage com o adulto que a imita durante atividades paralelas com brinquedos.",
+              "descricao": "Mostra interesse na atividade observando e imitando o adulto fazendo ações e dá continuidade ao esquema de jogo imitado."
+            },
+            {
+              "numero": 7,
+              "competencia": "Tem um repertório de 5-10 jogos sociais sensoriais.",
+              "descricao": "Participa duas vezes ou mais em qualquer comportamento ativo (alcançar, imitar, vocalizar) durante um jogo. O contato visual e o sorriso isolado não são suficientes. Exemplos de atividades: \"Cadê o...\", \"Era uma vez uma formiguinha...\", músicas, livros, bolinha de sabão."
+            },
+            {
+              "numero": 8,
+              "competencia": "Responde aos cumprimentos olhando, virando-se, etc.",
+              "descricao": "Demonstra consciência da saudação, virando a cabeça e olhando para o adulto por 2-3 segundos. A resposta não precisa ser acompanhada de gestos ou vocalizações."
+            },
+            {
+              "numero": 9,
+              "competencia": "Responde à saudação com gestos ou vocalização.",
+              "descricao": "Demonstra consciência da saudação, virando a cabeça e o corpo e vocalizando \"Olá/Tchau\" com contato visual por 2-3 segundos."
+            },
+            {
+              "numero": 10,
+              "competencia": "Partilha sorrisos com o parceiro durante um jogo coordenado.",
+              "descricao": "Partilha sorrisos com contato visual por 2-3 segundos durante a atividade de jogo com o adulto."
+            }
+          ]
+        },
+        {
+          "nome": "Imitação",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Imita 8-10 ações de um esquema com objetos.",
+              "descricao": "Imita oito ou mais ações com objetos até 5 segundos após o modelo do adulto. P.e.: bater dois objetos um contra o outro, colocar um objeto dentro de um recipiente ou rolar um objeto)."
+            },
+            {
+              "numero": 2,
+              "competencia": "Imita 10 ações motoras visíveis dentro de uma canção/rotinas de jogo.",
+              "descricao": "Imita 10 ações motoras diferentes até 5 segundos após modelo do adulto. Imita duas ações diferentes por música em quatro a cinco rotinas diferentes."
+            },
+            {
+              "numero": 3,
+              "competencia": "Imita seis ações motoras invisíveis na cabeça ou face em canções/rotinas de jogo.",
+              "descricao": "Imita seis ações diferentes. P.e.: colocar as mãos na cabeça, nas orelhas ou palmadinhas nas bochechas."
+            },
+            {
+              "numero": 4,
+              "competencia": "Imita seis movimentos oro-faciais.",
+              "descricao": "Imita movimentos oro-faciais até 5 segundos após o modelo do adulto. P.e.: mostrar a língua, vibrar a língua, lábios, encher as bochechas de ar."
+            }
+          ]
+        },
+        {
+          "nome": "Cognição",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Corresponde/agrupa objetos idênticos.",
+              "descricao": "Pode ser em resposta à pista verbal (\"Coloca aqui\") ou física (\"Mão sobre mão) do adulto nas primeiras tentativas, mas a criança precisa completar a correspondência/classificação de forma autónoma pelo menos para cinco objetos diferentes. P.e, agrupar trens e carros; lápis e papel; palitos e círculos em recipientes separados."
+            },
+            {
+              "numero": 2,
+              "competencia": "Corresponde/agrupa imagens idênticas.",
+              "descricao": "Igual acima para pelo menos cinco imagens diferentes."
+            },
+            {
+              "numero": 3,
+              "competencia": "Corresponde/agrupa imagens e objetos.",
+              "descricao": "Igual acima para pelo menos cinco pares de objeto/imagem diferentes."
+            },
+            {
+              "numero": 4,
+              "competencia": "Corresponde/agrupa objetos pela cor.",
+              "descricao": "Igual acima para cinco ou mais cores."
+            }
+          ]
+        },
+        {
+          "nome": "Jogo",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Adequa o comportamento às qualidades de cinco objetos diferentes (Uso funcional do objeto).",
+              "descricao": "A ação deve ser iniciada pela criança e não em resposta ao modelo do adulto. O comportamento adapta-se às características do objeto. P.e.: agitar o chocalho, bater com martelo, rolar ou bater a bola, ou empilhar blocos."
+            },
+            {
+              "numero": 2,
+              "competencia": "Brinca de forma autônoma e apropriada com 10 brinquedos de uma ação.",
+              "descricao": "O jogo é adequado ao desenvolvimento (p.e., não é restrito ou repetitivo), relaciona-se com o objeto/atividade e envolve ações de um passo com objetos. P.e.: inserir blocos num jogo de encaixe, colocar bolas num labirinto, colocar pinos em orifícios, desmanchar sequências de contas encaixadas."
+            },
+            {
+              "numero": 3,
+              "competencia": "Brinca de forma autônoma com brinquedos que exigem a repetição da mesma ação em vários objetos (anel empilhador, copos para empilhar).",
+              "descricao": "O jogo envolve a conclusão autônoma do objeto/atividade. Passa com cinco ou mais brinquedos. P.e.: inserir anéis num pino; pôr e tirar copos encaixados; empilhar blocos ou colocar pinos em orifícios."
+            },
+            {
+              "numero": 4,
+              "competencia": "Demonstra comportamentos de jogo apropriados numa variedade de brinquedos de uma ação: atira a bola, empilha blocos, introduz pinos nos orifícios, rola o carro.",
+              "descricao": "O jogo relaciona-se com o objeto/atividade e envolve ações de um passo com objetos. Passa com 8-10 brinquedos. P.e.: atirar bolas, rolar carrinhos ou bater num tambor."
+            },
+            {
+              "numero": 5,
+              "competencia": "Brinca de forma autónoma com brinquedos que requerem duas ações motoras diferentes (tirar, introduzir).",
+              "descricao": "O jogo envolve a conclusão autônoma do objeto/atividade. Passa com 8-10 brinquedos. P.e.: colocar e tirar blocos de um recipiente; amassar e cortar papel ou juntar contas num colar e desmanchar."
+            },
+            {
+              "numero": 6,
+              "competencia": "Brinca de forma autónoma com brinquedos que requerem várias ações motoras diferentes (p.e., introduzir, abrir, remover, fechar).",
+              "descricao": "O jogo envolve a conclusão autônoma do objeto/atividade. Passa com 6-8 brinquedos. P.e.: abrir/fechar recipientes; colocar/tirar objetos, realizando diferentes ações com os mesmos."
+            },
+            {
+              "numero": 7,
+              "competencia": "Demonstra ações convencionais em si própria com uma variedade de objetos.",
+              "descricao": "Ações socialmente convencionais e dirigidas para si. Podem ser em resposta ao modelo do adulto mas independentes, a utilização espontânea dos objetos é necessária em pelo menos uma ação. P.e.: colocar o telefone na orelha; escovar o cabelo com a escova; colocar o garfo/colher na boca; limpar o nariz com lenço; levar o copo aos lábios; colocar contas."
+            },
+            {
+              "numero": 8,
+              "competencia": "Completa a atividade de jogo e a afasta.",
+              "descricao": "Termina a atividade apropriadamente e mostra alguma tentativa de arrumar (p.e., guarda um objeto ou entrega para o adulto). Pode ser em resposta à sugestão verbal ou ao gesto do adulto para começar, mas precisa participar sem ajuda física."
+            }
+          ]
+        },
+        {
+          "nome": "Motricidade Fina",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Coloca uma ou duas peças num jogo de encaixe.",
+              "descricao": "Pode ser em resposta à sugestão do adulto para começar a rotina, mas é necessário colocar 1-2 formas autonomamente."
+            },
+            {
+              "numero": 2,
+              "competencia": "Coloca anéis num anel empilhador.",
+              "descricao": "Pode ser em resposta à sugestão do adulto para começar a rotina, mas é necessário colocar 2-3 anéis autonomamente."
+            },
+            {
+              "numero": 3,
+              "competencia": "Completa um puzzle de três peças de madeira (pelo menos 2 a 3 peças autonomamente).",
+              "descricao": "Pode ser em resposta à sugestão do adulto para começar a rotina, mas é necessário três ou mais peças autonomamente."
+            },
+            {
+              "numero": 4,
+              "competencia": "Introduz pinos num quadro de pinos.",
+              "descricao": "Pode ser em resposta à sugestão do adulto para começar a rotina, mas é necessário colocar três ou mais pinos autonomamente."
+            },
+            {
+              "numero": 5,
+              "competencia": "Aperta botões em cinco tipos de brinquedos de causa e efeito.",
+              "descricao": "Pode ser em resposta à sugestão do adulto para começar a rotina, mas tem que apertar os botões autonomamente."
+            },
+            {
+              "numero": 6,
+              "competencia": "Desmancha encaixes de contas, Legos.",
+              "descricao": "Pode ser em resposta à sugestão do adulto para começar a rotina, mas tem de separar três ou mais peças ou legos autonomamente."
+            },
+            {
+              "numero": 7,
+              "competencia": "Usa um movimento de pinça ou a preensão de três dedos conforme o brinquedo.",
+              "descricao": "O adulto pode colocar o brinquedo ao alcance da criança mas sem outras facilidades."
+            },
+            {
+              "numero": 8,
+              "competencia": "Empilha três grandes blocos numa torre (ou copos para empilhar).",
+              "descricao": "Pode ser em resposta à sugestão do adulto para começar a rotina, mas é necessário empilhar pelo menos três blocos ou copos autonomamente."
+            },
+            {
+              "numero": 9,
+              "competencia": "Faz marcas, linhas, rabiscos e pontos com marcadores/lápis de cor.",
+              "descricao": "Pode ser em resposta à sugestão do adulto para começar a rotina, mas é necessário segurar e fazer marcas autonomamente. As marcas não precisam ter uma forma reconhecível."
+            },
+            {
+              "numero": 10,
+              "competencia": "Bate com um martelo de brincar em bolas, pinos, etc.",
+              "descricao": "Pode ser em resposta à sugestão do adulto para começar a rotina, mas é necessário segurar e bater no brinquedo autonomamente."
+            },
+            {
+              "numero": 11,
+              "competencia": "Usa pá, balde, despeja areia, água, arroz, etc.",
+              "descricao": "Pode ser em resposta à sugestão do adulto para começar a rotina, mas é necessário segurar nos objetos e encher a colher/usar o balde/despejar autonomamente."
+            },
+            {
+              "numero": 12,
+              "competencia": "Empilha grandes legos.",
+              "descricao": "Pode ser em resposta à sugestão do adulto para começar a rotina, mas é necessário empilhar pelo menos três peças autonomamente."
+            }
+          ]
+        },
+        {
+          "nome": "Motricidade Grossa",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Dá pontapés na bola grande Não pode agarrar o adulto ou objeto (mesa, cadeira) para chutar a bola.",
+              "descricao": "Mantém equilíbrio, não cai, pode ser desajeitado."
+            },
+            {
+              "numero": 2,
+              "competencia": "Sobe e desce escadas com ajuda, sem alternar os pés.",
+              "descricao": "Pode segurar no corrimão ou dar a mão ao adulto, colocando os dois pés em cada degrau. Não pode colocar as mãos nem os joelhos nos degraus."
+            },
+            {
+              "numero": 3,
+              "competencia": "Sobe um ou dois degraus numa escada pequena para deslizar.",
+              "descricao": "Deve fazer sem ajuda."
+            },
+            {
+              "numero": 4,
+              "competencia": "Sobe e desce de equipamentos.",
+              "descricao": "Deve fazer sem ajuda em brinquedos de montar, cavalo de balanço ou cadeiras para criança ou adulto."
+            },
+            {
+              "numero": 5,
+              "competencia": "Protege-se quando fica sem equilíbrio.",
+              "descricao": "Usa reações de proteção ou de equilíbrio (estica as mãos, estende os braços, protege a cabeça)."
+            },
+            {
+              "numero": 6,
+              "competencia": "Contorna os objetos no chão, em vez de os pisar.",
+              "descricao": "Mostra consciência do corpo em relação aos objetos passando por cima ou caminhando em redor dos objetos."
+            },
+            {
+              "numero": 7,
+              "competencia": "Atira bolas e saquinhos de feijão em qualquer direção.",
+              "descricao": "Deve fazer com ajuda e com orientação espacial para frente."
+            },
+            {
+              "numero": 8,
+              "competencia": "Rola brinquedos para frente e para trás com outra pessoa.",
+              "descricao": "O adulto pode começar a rotina mas, a criança mostra interesse fazendo rolar o brinquedo em direção à pessoa."
+            }
+          ]
+        },
+        {
+          "nome": "Comportamento",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Exibe dificuldades mínimas de comportamento severo.",
+              "descricao": "Comportamentos autoagressivos, agressão, birras frequentes e/ou graves."
+            },
+            {
+              "numero": 2,
+              "competencia": "Senta-se numa cadeira ou de frente para o adulto durante atividades que lhe dão prazer sem dificuldades por 1-2 minutos.",
+              "descricao": "Senta-se calmamente/feliz durante pelo menos 60 segundos, enquanto interage com o adulto."
+            },
+            {
+              "numero": 3,
+              "competencia": "Envolve-se voluntariamente em jogos simples na cadeira e no chão com adultos, por 5 minutos.",
+              "descricao": "Os jogos podem incluir \"Cadê/Achou\", canções ou rotinas físicas (cócegas, subir e descer do colo do adulto)."
+            },
+            {
+              "numero": 4,
+              "competencia": "Tolera a proximidade e a interação com o adulto (com pedidos mínimos) sem problemas de comportamento em intervalos de 20 minutos.",
+              "descricao": "As solicitações dos adultos são dentro do conjunto das competências atuais da criança. As birras podem ocorrer mas sem comportamento agressivo."
+            },
+            {
+              "numero": 5,
+              "competencia": "Interage de forma adequada com membros da família (ou seja, sem agressão ou outras interações inapropriadas).",
+              "descricao": "Sem agressão ou outras interações inapropriadas observadas no relatório dos pais."
+            }
+          ]
+        },
+        {
+          "nome": "Independência Pessoal: Alimentação",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Come refeições e lanches à mesa.",
+              "descricao": "Senta à mesa durante a refeição (não se levanta ou anda ou sai da mesa durante a refeição). Não precisa manter-se durante toda a refeição da família."
+            },
+            {
+              "numero": 2,
+              "competencia": "Come a refeição de forma autônoma.",
+              "descricao": "O adulto prepara a comida mas, não é preciso nenhum outro tipo de assistência."
+            },
+            {
+              "numero": 3,
+              "competencia": "Usa um copo aberto.",
+              "descricao": "Segura e coloca o copo na boca sem ajuda. É possível sorver um pouco de líquido enquanto bebe."
+            },
+            {
+              "numero": 4,
+              "competencia": "Usa uma colher Segura e coloca a colher na boca sem ajuda na maioria das colheradas.",
+              "descricao": "Pode deixar cair ocasionalmente."
+            },
+            {
+              "numero": 5,
+              "competencia": "Usa um garfo.",
+              "descricao": "Segura e coloca o garfo na boca sem ajuda na maioria das dentadas. Pode deixar cair ocasionalmente."
+            },
+            {
+              "numero": 6,
+              "competencia": "Come alimentos de várias texturas, tipos e grupos.",
+              "descricao": "O relatório dos pais é suficiente."
+            },
+            {
+              "numero": 7,
+              "competencia": "Tolera novos alimentos no prato.",
+              "descricao": "Permite que um alimento novo fique no prato e tenta comer (toca, cheira ou coloca na boca). Não tem que comer."
+            },
+            {
+              "numero": 8,
+              "competencia": "Bebe no canudo.",
+              "descricao": "O adulto pode colocar o canudo na boca da criança se ela nunca tomou antes."
+            }
+          ]
+        },
+        {
+          "nome": "Independência Pessoal: Vestir",
+          "itens": [
+            {
+              "numero": 9,
+              "competencia": "Remove cada peça de roupa com ajuda.",
+              "descricao": "Não precisa desabotoar ou abrir o zíper das roupas, mas deve conseguir tirar itens com ajuda. P.e., o adulto tira os braços e a criança a cabeça da camiseta; o adulto desabotoa a calça e a criança tira."
+            },
+            {
+              "numero": 10,
+              "competencia": "Veste cada peça de roupa com ajuda.",
+              "descricao": "Não precisa abotoar ou fechar o zíper das roupas, mas deve vestir um item com ajuda. P.e.: o adulto estica a camiseta e a criança passa a cabeça; segura o sapato e a criança coloca o pé; o adulto coloca os pés da calça e a criança sobre."
+            }
+          ]
+        },
+        {
+          "nome": "Independência Pessoal: Higiene",
+          "itens": [
+            {
+              "numero": 11,
+              "competencia": "Põe as mãos debaixo de água corrente.",
+              "descricao": "Pode ser ajudado, se necessário, mas é capaz de colocar as mãos debaixo da água durante pelo menos 5 segundos. O relatório dos pais é suficiente."
+            },
+            {
+              "numero": 12,
+              "competencia": "Seca as mãos com uma toalha.",
+              "descricao": "Pode ser ajudado, se necessário, mas usa uma toalha para secar ambas as mãos. O relatório dos pais é suficiente."
+            },
+            {
+              "numero": 13,
+              "competencia": "Esfrega a toalha de rosto ou o toalhão pelo corpo.",
+              "descricao": "Pode ser ajudado, se necessário, mas usa uma toalha em muitas partes do corpo (p.e. rosto, mãos, barriga, pernas). O relatório dos pais é suficiente."
+            },
+            {
+              "numero": 14,
+              "competencia": "Tolera pentear o cabelo, assoar o nariz e escovar os dentes.",
+              "descricao": "Pode fazer birra, mas é capaz de terminar a rotina sem agressividade ou problemas de autoagressão ou de comportamentos graves."
+            },
+            {
+              "numero": 15,
+              "competencia": "Ajuda com a escova de dentes/pente.",
+              "descricao": "P.e.: segura a escova/pente, ou toma a vez."
+            },
+            {
+              "numero": 16,
+              "competencia": "Põe a escova de dentes na boca Coloca a escova de dentes na boca, saboreia a pasta.",
+              "descricao": "Não tem que escovar os dentes."
+            }
+          ]
+        },
+        {
+          "nome": "Independência Pessoal: Tarefas",
+          "itens": [
+            {
+              "numero": 17,
+              "competencia": "Põe a roupa suja no cesto.",
+              "descricao": "Pode ser lembrado ou receber ajuda física se necessário (p.e. adulto entrega a roupa, aponta para o cesto), mas é capaz de colocar as roupas no cesto."
+            },
+            {
+              "numero": 18,
+              "competencia": "Põe os lenços de papel no lixo.",
+              "descricao": "Pode ser lembrado ou receber ajuda física se necessário (p.e. adulto entrega o lenço, aponta o lixo), mas é capaz de jogar os lenços no lixo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "categorias": [
+        {
+          "nome": "Comunicação Receptiva",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Segue instruções para \"parar\" ou \"esperar\" sem ajudas ou gestos.",
+              "descricao": "A criança responde a instruções verbais isoladas; para cada atividade por completo, olha para o adulto e espera a instrução."
+            },
+            {
+              "numero": 2,
+              "competencia": "Segue 8-10 instruções verbais de um comportamento envolvendo ações corporais e ações com objetos.",
+              "descricao": "Responde a instruções verbais envolvendo verbos (p.e., balançar o chocalho, bater com paus, abraçar o bebê, bater na massinha, cortar, levantar, bater palmas, mexer nas orelhas; tem que seguir tanto as ações corporais como as com objetos."
+            },
+            {
+              "numero": 3,
+              "competencia": "Identifica apontando ou",
+              "descricao": "Para passar tem que identificar cinco ou mais mostrando várias partes do corpo nomeadas, em si própria ou em outra pessoa. partes do corpo."
+            },
+            {
+              "numero": 4,
+              "competencia": "Responde a instruções verbais para dar/ apontar/ mostrar 8-10 objetos específicos nas rotinas de jogo natural, vestir e alimentação (p.e., bebé, cadeira, carro, bloco, corpo, urso).",
+              "descricao": "Autoexplicativo."
+            },
+            {
+              "numero": 5,
+              "competencia": "Identifica apontando e dirigindo o olhar para três imagens nomeadas num livro (incluindo copo, carro, cão, gato, bebê).",
+              "descricao": "Responde a “Onde está...?” ou Mostra-me...? com o dedo indicador e o olhar."
+            },
+            {
+              "numero": 6,
+              "competencia": "Entende conceitos espaciais iniciais (p.e., entre, sob).",
+              "descricao": "Para passar a criança tem de demonstrar uma compreensão generalizada de três ou mais preposições seguindo instruções verbais usando objetos."
+            },
+            {
+              "numero": 7,
+              "competencia": "Olha para pessoas e fotografias de pessoas quando nomeadasfamília, animais, professores.",
+              "descricao": "Para passar tem de responder a quatro ou mais nome diferentes. Se a pessoa/animal de estimação chamado está presente, a criança deverá olhar claramente para a pessoa ou animal que foi chamado (também pode apontar). Em fotos, a criança deverá tocar ou apontar para a imagem nomeada."
+            },
+            {
+              "numero": 8,
+              "competencia": "Obtém 8-10 objetos verbalmente solicitados na sala, mas não diretamente à frente da criança requerendo alguma procura.",
+              "descricao": "Em resposta à indicação verbal “Vai buscar...” a criança traz objetos da sala, mas fora do seu campo de visão. A tarefa envolve lembrar o pedido pelo tempo suficiente para realizar uma busca visual na sala e recuperar o objeto do chão, mesa, cadeira ou prateleira."
+            },
+            {
+              "numero": 9,
+              "competencia": "Mediante pedidos verbais (com pistas gestuais) completa duas ações (comandos duplos) com um objeto.",
+              "descricao": "Faz uma sequência de duas ações com um objeto em resposta a uma instrução verbal com o gesto. É preciso demonstrar três ou mais sequências diferentes para passar (p.e., “Vai buscar os sapatos e traga para mim”)."
+            },
+            {
+              "numero": 10,
+              "competencia": "Aponta para partes do corpo nomeadas numa imagem.",
+              "descricao": "Identifica cinco ou mais partes do corpo numa imagem grande ou num desenho quando solicitado"
+            }
+          ]
+        },
+        {
+          "nome": "Comunicação Expressiva",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Usa os sinais ou gestos-alvo com vocalização para se expressar as quatro funções: pedir, terminar, partilhar, pedir ajuda, protestar.",
+              "descricao": "A criança combina o gesto e a vocalização específica ou uma aproximação da palavra para comunicar todas estas quatro funções."
+            },
+            {
+              "numero": 2,
+              "competencia": "Produz 6-10 palavras ou aproximações dentro do contexto de rotinas familiares, rotinas sociais sensoriais e canções.",
+              "descricao": "Produz cinco ou mais aproximações de palavras diferenciadas dentro de rotinas familiares. Estas podem ser espontâneas ou imitadas espontaneamente, mas não com ajuda."
+            },
+            {
+              "numero": 3,
+              "competencia": "Produz espontaneamente várias palavras associadas a uma rotina de jogo (rola, vai, para).",
+              "descricao": "Produz três ou mais aproximações de palavras diferenciadas para verbos que envolvam ações em si mesmo com objetos – espontâneas ou por imitação, mas sem ajuda."
+            },
+            {
+              "numero": 4,
+              "competencia": "Usa de forma funcional 20 ou mais aproximações de nomes (nomes de objetos, animais, pessoas) e não nominais (palavras que se referem a ações ou outras relações: desapareceram todos, cima, etc.).",
+              "descricao": "Isto envolve aproximações de palavras usadas espontaneamente para solicitar ações ou objetos. Tanto as formas nominais como as não nominais devem ser usadas para passar."
+            },
+            {
+              "numero": 5,
+              "competencia": "Nomeia objetos e imagens espontaneamente.",
+              "descricao": "Passa se a criança nomeia cinco ou mais objetos e cinco ou mais imagens espontaneamente."
+            },
+            {
+              "numero": 6,
+              "competencia": "Vocaliza com uma variedade de entoações durante canções, etc.",
+              "descricao": "Faz variações de entonação quando produz algumas palavras em músicas ou canções, demonstrando consciência dos padrões de entonação envolvidos."
+            },
+            {
+              "numero": 7,
+              "competencia": "Faz pedidos e recusa usando palavras isoladas com contato visual.",
+              "descricao": "Usa rotineiramente palavras simples com o olhar para pedir, protestar, recusar e negar."
+            },
+            {
+              "numero": 8,
+              "competencia": "Nomeia ações em contexto (p.e., durante os movimentos corporais e/ou ações com objetos).",
+              "descricao": "Produz 10 ou mais verbos tanto por imitação como espontaneamente para nomear ações em si mesmo, nos outros ou com objetos."
+            },
+            {
+              "numero": 9,
+              "competencia": "Faz aproximações ao nome de três pessoas importantes (incluindo a própria).",
+              "descricao": "Nomeia pessoasno espelho, na vida real ou para obter atenção. Pode ser em resposta à pergunta “Quem é este?”."
+            },
+            {
+              "numero": 10,
+              "competencia": "Abana a cabeça e diz \"Não\" para recusar.",
+              "descricao": "Combina espontaneamente o balançar da cabeça com a verbalização “Não” para recusar uma oferta."
+            },
+            {
+              "numero": 11,
+              "competencia": "Acena com a cabeça e diz \"Sim\" para afirmar.",
+              "descricao": "Combina espontaneamente o acenar da cabeça com a verbalização “Sim” para aceitar a oferta."
+            },
+            {
+              "numero": 12,
+              "competencia": "Pergunta (aproximação) \" O que é isso?\" quando se depara com algo desconhecido.",
+              "descricao": "Olha espontaneamente para o adulto e gesticula para o objeto, via gesto manual ou alternando o olhar enquanto pergunta, “O que é isso?” em vários contextos."
+            }
+          ]
+        },
+        {
+          "nome": "Comportamentos de Atenção Conjunta",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Responde a \"Olha\" e ao objeto oferecido com a alternância do olhar, virando o corpo e olhando para o objeto oferecido.",
+              "descricao": "Autoexplicativo"
+            },
+            {
+              "numero": 2,
+              "competencia": "Responde a \"Olha\" e ao apontar, orientando-se para a pessoa/objeto distal indicado.",
+              "descricao": "Autoexplicativo"
+            },
+            {
+              "numero": 3,
+              "competencia": "Dá ou pega no objeto de outra pessoa coordenando com o contato visual.",
+              "descricao": "Isto envolve dar ou tirar espontaneamente. Se é para tirar, o adulto não deve oferecer o objeto. O olhar comunica o “pedido”."
+            },
+            {
+              "numero": 4,
+              "competencia": "Responde a \"Mostra-me\" estendendo o objeto ao adulto.",
+              "descricao": "Autoexplicativo"
+            },
+            {
+              "numero": 5,
+              "competencia": "\"Mostra\" objetos de forma espontânea.",
+              "descricao": "Envolve atos da rotina do mostrar, posicionando o objeto em direção ao rosto do adulto, olhando para o adulto esperando um comentário. Passa se isto é observado várias vezes no momento do jogo."
+            },
+            {
+              "numero": 6,
+              "competencia": "Segue ou olha para um ponto de forma espontânea (sem pista verbal) para olhar para o alvo.",
+              "descricao": "Obtenha o contato visual da criança na interação face-a-face e, em seguida, volte-se para olhar para o objeto. Passe se a criança demonstrar a rotação da cabeça e alguma procura. Não precisa encontrar o objeto."
+            },
+            {
+              "numero": 7,
+              "competencia": "Aponta espontaneamente para os objetos de interesse.",
+              "descricao": "Envolve rotinas de ações, várias por hora. A criança deve apontar para o alvo, olhar para o adulto e esperar por um comentário para passar."
+            },
+            {
+              "numero": 8,
+              "competencia": "Partilha sorrisos com o adulto alternando o olhar durante uma atividade agradável com um objeto.",
+              "descricao": "Trata-se de mudanças claras do olhar, do objeto para os olhos do adulto e voltar para o objeto para compartilhar satisfação. Deve ser observado várias vezes num jogo social de 10 minutos para passar."
+            }
+          ]
+        },
+        {
+          "nome": "Competênciais Sociais: Adultos ou Pares",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Inicia e mantém o contato visual para comunicar.",
+              "descricao": "A criança começa rotineiramente trocas comunicativas (de qualquer tipo) com olhar e mantém o olhar de forma natural ao longo da troca."
+            },
+            {
+              "numero": 2,
+              "competencia": "Verbaliza pedidos ou inicia fisicamente jogos sociais Inicia e transmite olhares sociais através dos movimentos corporais, gestos ou padrões vocais familiares. que são específicos para umdeterminado jogo.",
+              "descricao": "Deve fazer sinalizações em três ou mais jogos para passar."
+            },
+            {
+              "numero": 3,
+              "competencia": "Retribui comportamentos afetuosos: abraços, beijos, a pessoas familiares.",
+              "descricao": "Retribui espontânea e consistentemente abraços dos adultos familiares com os braços e o corpo, retribui beijos franzindo as bochechas ou os lábios."
+            },
+            {
+              "numero": 4,
+              "competencia": "Usa gestos ou palavras para conseguir a atenção dos adultos.",
+              "descricao": "Procura o contato visual do adulto usando palavras ou gestos claros de qualquer tipo (acenar, mostrar, virar o rosto, bater, etc)."
+            },
+            {
+              "numero": 5,
+              "competencia": "Responde a cumprimentos sociais com \" Olá\" ou \" Adeus\" e acena imitativamente.",
+              "descricao": "Responde aos cumprimentos com palavras e gestos, sem ajuda."
+            },
+            {
+              "numero": 6,
+              "competencia": "Pede ajuda verbal ou gestualmente.",
+              "descricao": "Inicia pedidos de ajuda usando tanto sinais convencionais como aproximações de palavras combinadas com o olhar. A manipulação das mãos e do corpo não conta, a menos que acompanhada pelo olhar e palavras apropriadas."
+            },
+            {
+              "numero": 7,
+              "competencia": "Coordena consistentemente o contato visual com a vocalização e/ou gesto para direcionar a comunicação.",
+              "descricao": "Acompanha espontaneamente os atos comunicativos com o olhar."
+            },
+            {
+              "numero": 8,
+              "competencia": "\"Dança\" com os outros em jogos de círculo ao som da música.",
+              "descricao": "Brinca em vários jogos de roda e imita os movimentos de dança ao som de músicas."
+            },
+            {
+              "numero": 9,
+              "competencia": "Corre com os outros em jogos de \"perseguição\".",
+              "descricao": "Persegue outras pessoas e apanha-a enquanto brinca de pega-a-pega, e também corre para não ser apanhada durante a brincadeira."
+            },
+            {
+              "numero": 10,
+              "competencia": "Obtém a atenção do outro utilizando o nome da pessoa ou jogo e inicia o jogo ou atividade social.",
+              "descricao": "Inicia espontaneamente jogos sociais familiares com um parceiro, estabelecendo contato visual e usando um gesto associado e o seu nome ou uma palavra de ação (p.e, “Cócegas”, Pega-pega”)."
+            }
+          ]
+        },
+        {
+          "nome": "Competências Sociais com Pares",
+          "itens": [
+            {
+              "numero": 11,
+              "competencia": "Dá um objeto ao parceiro quando ele pede.",
+              "descricao": "Responde de forma consistente ao pedido verbal de um objeto por parte do par, olhando para ele e entregando-lhe o objeto."
+            },
+            {
+              "numero": 12,
+              "competencia": "Junta-se a canções/jogos de dedos familiares em contexto de grupo.",
+              "descricao": "Participa em canções conhecidas e jogos sociais com padrões de movimento apropriados num ambiente de grupos pequenos (com mais 1-2 crianças) sem pistas especiais."
+            },
+            {
+              "numero": 13,
+              "competencia": "Prossegue uma atividade quando o par se junta num jogo paralelo.",
+              "descricao": "Prossegue a atividade quando o par se junta, reconhecendo e aceitando a abordagem dos pares. Não “protege” os materiais nem rejeita a abordagem."
+            },
+            {
+              "numero": 14,
+              "competencia": "Responde apropriadamente à saudação do par.",
+              "descricao": "Responde espontaneamente a um “Olá” e “Adeus” de um colega com o olhar, gesto e com as palavras apropriadas."
+            },
+            {
+              "numero": 15,
+              "competencia": "Troca de vez com o par em ações simples com brinquedos quando o par pede; Dá e leva de volta.",
+              "descricao": "Em situação de jogo paralelo, a criança responde rotineiramente às ofertas dos pares em trocas de vez, tanto dando o objeto quando solicitado como pedindo a sua vez, verbal e não-verbalmente, ambas as situações acompanhadas pelo olhar."
+            },
+            {
+              "numero": 16,
+              "competencia": "Senta-se em grupo com os pares e atende a instruções familiares do adulto.",
+              "descricao": "Senta num pequeno grupo, sem cadeiras especiais ou ajuda do adulto, presta atenção ao adulto líder e segue as instruções verbais que estão dentro do seu repertório. O adulto pode usar o nome da criança para dar a instrução, mas nenhuma outra ajuda."
+            },
+            {
+              "numero": 17,
+              "competencia": "Recebe objetos dos pares quando estes oferecem.",
+              "descricao": "Pega frequentemente num objeto, acompanhando com o olhar quando um colega oferece."
+            },
+            {
+              "numero": 18,
+              "competencia": "Passa objetos aos pares na mesa",
+              "descricao": "Responde consistentemente e apropriadamente a ou em grupo quando pedido. pedidos de objetos em situações de pequenos grupos (p.e., momentos de rodas, mesa do lanche, mesa de trabalhos manuais, canto de jogos dramáticos)."
+            },
+            {
+              "numero": 19,
+              "competencia": "Imita o comportamento dos pares ocasionalmente em atividades de jogo.",
+              "descricao": "Durante as atividades de jogo paralelo, a criança imita algumas ações dos pares espontaneamente."
+            },
+            {
+              "numero": 20,
+              "competencia": "Joga jogos de correspondência de imagens (Memória, loto, etc.) sozinho e com os pares.",
+              "descricao": "Passa se conseguir revezar a vez com o parceiro e completar o jogo. Estas são as únicas competências necessárias para passar neste item."
+            }
+          ]
+        },
+        {
+          "nome": "Imitação",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Imita uma variedade de sons de vogais e consoantes durante aproximações verbais em comunicações significativas.",
+              "descricao": "Inclui quatro a cinco sons de vogais diferentes ou quatro a cinco sons de consoantes diferentes."
+            },
+            {
+              "numero": 2,
+              "competencia": "Imita sons de animais e outros sons.",
+              "descricao": "Imita pelo menos cinco sons diferentes."
+            },
+            {
+              "numero": 3,
+              "competencia": "Imita palavras isoladas reconhecíveis, espontânea e frequentemente em interações.",
+              "descricao": "Produz 10 ou mais aproximações de palavras."
+            },
+            {
+              "numero": 4,
+              "competencia": "Imita os movimentos para cinco músicas, imita pelo menos 10 ações diferentes.",
+              "descricao": "Estas são ações familiares; sem ajudas."
+            },
+            {
+              "numero": 5,
+              "competencia": "Imita/faz aproximações de ações em sequência em canções.",
+              "descricao": "Aproxima pelo menos cinco novas ações no primeiro modelo."
+            },
+            {
+              "numero": 6,
+              "competencia": "Imita ações com objetos- passos múltiplos (ações de jogo).",
+              "descricao": "Envolve imitar uma sequência de três ou mais ações relacionadas (p.e., tirar a tampa da caixa de encaixar; tirar as peças; colocar a tampa e introduzir peças)."
+            },
+            {
+              "numero": 7,
+              "competencia": "Imita ações a fingir para si mesma e com miniaturas.",
+              "descricao": "Imita consistentemente quatro ou mais ações naturalistas com miniaturas, em si mesmoe oferecendo ao parceiro."
+            },
+            {
+              "numero": 8,
+              "competencia": "Imita duas sequências de movimentos em rotinas de canção/jogo.",
+              "descricao": "Imita consistentemente quatro ou mais ações dentro de uma música sem ajuda e se esperar."
+            },
+            {
+              "numero": 9,
+              "competencia": "Imita frases de duas palavras.",
+              "descricao": "Imita consistentemente vários enunciados de duas palavras."
+            }
+          ]
+        },
+        {
+          "nome": "Cognição",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Corresponde/agrupa por formas.",
+              "descricao": "Corresponde e agrupa pelo menos cinco formas diferentes."
+            },
+            {
+              "numero": 2,
+              "competencia": "Corresponde/agrupa por tamanho.",
+              "descricao": "Corresponde e agrupa pelo menos três tamanhos diferentes de objetos idênticos."
+            },
+            {
+              "numero": 3,
+              "competencia": "Corresponde/agrupa desenhos e contornos.",
+              "descricao": "Combina e classifica desenhos a lápis e padrões de desenhos."
+            },
+            {
+              "numero": 4,
+              "competencia": "Classifica objetos semelhantes por grupos.",
+              "descricao": "Combina e classifica objetos não idênticos por identidade (p.e., carros, cavalos, bolas, meias, sapatos, copos)."
+            },
+            {
+              "numero": 5,
+              "competencia": "Agrupa objetos comuns em grupos funcionais.",
+              "descricao": "Agrupa objetos por função: comer, vestir, brinca, desenhar."
+            },
+            {
+              "numero": 6,
+              "competencia": "Procura/pergunta por objeto desaparecidos.",
+              "descricao": "Reconhece quando um objeto de um conjunto está faltando e pergunta por ele ou o procura (p.e., uma peça de um puzzle perdida, um sapato que falta, um copo)."
+            },
+            {
+              "numero": 7,
+              "competencia": "Corresponde/agrupa em duas dimensões.",
+              "descricao": "Corresponde/classifica objetos pela cor e forma, ou forma e tamanho, etc."
+            },
+            {
+              "numero": 8,
+              "competencia": "Corresponde por quantidade, de um a três.",
+              "descricao": "Combina uma variedade de objetos em grupos de quantidade envolvendo quantidades de um a três (p.e., peças de dominó, bolachas de animais num prato)."
+            }
+          ]
+        },
+        {
+          "nome": "Jogo de Representação",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Combina objetos relacionados no jogo (xícara no pires, colher no prato).",
+              "descricao": "A criança demonstra consciência das relações funcionais de vários conjuntos de objetos no seu jogo e ao arrumar."
+            },
+            {
+              "numero": 2,
+              "competencia": "Imita/produz efeitos sonoros no jogo (vocaliza ao telefone, faz barulhos de carros, sons de animais com animais).",
+              "descricao": "Passa se fizer cinco ou mais sons destes durante o jogo."
+            },
+            {
+              "numero": 3,
+              "competencia": "Realiza uma ação única com um adereço numa boneca ou animal.",
+              "descricao": "Requer ações espontâneas; não passa apenas com a imitação."
+            },
+            {
+              "numero": 4,
+              "competencia": "Combina ações funcionalmente relacionadas com o tema do jogo (alimenta e dá bebida, deita na cama e tapa).",
+              "descricao": "Requer ações espontâneas que envolvam pelo menos duas ações relacionadas numa sequência. Não passa apenas com imitação."
+            },
+            {
+              "numero": 5,
+              "competencia": "Demonstra uma abordagem de tentativae erro para resolver problemas com brinquedos de construção; os esquemas são flexíveis e não repetitivos.",
+              "descricao": "Passa se demonstrar consistentemente a abordagem de tentativa e erro na resolução de problemas no jogo com objetos."
+            }
+          ]
+        },
+        {
+          "nome": "Jogo: Jogo Independente",
+          "itens": [
+            {
+              "numero": 6,
+              "competencia": "Brinca de forma adequada e flexível durante 10 minutos apenas com atenção ocasional ao adulto.",
+              "descricao": "O adulto pode preparar vários conjuntos de materiais de construção ou visoespaciais, mas a criança tem de brincar sozinha usando durante o jogo uma maioria de ações apropriadas, sem mais do que duas interações verbais, para passar este item. Não penalize se alguns atos repetitivos ou estereotipados acontecerem dentro de um jogo apropriado."
+            },
+            {
+              "numero": 7,
+              "competencia": "Mantém-se ocupada com materiais simples de uso múltiplo de forma adequada durante pelos menos 10 minutos de cada vez com orientação ocasional do adulto.",
+              "descricao": "O adulto pode preparar algum material (massinha, arte, livros, adereços de jogo), mas a criança precisa brincar sozinha usando durante o jogo uma maioria de ações apropriadas, sem mais do que duas interações verbais, para passar este item. Não penalize se alguns atos repetitivos ou estereotipados acontecerem dentro de um jogo apropriado."
+            },
+            {
+              "numero": 8,
+              "competencia": "Obtém os materiais, traz para a mesa, completa a atividade de jogo e afaste-se.",
+              "descricao": "Brinca de forma autônoma, incluindo ir buscar os materiais, deslocar-se para um espaço de jogo, arrumar e afastar os materiais no final. Isto pode envolver atividades ilimitadas ou limitadas."
+            }
+          ]
+        },
+        {
+          "nome": "Motricidade Fina",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Introduz três ou mais peças no jogo de encaixe.",
+              "descricao": "A criança completa o jogo de encaixe de forma autônoma; pode usar a tentativa e erro mas, sem instruções ou apoio de qualquer tipo."
+            },
+            {
+              "numero": 2,
+              "competencia": "Empilha 8-10 blocos de 2,5 cm.",
+              "descricao": "Constrói de forma autônoma uma torre de 8-10 blocos que balança."
+            },
+            {
+              "numero": 3,
+              "competencia": "Copia três ou mais pilhas de blocos simples.",
+              "descricao": "A criança copia várias construções diferentes envolvendo pelo menos três blocos (p.e., torre vertical, linha horizontal, ponte)."
+            },
+            {
+              "numero": 4,
+              "competencia": "Junta cinco ou mais legos, contas, brinquedos \"tinker\", blocos \"bristle\" de formas variadas.",
+              "descricao": "A criança usa vários tipos de objetos de encaixe e reúne cinco ou mais peças de várias formas."
+            },
+            {
+              "numero": 5,
+              "competencia": "Imita cinco ou mais ações simples complasticina (massinha) - rolar,puxar,bater,apertar.",
+              "descricao": "Autoexplicativo."
+            },
+            {
+              "numero": 6,
+              "competencia": "Cola vários autocolantes em folhas.",
+              "descricao": "O adulto pode ter que descolar um canto para que a criança entenda, mas a criança tira o autocolante da folha adesiva e coloca-o sobre uma folha de forma autônoma."
+            },
+            {
+              "numero": 7,
+              "competencia": "Abre e fecha uma variedade de recipientes, incluindo tampas de enroscar.",
+              "descricao": "Isto não é um teste de força – as tampas devem ser fáceis de remover."
+            },
+            {
+              "numero": 8,
+              "competencia": "Abre e fecha grandes fechos de correr.",
+              "descricao": "Consegue abrir o fecho até o fim; a criança consegue puxar o fecho todo para cima, embora o adulto tenha que juntar as duas peças à criança."
+            },
+            {
+              "numero": 9,
+              "competencia": "Amarra objetos grandes com cordéis, corda grossa ou tubos de aquário.",
+              "descricao": "Ata cinco ou mais contas, pedaços de massa, anéis, etc., até fazer uma sequência, sem ajuda."
+            },
+            {
+              "numero": 10,
+              "competencia": "Imita traços, rabiscos e pontos com marcadores e lápis de cor.",
+              "descricao": "Imita pelo menos três tipos de ações com ferramentas escritas."
+            },
+            {
+              "numero": 11,
+              "competencia": "Corta papel com tesouras.",
+              "descricao": "Pode usar tesouras de crianças ou adulto. O adulto pode mostrar como se usa a tesoura, mas a criança corta de forma autónoma. Não é preciso segurar perfeitamente na tesoura. Deve fazer três cortes."
+            },
+            {
+              "numero": 12,
+              "competencia": "Coloca peças do jogo de damas e moedas numa ranhura.",
+              "descricao": "Pega de forma autônoma em cinco ou mais peças da mesa e coloca cada uma na ranhura, tanto na horizontal como na vertical, sem ajudas ou lembretes, e é bem sucedida com moedas de uma centímetro."
+            },
+            {
+              "numero": 13,
+              "competencia": "Coloca uma variedade de contas em diferentes tipos de fio.",
+              "descricao": "Consegue atar vários objetos com vários tipos de fios."
+            },
+            {
+              "numero": 14,
+              "competencia": "Completa puzzles de quatro a seis peças geométricas.",
+              "descricao": "Completa o puzzle de forma autônoma, pode usar a tentativa e erro, mas sem instruções ou apoio."
+            }
+          ]
+        },
+        {
+          "nome": "Motricidade Grossa",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Imita ações de motricidade grossa numa variedade de posições (sentada, de pé, em movimento).",
+              "descricao": "A criança imita ações de motricidade grossa consistentemente e de forma espontânea (pode ser instruída), independentemente da localização. Podem ser aproximações. É a consistência que é importante e não a precisão."
+            },
+            {
+              "numero": 2,
+              "competencia": "Pula e passa por obstáculos no chão.",
+              "descricao": "Pula e move-se no espaço, a partir de um degrau baixo até o solo, assim como a partir do solo."
+            },
+            {
+              "numero": 3,
+              "competencia": "Usa alguns equipamentos do parque infantil (escadas, escorregas).",
+              "descricao": "Inicia de forma consistente ações apropriadas em vária peças de equipamento do parque infantil."
+            },
+            {
+              "numero": 4,
+              "competencia": "Senta-se no triciclo, empurra-o com os pés e começa a pedalar.",
+              "descricao": "Senta sozinha no triciclo, na posição correta e tenta pedalar, mas pode precisar de ajuda para o fazer."
+            },
+            {
+              "numero": 5,
+              "competencia": "Puxa um carrinho ou empurra um carrinho de mão.",
+              "descricao": "Manuseia autonomamente um carrinho ou carrinho de mão para mover as coisas no parque infantil."
+            },
+            {
+              "numero": 6,
+              "competencia": "Pontapeia a bola em direção a um alvo.",
+              "descricao": "Chuta uma bola grande com direcionalidade."
+            },
+            {
+              "numero": 7,
+              "competencia": "Escava com uma pá.",
+              "descricao": "Cava com a pá, apanha a matéria e deposita-a de forma independente, em múltiplas pazadas."
+            }
+          ]
+        },
+        {
+          "nome": "Independência Pessoal: Alimentação",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Usa um guardanapo quando sugerido.",
+              "descricao": "Quando instruída, mas sem ajuda, a criança pega no guardanapo e limpa a parte do corpo adequada de acordo com a instrução. Não tem de ser completo, mas tem que ser mais do que superficial."
+            },
+            {
+              "numero": 2,
+              "competencia": "Serve a comida sozinha da tigela com um utensílio Quando o adulto segura ou aproxima a travessa ou o prato da criança, esta usa o utensílio apropriado para servir os alimentos para o seu prato de forma autónoma.",
+              "descricao": "Pode ser desajeitada. O adulto pode indicar as quantidades."
+            },
+            {
+              "numero": 3,
+              "competencia": "Passa recipientes quando instruída.",
+              "descricao": "Na mesa, quando alguém pede à criança para passar um item, a criança procura o item, pega nele, e passa-o à pessoa à esquerda ou à direita. A criança deve responder ao pedido através da procura do objeto e tentar agarrá-lo sozinha. Se alguém passar um recipiente à criança e instruí-la para passar à próxima pessoa, a criança segue a instrução sem ajudas."
+            },
+            {
+              "numero": 4,
+              "competencia": "Transporta o prato, o copo e os talheres para o lava-louça ou para o balcão quando termina.",
+              "descricao": "Quando a criança sai da mesa, segue as instruções dos adultos para levar os itens especificados para um lugar específico, sem ajudas."
+            },
+            {
+              "numero": 5,
+              "competencia": "Permanece na mesa com o parceiro durante a refeição.",
+              "descricao": "Senta durante toda a refeição e mantém-se no lugar sem ajudas ou outros apoios até que tenha terminado de comer e o adulto diga que pode sair."
+            },
+            {
+              "numero": 6,
+              "competencia": "Come e comporta-se adequadamente em restaurantes de fast food.",
+              "descricao": "Participa em todas as etapas de uma refeição de fast food – esperar, pedir, transportar, comer, limpar e sair, sem a necessidade de ajudas físicas completas. A criança caminha voluntariamente com os adultos até a porta ou mesa. Não precisa dar a mão para ficar com o adulto."
+            },
+            {
+              "numero": 7,
+              "competencia": "Toca ou prova um novo alimento que já tenha sido introduzido várias vezes.",
+              "descricao": "Responde voluntariamente à instrução de provar, mordiscar ou beber um alimento/bebida familiar."
+            },
+            {
+              "numero": 8,
+              "competencia": "Come alimentos de todos os grupos alimentares.",
+              "descricao": "Come algumas peças de fruta/verduras, lacticínios, cereais e carnes (a menos que existam restrições alimentares), espontaneamente."
+            },
+            {
+              "numero": 9,
+              "competencia": "Vai buscar bebida ou água autonomamente.",
+              "descricao": "Vai buscar espontaneamente o copo e tirar a água da torneira, prateleira ou da porta da geladeira, sem qualquer instrução ou ajuda do adulto. Se a criança usar a torneira, deve fechar a água espontaneamente."
+            }
+          ]
+        },
+        {
+          "nome": "Independência Pessoal: Vestir",
+          "itens": [
+            {
+              "numero": 10,
+              "competencia": "Despe a roupa sozinha e deposita-a no cesto (sem fechos).",
+              "descricao": "Quando instruída, a criança tira a camisa, as calças, a roupa interior, as meias e os sapatos, sem ajuda a não ser para os fechos e coloca toda a roupa num recipiente apropriado. A criança pode ser verbal ou gestualmente relembrada uma ou duas vezes em toda a rotina, mas sem ajudas físicas, sejam totais ou parciais."
+            },
+            {
+              "numero": 11,
+              "competencia": "Completa alguns passos ao vestir algumas peças de roupa sozinha (precisa de ajuda com fechos).",
+              "descricao": "Autoexplicativo."
+            },
+            {
+              "numero": 12,
+              "competencia": "Tira o casaco, o chápeu (sem fechos), e coloca-os no cabide (ou gaveta).",
+              "descricao": "Tirar o casaco e a touca de forma autónoma; pode ser solicitado para colocar no cabide."
+            }
+          ]
+        },
+        {
+          "nome": "Independência Pessoal: Higiene",
+          "itens": [
+            {
+              "numero": 13,
+              "competencia": "Limpa o rosto com um pano quente quando instruída.",
+              "descricao": "Depois de o adulto lhe dar um pano úmido e após a instrução “Lava o rosto”, a criança esfrega toda a superfície do rosto sem mais ajudas e afasta o pano ou pousa-o quando termina."
+            },
+            {
+              "numero": 14,
+              "competencia": "Limpa o nariz quando instruída.",
+              "descricao": "Quando instruída para assoar ou limpar o nariz, a criança dirige-se consistentemente para a caixa dos lenços, assoa ou limpa o nariz e deita o lenço fora, sem mais do que uma ajuda verbal e sem ajudas manuais."
+            },
+            {
+              "numero": 15,
+              "competencia": "Participa em todos os passos da lavagem de mãos.",
+              "descricao": "Realiza consistentemente a ação manual para cada etapa da lavagem de mãos, exceto abrir a torneira, sem precisar de ajudas físicas completas. O adulto pode ajudar em alguns passos através do gesto ou de ajudas físicas parciais."
+            },
+            {
+              "numero": 16,
+              "competencia": "Coopera na lavagem/corte do Não briga, não chora nem protesta de nenhuma cabelo. outra forma durante a lavagem e o corte de cabelo.",
+              "descricao": "Participa, ajudando a esfregar o shampoo e usar a toalha. Pode usar reforços fortes durante a rotina."
+            },
+            {
+              "numero": 17,
+              "competencia": "Brinca com cinco brinquedos para o banho adequadamente.",
+              "descricao": "Autoexplicativo – para brinquedos de banho convencionais."
+            },
+            {
+              "numero": 18,
+              "competencia": "Arruma os brinquedos quando solicitado no final do banho.",
+              "descricao": "Guarda rotineiramente os brinquedos do banho no recipiente apropriado sem mais ajudas após a instrução inicial, para passar."
+            },
+            {
+              "numero": 19,
+              "competencia": "Ajuda na colocação da loção.",
+              "descricao": "Ajuda os pais a pôr a loção nas mãos, braços, pernas, barriga."
+            },
+            {
+              "numero": 20,
+              "competencia": "Usa corretamente a escova de dentes.",
+              "descricao": "Esfrega a escova de dentes inferiores e superiores, à frente e atrás, quando instruída. Todos os níveis de ajudas físicas completas podem ser usados."
+            },
+            {
+              "numero": 21,
+              "competencia": "Vai dormir sozinha depois do ritual de preparação para deitar.",
+              "descricao": "Dorme rotineiramente na própria cama e dorme sem a presença de um adulto no quarto depois de terminada a rotina de deitar e as luzes estarem desligadas. Raramente sai da cama ou do quarto depois de ter sido colocada na cama."
+            },
+            {
+              "numero": 22,
+              "competencia": "Mostra conhecimento acerca da sequência da rotina da hora de deitar.",
+              "descricao": "Demonstra consciência da rotina de deitar ao iniciar uma ou mais atividades, e participando nas várias etapas da rotina sem necessidades de ajudas completas."
+            }
+          ]
+        },
+        {
+          "nome": "Independência Pessoal: Tarefas",
+          "itens": [
+            {
+              "numero": 23,
+              "competencia": "Separa os talheres da máquina de lavar louça para a bandeja dos talheres.",
+              "descricao": "O adulto pode preparar a situação, mas após a preparação e a instrução inicial, a criança leva até 20 talheres da máquina de lavar louça e coloca-os na gaveta dos talheres sem qualquer ajuda do adulto."
+            },
+            {
+              "numero": 24,
+              "competencia": "Tira a roupa da máquina de secar para o cesto.",
+              "descricao": "Quando o adulto abre a porta da máquina de secar e entrega o cesto da roupa, a criança tira todas as peças da máquina para o cesto sem necessidade de obter instruções. Pode precisar de ajuda com as peças mais difíceis."
+            },
+            {
+              "numero": 25,
+              "competencia": "Emparelha as meias.",
+              "descricao": "A partir de um conjunto de 10 meias ou mais num cesto ou pilha, a criança emparelha, dobra ou junta as meias, e empilha-as num recipiente."
+            },
+            {
+              "numero": 26,
+              "competencia": "Põe água/comida na tigela do animal.",
+              "descricao": "O adulto pode fornecer os materiais ou instruções diretas, mas a criança realiza a ação sem mais ajudas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nivel": 3,
+      "categorias": [
+        {
+          "nome": "Comunicação Receptiva",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Presta atenção e junta-se com interesse durante 5-10 minutos enquanto o adulto lê um livro familiar usando frases simples.",
+              "descricao": "Fica com o adulto, presta atenção plena e participa da história que o adulto está lendo. Os exemplos incluem alternar o contato visual entre as páginas do livro e a adulto, apontando para as imagens do livro, virando as páginas e vocalizando os nomes das imagens do livro."
+            },
+            {
+              "numero": 2,
+              "competencia": "Segue ordens novas de um passo envolvendo objetos /ações familiares.",
+              "descricao": "Completa uma instrução olhando para o adulto e realizando a ação sem gestos ou ajuda física do adulto. O adulto pode repetir as instruções num segundo momento mas sem pista gestual."
+            },
+            {
+              "numero": 3,
+              "competencia": "Identifica muitos objetos comuns e as suas imagens: peças de roupa, objetos relacionados com refeições, higiene, jogo e alimentos (50 objetos).",
+              "descricao": "Identifica 50 ou mais objetos comuns para passar."
+            },
+            {
+              "numero": 4,
+              "competencia": "Responde apropriadamente a perguntas \"Sim/Não\" sobre preferências.",
+              "descricao": "Usa “Sim/Não” apropriadamente em contextos de pedido e recusa. Deve incluir o contato visual, embora não precise de ser acompanhado por gestos (ou seja, acenar/abanar a cabeça). Pode usar frases cordiais, “Sim, por favor”, “Não, obrigado”."
+            },
+            {
+              "numero": 5,
+              "competencia": "Identifica cinco ou mais ações em imagens ou livros.",
+              "descricao": "Vocaliza ou gesticula (p.e., aponta) em resposta a perguntas do adulto. P.e.:“Mostra-me o bebê dormindo” ou “Cadê o cachorro correndo”. A resposta não precisa ser acompanhada do contato visual."
+            },
+            {
+              "numero": 6,
+              "competencia": "Segue duas ou mais instruções dadas em rotinas situacionais (hora de dormir: pegar num livro e entrar na cama;escovar os dentes: pegar na escova e na pasta).",
+              "descricao": "Consistentemente segue duas ou três partes das instruções da rotina envolvendo ações e objetos em rotinas bem praticadas."
+            },
+            {
+              "numero": 7,
+              "competencia": "Percebe as relações espaciais envolvendo objetos (p.e., debaixo de, perto de).",
+              "descricao": "Exemplos disto são usar os conceitos de forma adequada quando lhe é pedido (“Põe a bola ao lado do carro”, ou “Põe a bola debaixo da mesa”)."
+            },
+            {
+              "numero": 8,
+              "competencia": "Diferencia os conceitos de tamanhos iniciaisgrande/pequeno.",
+              "descricao": "Vocaliza ou gesticula (p.e., aponta, entrega os objetos) em resposta às perguntas do adulto. Alguns exemplos são: “Onde está a bola grande?” ou “Mostra-me o carro pequeno”. A resposta não precisa ser acompanhada do contato visual."
+            },
+            {
+              "numero": 9,
+              "competencia": "Diferencia pelo menos quatro cores diferentes quando solicitado.",
+              "descricao": "Vocaliza ou gesticula (p.e., aponta, entrega os objetos) em resposta às perguntas do adulto. Alguns exemplos são: “Qual é o lápis azul?” ou “Mostra-me o caminhão vermelho”. A resposta não precisa ser acompanhada do contato visual."
+            },
+            {
+              "numero": 10,
+              "competencia": "Identifica 20 itens pelo som (p.e., animais, telefone,\"Qual animal que faz 'Miau, miau'?\").",
+              "descricao": "Vocaliza ou gesticula (p.e., aponta, entrega os objetos) em resposta às perguntas do adulto. Alguns exemplos são: “Que animal faz miau?” ou “O que faz o cachorro?”, ou “O que você ouviu?”. A resposta não precisa ser acompanhada do contato visual."
+            },
+            {
+              "numero": 11,
+              "competencia": "Compreende a função de objetos comuns (passear, cortar, comer, dormir, calçar pés, beber, etc.).",
+              "descricao": "Vocaliza ou gesticula (p.e., aponta, entrega os objetos) em resposta às perguntas do adulto. Alguns exemplos são: “O que usamos para pedalar?” ou “O que usamos para beber?”. A resposta não precisa ser acompanhada do contato visual. Identifica três ou mais funções de objetos para passar."
+            },
+            {
+              "numero": 12,
+              "competencia": "Compreende os pronomes pessoais \"meu\" e \"teu\".",
+              "descricao": "Vocaliza ou gesticula (p.e., aponta, entrega os objetos) em resposta às perguntas do adulto. Alguns exemplos são: “De quem é a vez?” ou “De quem é esse sapato?”. A resposta não precisa ser acompanhada do contato visual."
+            },
+            {
+              "numero": 13,
+              "competencia": "Identifica 10 ações através de imagens, escolhas, representações.",
+              "descricao": "Vocaliza ou gesticula (p.e., aponta, entrega os objetos) em resposta às perguntas do adulto. Alguns exemplos são: “Mostra-me como joga bola” ou “Mostra-me o porco come”. A resposta não precisa ser acompanhada do contato visual."
+            },
+            {
+              "numero": 14,
+              "competencia": "Segue duas ou mais ações não relacionadas num contexto novo.",
+              "descricao": "Completa a instrução, olhando para o adulto e a realizando a ação sem gestos ou ajuda física do adulto. O adulto pode repetir a instrução um segundo momento, sem pista gestual. P.e.: “Dá o carro e fecha o livro” ou “Põe a bola no balde e a boneca em cima da mesa”."
+            }
+          ]
+        },
+        {
+          "nome": "Comunicação Expressiva",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Produz uma combinação de duas a três palavras para uma variedade de intenções comunicativas (p.e., pedir, cumprimentar, chamar a atenção, protestar).",
+              "descricao": "As verbalizações devem incluir o contato visual. Ex: “Quer mais suco?”, “Tchau,...”, “Ajuda a abrir” ou “Bola não”. A articulação não precisa ser perfeita."
+            },
+            {
+              "numero": 2,
+              "competencia": "Produz enunciados de duas ou mais palavras para fazer comentários a outra pessoa.",
+              "descricao": "As verbalizações devem incluir o contato visual e não estão relacionadas com pedidos para comentar objetos ou ações. Ex.: “Olha a vaca”, “Avião anda rápido” ou “Cãozinho”. A articulação não precisa ser perfeita."
+            },
+            {
+              "numero": 3,
+              "competencia": "Nomeia ações em imagens ou livros.",
+              "descricao": "As verbalizações não precisam ser acompanhadas por contato visual. Ex.: “Bebê comer” ou “Pássaro voar”. A articulação pode não ser perfeita."
+            },
+            {
+              "numero": 4,
+              "competencia": "Faz comentários e pedidos de localização (cima, baixo, dentro, em cima).",
+              "descricao": "As verbalizações devem incluir o contato visual. Ex.: “Coelho em cima da cadeira” ou “Bola dentro...”. A articulação pode não ser perfeita."
+            },
+            {
+              "numero": 5,
+              "competencia": "Faz comentários e pedidos usando formas possessivas iniciais (meu, teu).",
+              "descricao": "As verbalizações devem incluir o contato visual. O adulto pode usar um objeto pertencente à criança. Ex.: “Isso (copo com canudo) é meu” ou “Tua vez”, “Meu bebê. A articulação pode não ser perfeita."
+            },
+            {
+              "numero": 6,
+              "competencia": "Gesticula ou vocaliza \"Não sei\" em contexto.",
+              "descricao": "A verbalização ou gesto (p.e., encolher os ombros, levantar as mãos) devem incluir o contato visual."
+            },
+            {
+              "numero": 7,
+              "competencia": "Usa de forma consistente o nome das outras pessoas para chamar a atenção.",
+              "descricao": "A verbalização deve incluir o contato visual. A articulação pode não ser perfeita."
+            },
+            {
+              "numero": 8,
+              "competencia": "Transmite uma mensagem simples a outra pessoa (\"Vai dizer Olá à mãe\").",
+              "descricao": "A verbalização deve incluir o contato visual. Ex.: “Vai dizer olá à mamãe” ou “Diz para o papai vir aqui”. A articulação pode não ser perfeita."
+            },
+            {
+              "numero": 9,
+              "competencia": "Diz \"Olá\" e \"Adeus\" apropriadamente, tanto iniciando como respondendo.",
+              "descricao": "A verbalização deve incluir o contato visual."
+            },
+            {
+              "numero": 10,
+              "competencia": "Usa pronomes para si e para os outros \"variantes do \"eu\" e \"tu\").",
+              "descricao": "A verbalização deve incluir o contato visual. O adulto pode querer usar um espelho para testar. A resposta pode incluir as variantes do eu e tu. Ex.: “Este sou eu” ou “Eu te vejo”."
+            },
+            {
+              "numero": 11,
+              "competencia": "Usa palavras e gestos simples para descrever experiências pessoais.",
+              "descricao": "A verbalização e/ou gestos (p.e. representar) devem incluir o contato visual. A criança pode usar palavras ou frases simples. Ex.: “Cãozinho”, “Pega a bola” ou “Sobe balão”. A articulação não precisa ser perfeita."
+            },
+            {
+              "numero": 12,
+              "competencia": "Nomeia uma ou duas cores.",
+              "descricao": "A verbalização não precisa ser acompanhada por contato visual. O adulto pode perguntar, “Qual é a cor do carro?”, mas a criança deve iniciar a resposta (“Carro vermelho”, “É um balão azul”). A aproximação pode ser aceita."
+            },
+            {
+              "numero": 13,
+              "competencia": "Responde apropriadamente a questões \"O quê?\".",
+              "descricao": "A verbalização não precisa ser acompanhada por contato visual. O adulto pode perguntar uma segunda vez."
+            },
+            {
+              "numero": 14,
+              "competencia": "Responde apropriadamente a questões \"Onde?\".",
+              "descricao": "A verbalização não precisa ser acompanhada por contato visual. O adulto pode perguntar uma segunda vez."
+            },
+            {
+              "numero": 15,
+              "competencia": "Responde apropriadamente a questões \"Quem?\".",
+              "descricao": "A verbalização não precisa ser acompanhada por contato visual. O adulto pode perguntar uma segunda vez."
+            },
+            {
+              "numero": 16,
+              "competencia": "Faz perguntas simples de \"Sim/Não\" usando uma entonação ascendente (pode ser A verbalização não precisa ser acompanhada por contato visual.",
+              "descricao": "A pergunta pode ser um enunciado de uma palavra com a entonação ascendente. Ex.: um enunciado de uma palavra com uma entoação ascendente.) “Biscoito?” ou “Vamos embora?”."
+            },
+            {
+              "numero": 17,
+              "competencia": "Faz perguntas de \"O quê?\" e \"Onde?\".",
+              "descricao": "A verbalização não precisa ser acompanhada por contato visual. Deve fazer as duas perguntas para passar."
+            },
+            {
+              "numero": 18,
+              "competencia": "Responde a perguntas sobre informações simples: nome, idade, cor da camisola, etc.",
+              "descricao": "A verbalização não precisa ser acompanhada por contato visual. Ex.: “Qual é seu nome?”, “Quantos anos você tem?”, “Qual é a cor da sua camiseta?”."
+            }
+          ]
+        },
+        {
+          "nome": "Competências Sociais: Adultos e Pares",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Joga jogos simples de motricidade grossa (p.e., bola, escondidas, rodas de canções).",
+              "descricao": "Participa duas ou mais vezes em qualquer comportamento ativo (alcançar, imitar vocalizar) em três ou mais jogos. O contato visual e os sorrisos não são suficientes. Ex.: “Escondidas”, “Ring-around-the-Rosy”, e jogar a bola."
+            },
+            {
+              "numero": 2,
+              "competencia": "Partilha e mostra objeto quando o par pede.",
+              "descricao": "Responde até 3 segundos após o pedido do parceiro. O parceiro pode repetir uma segunda vez. A resposta pode incluir a verbalização (p.e. “bebe”) ou um gesto (p.e. traz o objeto ao par e mantém na mão)."
+            },
+            {
+              "numero": 3,
+              "competencia": "Imita e realiza novas canções/jogos de dedos em situação de grupo.",
+              "descricao": "Participa duas ou mais vezes em qualquer comportamento ativo em duas ou mais rotinas. O contato visual e os gestos isolados não são suficientes. Ex.: “Dedos assustadores”, “Cócegas”."
+            },
+            {
+              "numero": 4,
+              "competencia": "Responde apropriadamente a pedidos/instruções simples dos pares.",
+              "descricao": "O relatório dos pais pode ser aceito. Ex.: “Traz a bola”, “Você é a mamãe” ou “Põe isso ali”."
+            },
+            {
+              "numero": 5,
+              "competencia": "Inicia interações e imitações dos pares.",
+              "descricao": "O relatório dos pais pode ser aceito. Inicia/imita duas ou mais rondas em três ou mais jogos apropriados à idade (p.e., “Apanhada”, “Escondidas”, brincar com trens, mascarar-se)."
+            },
+            {
+              "numero": 6,
+              "competencia": "Participa na rotina de jogo dramático familiar com o parceiro em jogo paralelo.",
+              "descricao": "O relatório dos pais pode ser aceito. Participa em duas ou mais tomadas de vez. Os comportamentos podem incluir verbalizações (p.e. “Bebê está com fome”), imitação, ou observação do jogo do parceiro. Ex.: brincar de casinha, se fantasiar, dramatizar."
+            },
+            {
+              "numero": 7,
+              "competencia": "Toma a vez em jogos de tabuleiro simples.",
+              "descricao": "Participa em duas ou mais rondas em três ou mais jogos apropriados."
+            },
+            {
+              "numero": 8,
+              "competencia": "Usa termos de cortesia: \"Por favor\", \"Obrigada\", \"Desculpe\".",
+              "descricao": "Usa de forma espontânea e adequada. As aproximações podem ser aceitas. Passa se usar frequentemente dois dos três."
+            },
+            {
+              "numero": 9,
+              "competencia": "Imita uma série de novas ações motoras em pé e em movimento como em \"Segue o líder\" ou movimentos de animais.",
+              "descricao": "Ex.: “Seu mestre mandou”, fingir que se move como um animal. Imita espontaneamente 10 ou mais ações novas. Pode ser impreciso."
+            },
+            {
+              "numero": 10,
+              "competencia": "Participa em atividades de jogo que envolvam guiões verbais.",
+              "descricao": "Participa em 3 ou mais atividades com comportamentos ativos (verbaliza, representa, imita). O contato visual e o sorriso por si só não são suficientes. Ex.: brincadeira de casinha, professor, deitar bebê na cama."
+            },
+            {
+              "numero": 11,
+              "competencia": "Chama frequentemente a atenção dos outros para os objetos verbalizando e gesticulando para comentar, mostrar, partilhar e pedir.",
+              "descricao": "Inicia comportamentos, três ou mais vezes, com contato visual. Ex.: Verbalizações (“Mamãe, olha o gatinho”, “Blocos caíram”, “Mais biscoito, papai”) com gestos (p.e., dar ou entregar o objeto ao adulto, apontar para um objeto)."
+            },
+            {
+              "numero": 12,
+              "competencia": "Responde às licitações dos outros para a atenção conjunta olhando e comentando.",
+              "descricao": "Responde no espaço de três segundos após a incitação do adulto. O adulto pode repetir uma segunda vez."
+            },
+            {
+              "numero": 13,
+              "competencia": "Identifica receptivamente o afeto (feliz, triste, zangada,assustada) Responde no espaço de três segundos após a incitação do adulto.",
+              "descricao": "O adulto pode repetir uma a partir de fotografias, nos outros, e/ou em desenhos a lápis. segunda vez. Identifica dois ou mais sentimentos afetivos (p.e., feliz, triste, bravo, assustado, surpreso). A verbalização não precisa ser acompanhada do contato visual."
+            },
+            {
+              "numero": 14,
+              "competencia": "Identifica expressivamente o afeto a partir de fotografias, nos outros, e/ou em desenhos a lápis.",
+              "descricao": "Identifica dois ou mais sentimentos afetivos (p.e., feliz, triste, bravo, assustado, surpreso). A verbalização não precisa ser acompanhada do contato visual."
+            },
+            {
+              "numero": 15,
+              "competencia": "Faz o seu próprio rosto refletir uma emoção (feliz, triste, zangada, assustada).",
+              "descricao": "Identifica dois ou mais sentimentos afetivos (p.e., feliz, triste, bravo, assustado, surpreso). A verbalização não precisa ser acompanhada do contato visual."
+            }
+          ]
+        },
+        {
+          "nome": "Cognição",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Faz correspondência de letras no próprio nome.",
+              "descricao": "Faz correspondência de todas as letras do primeiro nome."
+            },
+            {
+              "numero": 2,
+              "competencia": "Faz correspondência de letras.",
+              "descricao": "Faz correspondência de cinco ou mais letras. Pode ser em resposta à sugestão verbal do adulto (p.e., “Onde está o A?”) ou com demonstração nas primeiras tentativas, mas a criança tem de fazer correspondência de forma autônoma em pelo menos cinco tentativas."
+            },
+            {
+              "numero": 3,
+              "competencia": "Faz correspondência de palavras.",
+              "descricao": "Faz correspondência de cinco ou mais palavras. Pode ser em resposta à sugestão verbal do adulto (p.e., “Onde está o g-a-t-o?”) ou com demonstração nas primeiras tentativas, mas a criança tem de fazer correspondência de forma autônoma em pelo menos cinco tentativas."
+            },
+            {
+              "numero": 4,
+              "competencia": "Faz correspondência de números.",
+              "descricao": "Faz correspondência de cinco ou mais números. Pode ser em resposta à sugestão verbal do adulto (p.e., “Onde está o 6?”) ou com demonstração nas primeiras tentativas, mas a criança tem de fazer correspondência de forma autônoma em pelo menos cinco tentativas."
+            },
+            {
+              "numero": 5,
+              "competencia": "Identifica receptiva e expressivamente algumas letras, números, formas e cores.",
+              "descricao": "Identifica cinco ou mais em cada categoria. Pode ser em resposta à sugestão verbal do adulto (p.e., “Onde está o 6?”, “Mostra o lápis azul” ou “Qual letra?”) ou com demonstração nas primeiras tentativas, mas a criança tem de fazer correspondência de forma autônoma em pelo menos cinco tentativas."
+            },
+            {
+              "numero": 6,
+              "competencia": "Joga jogos que envolvam a memória para objetos escondidos.",
+              "descricao": "Identifica três ou mais objetos escondidos. O adulto pode sondar mostrando três objetos à criança (p.e., uma moeda, uma bola pequena e um pauzinho) e em seguida, coloca um copo sobre cada item. O adulto espera 7 segundos e em seguida, mostra uma réplica de um dos objetos escondidos (p.e., a bola pequena) e pergunta: “Onde está a outra bola?”. A resposta pode ser a verbalização (“Não”) e/ou gesto (p.e. apontar, pegar o copo). O contato visual não é necessário. O adulto deve preparar três ou mais tentativas."
+            },
+            {
+              "numero": 7,
+              "competencia": "Categoriza objetos/imagens em oito classes.",
+              "descricao": "Deverá classificar em conjuntos de três, oito classes de objetos."
+            },
+            {
+              "numero": 8,
+              "competencia": "Compreende a relação entre as quantidades e os símbolos numéricos até o número cinco.",
+              "descricao": "Compreende relações tanto verbalmente (p.e., conta cinco objetos) como gestualmente (p.e. toca ou agrupa cinco objetos)."
+            },
+            {
+              "numero": 9,
+              "competencia": "Conta o número correto de objetos até cinco.",
+              "descricao": "Atribui valor a cinco ou mais objetos. O adulto pode ter que contar os objetos preferidos da criança, como damas, doces, trens ou blocos. O adulto pode começar contando o primeiro item, mas a criança precisa continuar e terminar de forma autônoma."
+            },
+            {
+              "numero": 10,
+              "competencia": "Sequencia três ou mais imagens pela ordem correta e narra a sequência de imagens usando linguagem como \"primeiro, depois\".",
+              "descricao": "Pode ser em resposta à sugestão verbal do adulto (p.e., “O que vem a seguir?”). a criança deverá sequenciar de forma independente e narrar quando lhe for perguntado, “Conta lá” em três ou mais sequencias diferentes."
+            }
+          ]
+        },
+        {
+          "nome": "Jogo",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Faz jogo construtivo envolvendo esquemas complexos de sequenciação de vários objetos coordenados (p.e., os caminhões na estrada, blocos para fazer uma construção, contas para fazer um colar).",
+              "descricao": "Constrói três ou mais esquemas. Os vários objetos podem ser caminhões na estrada, blocos para construir, contas para fazer um colar."
+            },
+            {
+              "numero": 2,
+              "competencia": "Liga três ou mais ações relacionadas numa sequência de jogo.",
+              "descricao": "Ex.: construir uma pista, empurrar os trens e bater os trens; tirar massinha, usar o cortador de formas e tirar a forma. (Nota: estes podem formar a sequência da imagem durante 10 vezes isoladas)."
+            },
+            {
+              "numero": 3,
+              "competencia": "Executa duas ou mais ações ligadas numa boneca ou animal quando instruída.",
+              "descricao": "Ex: Fingir que entorna o suco e alimenta o bebê; pegar o cobertor e deitar a boneca na cama; pôr o animal no carro empurrando-o."
+            },
+            {
+              "numero": 4,
+              "competencia": "Coloca fisicamente figuras em miniaturas de móveis, veículos, etc., quando apropriado.",
+              "descricao": "Põe as figuras em contexto apropriado durante o jogo. Ex: sentar o pai na cadeira para ver TV ou colocar a mãe no carro para dirigir até a loja."
+            },
+            {
+              "numero": 5,
+              "competencia": "Realiza ações sobre bonecas ou animais de brincar espontaneamente.",
+              "descricao": "Completa três ou mais ações sem ajuda do adulto."
+            },
+            {
+              "numero": 6,
+              "competencia": "Organiza adereços para o tema.",
+              "descricao": "Organiza duas ou mais ajudas em três ou mais esquemas de jogo diferentes. Ex.: dispor o garfo e o prato para alimentar o bebê; colocar o chapéu em si mesmo e nos outros para o jogo de mascarar."
+            }
+          ]
+        },
+        {
+          "nome": "Motricidade Fina",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Completa um puzzle de cinco a seis peças interligadas.",
+              "descricao": "Autoexplicativo."
+            },
+            {
+              "numero": 2,
+              "competencia": "Imita o desenho de um círculo, cruz, quadrado, linha diagonal.",
+              "descricao": "Imita cada um, pelo menos uma vez. O adulto modela e pode usar sugestões verbais (p.e., “Desenha isto”)."
+            },
+            {
+              "numero": 3,
+              "competencia": "Imita e constrói diferentes estruturas de blocos usando uma variedade de materiais de construção (blocos, legos, tinkers, etc.).",
+              "descricao": "Usa cinco ou mais blocos para construir três ou mais estruturas diferentes."
+            },
+            {
+              "numero": 4,
+              "competencia": "Faz enfiamentos de ponto corrido (alinhavo).",
+              "descricao": "Lança através de três ou mais laçadas/buracos. O adulto pode usar a pista verbal (p.e., “Põe ali”) ou demonstrar na primeira tentativa."
+            },
+            {
+              "numero": 5,
+              "competencia": "Traça linhas e curvas com o dedo ou com material de escrita.",
+              "descricao": "Traça pelo menos três quartos de uma linha e uma curva com o dedo e com o material de escrita. O adulto pode modelar na primeira tentativa."
+            },
+            {
+              "numero": 6,
+              "competencia": "Usa uma variedade de utensílios para pegar e largar objetos: pinças, garfos.",
+              "descricao": "Usa dois ou mais dedos utensílios para pegar e soltar dois ou mais objetos. Ex.: usar uma colher grande para pegar/largar um pedaço de comida ou pinças para pegar e soltar blocos."
+            },
+            {
+              "numero": 7,
+              "competencia": "Traça uma variedade de formas.",
+              "descricao": "Traça três ou mais formas (p.e., quadrado, círculo, triângulo e retângulo). Pode usar uma armação de plástico ou as linhas pautadas no papel."
+            },
+            {
+              "numero": 8,
+              "competencia": "Usa uma tesoura com o domínio apropriado e usa a mão oposta para estabilizar e virar o papel.",
+              "descricao": "O corte não precisa seguir uma linha, mas tem que cortar uma tira de papel em dois. O adulto pode mostrar como segurar a tesoura e cortar ao longo do papel."
+            },
+            {
+              "numero": 9,
+              "competencia": "Corta numa linha - linhas retas e curvas.",
+              "descricao": "Corta ao longo da linha com bastante precisão. O adulto pode modelar na primeira tentativa."
+            },
+            {
+              "numero": 10,
+              "competencia": "Realiza simples projetos de expressão plástica com duas etapas (cortar e colar, carimbar com a almofada de tinta;dobrar papel e cortar uma linha).",
+              "descricao": "O adulto pode usar a pista verbal (p.e., “Primeiro faz isto, depois faz isto”) ou demonstrar os passos na primeira tentativa."
+            },
+            {
+              "numero": 11,
+              "competencia": "Realiza vários esquemas diferentes com plasticina (massinha) - usa uma variedade de utensílios.",
+              "descricao": "Realiza três ou mais esquemas. Usa duas ou mais ferramentas para passar. Ex.: enrolar massinha e cortar com uma faca; ou fazer uma bola de massinha e fingir que come com o garfo."
+            }
+          ]
+        },
+        {
+          "nome": "Motricidade Grossa",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Conduz bem o triciclo (pedais e volante, segue uma rota).",
+              "descricao": "Pedala e conduz, segue uma rota de forma autônoma e com uma boa coordenação."
+            },
+            {
+              "numero": 2,
+              "competencia": "Chuta de forma adequada e com equilíbrio.",
+              "descricao": "Chuta sem se agarrar a um objeto/pessoa. Não tropeça nem cai. Faz contato três ou mais vezes."
+            },
+            {
+              "numero": 3,
+              "competencia": "Usa todos os equipamentos do parque infantil com ajuda.",
+              "descricao": "Sobe e usa equipamentos do parque infantil simples (p.e. balanço, escorregadores pequenos) e equipamentos mais complexos (p.e. jungle gyms, barras para escalar, escorregadores grandes). Pode segurar nas grades."
+            },
+            {
+              "numero": 4,
+              "competencia": "Joga jogos de \"perseguição\" com os adultos e os pares, correndo suavemente, mudando de direção com bom equilíbrio.",
+              "descricao": "Joga pelo menos durante 5 minutos."
+            },
+            {
+              "numero": 5,
+              "competencia": "Imita ações de motricidade grossa com movimentos para canções e música.",
+              "descricao": "Imita cinco ou mais ações em três ou mais canções diferentes. Ex: imitação dos movimentos corporais em “Se você está contente...” ou “A rodas do ônibus...”. As imitações são espontâneas e imediatas."
+            },
+            {
+              "numero": 6,
+              "competencia": "Atira ao alvo dissimuladamente.",
+              "descricao": "Faz lançamentos dissimulados três ou mais vezes. Não tem que acertar o alvo completamente. O adulto pode demonstrar até duas tentativas."
+            },
+            {
+              "numero": 7,
+              "competencia": "Salta com os dois pés juntos.",
+              "descricao": "Salta para frente três ou mais vezes."
+            },
+            {
+              "numero": 8,
+              "competencia": "Salta com um pé só.",
+              "descricao": "Salta com um pé só pelo menos uma vez. Pode saltar agarrado a uma pessoa ou objeto estável, sem cair."
+            }
+          ]
+        },
+        {
+          "nome": "Independência Pessoal",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Usa a colher, o garfo e o copo ordenadamente e sem entornar.",
+              "descricao": "Não precisa segurar a colher e o copo corretamente."
+            },
+            {
+              "numero": 2,
+              "competencia": "Comporta-se apropriadamente num restaurante.",
+              "descricao": "A família é capaz de comer toda a refeição sem problemas graves de comportamento (p.e., atirar objetos, bater, rastejar debaixo da mesa, fugir). A criança pode fazer barulho ocasionalmente, mas pode ser direcionada para atividades que ocupem a sua atenção (p.e., desenhar, brincar com brinquedos pequenos)."
+            },
+            {
+              "numero": 3,
+              "competencia": "Usa ícones ou outros sistemas de símbolos para as escolhas, os horários, etc., de forma autônoma, se necessário em casa e na escola.",
+              "descricao": "Encontra o ícone/imagem/símbolo no livro, seleciona o ícone apropriado e completa a escolha de uma atividade sem ajuda. Conclui de forma autônoma, pelo menos 80% das vezes, em casa e na escola. Se nenhum destes for usado pela criança, passe o item."
+            },
+            {
+              "numero": 4,
+              "competencia": "Leva os seus materiais para o carro, a casa e a escola.",
+              "descricao": "Leva pelo menos um material sozinho. Ex.: mochila, lancheira, casaco, etc."
+            },
+            {
+              "numero": 5,
+              "competencia": "Abre e fecha a mochila de forma autônoma; coloca e remove objetos quando solicitado.",
+              "descricao": "Introduz/remove pelo menos três objetos sozinha mediante pedido. Ex.: lancheira, caderno, brinquedo, etc."
+            },
+            {
+              "numero": 6,
+              "competencia": "Veste-se e despe-se quando é apropriado (desaperta roupas com fechos- fecho-éclair e molas).",
+              "descricao": "Abre zíper, botões de forma autônoma."
+            }
+          ]
+        },
+        {
+          "nome": "Independência Pessoal: Higiene",
+          "itens": [
+            {
+              "numero": 7,
+              "competencia": "Usa o banheiro de forma autônoma, faz todas as etapas, por iniciativa própria ou quando mandada.",
+              "descricao": "Pode pedir ajuda na lavagem das mãos se não alcançar o lavatório."
+            },
+            {
+              "numero": 8,
+              "competencia": "Lida bem com a roupa no banheiro, exceto os fechos.",
+              "descricao": "Puxa para cima e para baixo a cueca/calcinha e calça. O adulto pode segurar a peça de roupa para a criança “enfiar” (se tiver sido retirada), mas a criança puxa para baixo/cima sozinha."
+            },
+            {
+              "numero": 9,
+              "competencia": "Completa todos os passos da lavagem de mãos de forma autônoma.",
+              "descricao": "Abre e fecha a torneira, usa sabão, esfrega e seca as mãos. Pode ser lembrada."
+            },
+            {
+              "numero": 10,
+              "competencia": "Limpa o rosto com uma toalha quente quando a toalha é entregue.",
+              "descricao": "Autoexplicativo. Pode ser lembrada."
+            },
+            {
+              "numero": 11,
+              "competencia": "Passa a escova ou o pente no cabelo.",
+              "descricao": "Autoexplicativo. Pode ser lembrada."
+            },
+            {
+              "numero": 12,
+              "competencia": "Tapa a boca quando tosse ou espirra.",
+              "descricao": "Tapa a boca com a mão ou lenço. Pode ser lembrada."
+            },
+            {
+              "numero": 13,
+              "competencia": "Ajuda ativamente no banho e a secar-se após o banho.",
+              "descricao": "O adulto pode fornecer a toalha, sabonete, esponja ou colocar o sabonete na esponja, mas a criança ajuda na lavagem e secagem do corpo (p.e., rosto, barriga, braços, pernas)."
+            },
+            {
+              "numero": 14,
+              "competencia": "Lavas os dentes com a escova, aplicando pelo menos algumas escovadelas.",
+              "descricao": "Escova para cima/baixo pelo menos cinco ou mais vezes nos dentes de cima e de baixo. O adulto pode colocar a pasta na escova de dentes. Podelhe ser dito para continuar a escovar."
+            }
+          ]
+        },
+        {
+          "nome": "Independência Pessoal: Tarefas",
+          "itens": [
+            {
+              "numero": 15,
+              "competencia": "Alimenta/dá água a um animal.",
+              "descricao": "Coloca alimentos/água na taça e traz para o animal de estimação. O adulto pode ajudar (p.e., abrir a lata, medir quantidades) ou lembrar."
+            },
+            {
+              "numero": 16,
+              "competencia": "Ajuda a levantar a mesa.",
+              "descricao": "Leva pelo menos dois ou mais itens (p.e. prato, copo, tigela, etc) para a máquina de lavar. Pode ser lembrada."
+            },
+            {
+              "numero": 17,
+              "competencia": "Ajuda a tirar a louça da máquina.",
+              "descricao": "Retira cinco ou mais itens. O adulto pode mostrar onde se coloca o item. Leva pelo menos dois ou mais itens (p.e. prato, copo, tigela, etc) da máquina. Pode ser lembrada."
+            },
+            {
+              "numero": 18,
+              "competencia": "Põe a roupa lavada nas gavetas.",
+              "descricao": "Guarda três ou mais peças de roupa cuidadosamente dobradas na gaveta, mas não precisa dobrá-las. Pode ser lembrada."
+            },
+            {
+              "numero": 19,
+              "competencia": "Pega os seus pertences quando solicitado.",
+              "descricao": "Agarra em bens pessoais (p.e, roupas, brinquedos, sapatos, etc) e coloca-os num local apropriado quando solicitado. Pode ser lembrada."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nivel": 4,
+      "categorias": [
+        {
+          "nome": "Comunicação Receptiva",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Compreende uma variedade de conceitos de relações físicas descritivas.",
+              "descricao": "Pega, dá, aponta ou mostra o item correto ao adulto numa escolha de dois objetos. A criança identifica cinco conceitos diferentes corretamente. Ex.: quente/frio, vazio/cheio,molhado/seco, duro/mole, pesado/leve, alto/baixo/longo, grande/pequeno."
+            },
+            {
+              "numero": 2,
+              "competencia": "Recupera 10-15 itens usando 2-3 pistas múltiplas (p.e., tamanho, quantidade, cor, nome do objeto.",
+              "descricao": "Pega, dá, aponta ou mostra o item correto ao adulto. Ex.: “Me dá o lápis azul, quebrado” e a criança faz referência ao item correto."
+            },
+            {
+              "numero": 3,
+              "competencia": "Compreende pronomes de gênero.",
+              "descricao": "Pega, dá, aponta ou mostra personagens, figuras ou pessoas reais femininas ou masculinas corretamente em resposta a instruções que envolvem “a ele ou a ela”. Ex.: “colocao no carro ou “Ela quer um pouco de sorvete”. A criança deve passar em pelo menos um pronome de gênero masculino e feminino para passar está competência."
+            },
+            {
+              "numero": 4,
+              "competencia": "Compreende comparativos: maior, mais baixo, menor, mais, menos, alguns, muitos, etc.",
+              "descricao": "Pega, dá, aponta ou mostra o item correto ao adulto num campo de quatro ou cinco escolhas. Para passar, a criança deve compreender três ou mais conjuntos comparativos."
+            },
+            {
+              "numero": 5,
+              "competencia": "Compreende relações espaciais envolvendo objetos e locuções preposicionais: atrás, na parte de trás de, em frente de, etc.",
+              "descricao": "A criança demonstra compreensão desses conceitos ao colocar os objetos na posição solicitada ou olhando para o local correto quando sugerido (p.e., “Procura atrás do sofá)."
+            },
+            {
+              "numero": 6,
+              "competencia": "Compreende negações (p.e., a caixa sem bolas, o rapaz que não está sentado).",
+              "descricao": "Pega, dá, aponta ou mostra o item correto que identifica a ausência de um objeto (tigela sem cereais)ou características (criança que não tem olhos azuis) ou uma ação que não está acontecendo (aquele que não está dormindo)."
+            },
+            {
+              "numero": 7,
+              "competencia": "Compreende possessivos e relações parte-todo.",
+              "descricao": "Em objetos e imagens, a criança aponta ou mostra a parte de um item quando solicitado (p.e., o nariz do coelhinho, a roda da bicicleta, a porta do carro)."
+            },
+            {
+              "numero": 8,
+              "competencia": "Demonstra atenção a pequenas histórias e compreensão das partes da história respondendo a questões simples de \" O quê\" e \"Quem\".",
+              "descricao": "Escuta histórias simples quando estas são lidas (cinco páginas). Demonstra atenção, olhando para o livro e para o adulto respondendo de forma precisa as questões, verbalmente ou apontando, página por página. Responde a duas ou três questões no final."
+            },
+            {
+              "numero": 9,
+              "competencia": "Responde a questões de \"Sim\"/Não\" para identidade.",
+              "descricao": "Responde corretamente ao verbalizar, sacudir ou acenar com a cabeça quando o adulto pergunta: “Isto é um...?” “O seu nome é Sam?”."
+            },
+            {
+              "numero": 10,
+              "competencia": "Responde a questões sobre estados físicos.",
+              "descricao": "Responde corretamente com a frase à pergunta “O que faria se estivesse cansado, ou com fome, ou com sede?). Para quatro ou mais: magoada, cansado, com fome, com sede."
+            },
+            {
+              "numero": 11,
+              "competencia": "Responde a questões de informação pessoal.",
+              "descricao": "Responde corretamente a três ou mais informações pessoais. Ex.: “Qual é o seu nome completo?”, “Qual é seu número de telefone?”, “Qual é seu endereço?”."
+            },
+            {
+              "numero": 12,
+              "competencia": "Compreende \"igual\" e \"diferente\".",
+              "descricao": "Pega, dá, aponta ou mostra imagens /itens para instruções que envolvam encontrar objetos que são iguais e que são diferentes."
+            },
+            {
+              "numero": 13,
+              "competencia": "Compreende conceitos de quantidade.",
+              "descricao": "Pega, dá, aponta ou mostra imagens /itens corretamente em resposta a perguntas de quantidade: um, alguns, todos, poucos, a maioria. Deve passar em todos para passar nesta competência."
+            },
+            {
+              "numero": 14,
+              "competencia": "Identifica as características dos objetos.",
+              "descricao": "Pega, dá, aponta ou mostra o item com característica que o adulto indica. Ex.: o adulto diz “Me mostra o cachorro com o rabo comprido” e a criança indica a resposta correta. As características envolvem tamanho, forma, textura, estado físico. Passar requer a compreensão de 10-15 características."
+            },
+            {
+              "numero": 15,
+              "competencia": "Responde a perguntas relacionadas com a categoria dos objetos/imagens.",
+              "descricao": "Entende categorias de objetos que envolvam cor, forma, tamanho ou função: os azuis, os redondos, os grandes, os que são para comer."
+            },
+            {
+              "numero": 16,
+              "competencia": "Compreende o tempo passado e o futuro.",
+              "descricao": "Deve responder com precisão ao passado e ao futuro, quer nos verbos regulares ou irregulares."
+            },
+            {
+              "numero": 17,
+              "competencia": "Compreende a voz passiva.",
+              "descricao": "Demonstra compreensão da voz passiva através da manipulação dos objetos ou da seleção de imagens (p.e., “O cachorro foi atingido pela bola” ou “A menina foi perseguida pelo menino”."
+            },
+            {
+              "numero": 18,
+              "competencia": "Compreende as relações temporais.",
+              "descricao": "Responde com precisão a questões que envolvam estas três relações temporais: primeiro/último, antes/depois, ao mesmo tempo."
+            },
+            {
+              "numero": 19,
+              "competencia": "Segue instruções verbais de três partes não relacionadas.",
+              "descricao": "Age em conformidade com a solicitação do adulto que contém três ou mais componentes: “Me dá um copo”, “Beija o urso”, e “Fecha a caixa”. Passar requer o desempenho correto em cinco tentativas."
+            }
+          ]
+        },
+        {
+          "nome": "Comunicação Expressiva",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Responde a questões complexas (\"Quem?\", \"Como?\").",
+              "descricao": "A criança responde corretamente a questões sobre estes conceitos (Ex. Por que lava as mãos?”, “Como escova os dentes?”)."
+            },
+            {
+              "numero": 2,
+              "competencia": "Descreve a função dos objetos em resposta a uma pergunta (p.e., \"O que você faz com uma colher?\").",
+              "descricao": "Consegue descrever as funções de cinco ou mais objetos comuns com frases simples."
+            },
+            {
+              "numero": 3,
+              "competencia": "Fala com enunciados de três ou quatro palavras consistentemente.",
+              "descricao": "Numa variedade de contextos, parceiros e atividades."
+            },
+            {
+              "numero": 4,
+              "competencia": "Usa uma variedade se sintagmas nominais.",
+              "descricao": "Combina uma variedade de palavras para fazer frases nominais que podem ter até quatro palavras, incluindo artigos, possessivos, adjetivos e quantificadores (p.e., “O cavalo pequeno”, “A minha caneta vermelha”, “Este caminhão”, “Duas bolachas”, “O quadrado vermelho grande”, “Mais algumas batatas fritas”)."
+            },
+            {
+              "numero": 5,
+              "competencia": "Usa locuções preposicionais (p.e.,debaixo, próximo de, atrás, por trás de, em frente de).",
+              "descricao": "A criança produz todas as preposições listadas ao lado para descrever arranjos de objetos, responder a perguntas e instruir os outros tanto em formatos naturais como estruturados."
+            },
+            {
+              "numero": 6,
+              "competencia": "Usa uma variedade de expressões verbais (p.e., ele chora, ela gosta dele, ele caiu, ele estava feliz, ele está feliz, poderia, deveria, faria).",
+              "descricao": "Autoexplicativo."
+            },
+            {
+              "numero": 7,
+              "competencia": "Demonstra uma produção precisa de pelo menos 80% de todas as consoantes e misturas de consoantes dentro do discurso conectado.",
+              "descricao": "Demonstra uma produção precisa de 80% dos sons durante a conversa; a inteligibilidade é considerada boa por um ouvinte estranho."
+            },
+            {
+              "numero": 8,
+              "competencia": "Descreve experiências recentes usando enunciados de três a quatro palavras.",
+              "descricao": "Diante uma pergunta, a criança descreve uma experiência recente com pelo menos dois componentes da experiência (Que, o quê, onde, quando). Ex.: “O que fez no seu aniversário?”, “Ganhei presentes do Davi”)."
+            },
+            {
+              "numero": 9,
+              "competencia": "Pede permissão para continuar uma atividade.",
+              "descricao": "Pede autorização antes de começar uma atividade regulamentada: “Posso mexer?” (panela no fogo), “Posso fazer isto?” (usando uma ferramenta de adulto). Também é usado se a criança quer trocar de atividade: “Podemos ouvir música?”."
+            },
+            {
+              "numero": 10,
+              "competencia": "Usa formas plurais.",
+              "descricao": "Usa plurais regulares de forma consistente e espontânea e usa também duas formas irregulares (p.e., pires, lápis)."
+            },
+            {
+              "numero": 11,
+              "competencia": "Usa possessivos (p.e., dele, dela, o chapéu da mãe).",
+              "descricao": "Usa-os de forma regular."
+            },
+            {
+              "numero": 12,
+              "competencia": "Usa o passado regular.",
+              "descricao": "Usa as formas do passado de forma espontânea e regular."
+            },
+            {
+              "numero": 13,
+              "competencia": "Usa artigos como um, uma, o.",
+              "descricao": "Aplica-os de forma consistente em frases."
+            },
+            {
+              "numero": 14,
+              "competencia": "Usa comparativos e superlativos.",
+              "descricao": "Usa cinco ou mais corretamente: melhor, o melhor, maior, o maior, menor, o menor, mais gordo, o mais gordo."
+            },
+            {
+              "numero": 15,
+              "competencia": "Usa a negativa.",
+              "descricao": "Ex.: “Eu não estou chorando”, “Eu não bati”, “Eu não vou sentar”."
+            },
+            {
+              "numero": 16,
+              "competencia": "Usa verbos no presente.",
+              "descricao": "Verbaliza uma frase incluindo uma forma verbal, estou/está/estão com verbo terminado em “ndo”, p.e., “O menino está andando”,"
+            },
+            {
+              "numero": 17,
+              "competencia": "Usa palavras para descrever estados físicos.",
+              "descricao": "Usa cinco ou mais palavras para descrever o seu estado: “Tenho fome, frio, sede, cansaço, dor”."
+            },
+            {
+              "numero": 18,
+              "competencia": "Responde a perguntas sobre estados físicos: \"O que faz quando está...?\"",
+              "descricao": "Responde corretamente a cinco ou mais."
+            },
+            {
+              "numero": 19,
+              "competencia": "Usa as categorias dos nomes para objetos familiares.",
+              "descricao": "Refere-se a um item ou a um conjunto de itens pela sua categoria. Ex.: animais, transportes, comida, roupas."
+            },
+            {
+              "numero": 20,
+              "competencia": "Descreve as características dos objetos.",
+              "descricao": "Consegue nomear três ou mais características de cinco objetos comuns quando lhe pedem, “Fala sobre...”."
+            },
+            {
+              "numero": 21,
+              "competencia": "Usa pronomes reflexivos.",
+              "descricao": "Usa dois ou mais pronomes reflexivos: me, te, se, nos, vos, se. Ex.: “Nós nos vimos ontem”, “Eu me confundi”."
+            },
+            {
+              "numero": 22,
+              "competencia": "Atende o telefone apropriadamente, incluindo cumprimentar a pessoa.",
+              "descricao": "Dirige-se ao telefone que toca, pega o fone e encosta no ouvido emitindo uma saudação verbal e chama a pessoa que o interlocutor pediu."
+            },
+            {
+              "numero": 23,
+              "competencia": "Participa numa conversa iniciada por um adulto em duas ou três tomadas de vez envolvendo uma variedade de funções (p.e., comentar reciprocamente, responder ou perguntar informações).",
+              "descricao": "Mantém conversas ao adicionar elementos, fazendo perguntas, comentando, partilhando experiências, etc. Consegue usar frases, mas mantém a conversa durante duas ou três tomadas de vez."
+            },
+            {
+              "numero": 24,
+              "competencia": "Inicia e mantém uma conversa com um adulto sobre um tópico gerado por si mesma.",
+              "descricao": "Inicia uma conversa como parceiro com um comentário ou perguntas e mantém tópicos através de pelo menos quatro tomadas de vez durante a conversação."
+            },
+            {
+              "numero": 25,
+              "competencia": "Descreve sequências de dois ou três eventos de atividades (p.e., ir visitar a avó).",
+              "descricao": "Em resposta a uma pergunta aberta (p.e., “Fale sobre tua visita na casa da vovó”), a criança irá descrever duas ou três atividades ou eventos usando frases."
+            },
+            {
+              "numero": 26,
+              "competencia": "Expressa \"Não sei\" acompanhado do gesto.",
+              "descricao": "Quando é feita uma pergunta na qual a criança não sabe responder de forma adequada."
+            },
+            {
+              "numero": 27,
+              "competencia": "Pede explicações se não entendeu o que foi dito.",
+              "descricao": "Diz “O quê?” ou uma resposta semelhante quando não conseguiu ouvir ou entender um comentário, pergunta ou instrução que lhe é dirigida."
+            },
+            {
+              "numero": 28,
+              "competencia": "Envolve-se numa variedade de tópicos durante uma conversa.",
+              "descricao": "Inicia e mantém conversas sobre uma variedade de tópicos."
+            },
+            {
+              "numero": 29,
+              "competencia": "Reformula a própria comunicação quando o ouvinte não está compreendendo.",
+              "descricao": "Demonstra o uso de estratégias de reparo (p.e., repete, reformula, combina a verbalização com o gesto, acrescenta ênfase) para esclarecer a comunicação quando não é entendida pelo parceiro."
+            },
+            {
+              "numero": 30,
+              "competencia": "Responde a perguntas sobre si e sobre os outros.",
+              "descricao": "Pode responder a uma variedade de perguntas simples sobre si mesma e pode também responder a perguntas sobre pessoas muito familiares como membros da família, animais de estimação, o melhor amigo, etc."
+            }
+          ]
+        },
+        {
+          "nome": "Competências Sociais: Adultos e Pares",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Convida os pares para brincar.",
+              "descricao": "Faz uma ou mais ofertas para o jogo, verbais ou gestuais, a um parceiro (“Vem brincar com o trem!”, “Vamos brincar de pega-pega”, ou acena para um colega)."
+            },
+            {
+              "numero": 2,
+              "competencia": "Usa termos de cortesia como \"Com licença\" ou \"Desculpe\".",
+              "descricao": "Usa vários termos de cortesia, incluindo, “Não, obrigado”, “Obrigado”, “De nada”, “Desculpe” e “Sinto muito”."
+            },
+            {
+              "numero": 3,
+              "competencia": "Procura os outros para conforto em situações de grupo.",
+              "descricao": "Quando a criança está com medo, magoada ou frustrada, aproxima-se do adulto ou faz contato físico com ele (abraça, senta no colo ou segura a sua mão)."
+            },
+            {
+              "numero": 4,
+              "competencia": "Expressa os seus sentimentos de forma apropriada.",
+              "descricao": "Verbaliza os seus próprios sentimentos ao dizer “Estou zangado”, etc."
+            },
+            {
+              "numero": 5,
+              "competencia": "Toma a vez no jogo informal autonomamente.",
+              "descricao": "Troca a vez com os adultos/pares quando envolvido numa atividade de jogo sem tomadas de vez definidas."
+            },
+            {
+              "numero": 6,
+              "competencia": "Descreve um acontecimento ou experiência a um parceiro.",
+              "descricao": "Reconta verbalmente uma história a um colega ou irmão, incluindo pelo menos três detalhes."
+            },
+            {
+              "numero": 7,
+              "competencia": "Identifica o que a faz sentir-se feliz, triste, zangada, assustada.",
+              "descricao": "Verbaliza um ou mais exemplos para cada conceito (p.e., feliz, triste, zangada, assustada). Ex.: O adulto diz, “Porque está triste?” e a criança responde “Ela tirou o livro e estou triste”."
+            },
+            {
+              "numero": 8,
+              "competencia": "Identifica as emoções dos outros com base em fatores situacionais.",
+              "descricao": "Durantes as atividades de leitura ou conversação, a criança responde adequadamente quando perguntado: “Porque é que ela está chorando?” ou “Porque ele está com medo?”."
+            },
+            {
+              "numero": 9,
+              "competencia": "Começa a desenvolver estratégias para lidar com as situações que a deixam aborrecida, zangada ou assustada.",
+              "descricao": "Envolve-se em uma ou mais estratégias para lidar com situações. Ex.: pede uma pausa, pede ajuda, vem para dar um abraço, vai buscar um objeto de conforto."
+            }
+          ]
+        },
+        {
+          "nome": "Cognição",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Conta de cor até 20.",
+              "descricao": "Conta em voz alta de um a 20 na ordem correta."
+            },
+            {
+              "numero": 2,
+              "competencia": "Conta objetos com a correspondência 1:1 até 10.",
+              "descricao": "Toca ou aponta para imagens ou objetos enquanto conta em sequência, tocando ou apontando uma vez para cada número."
+            },
+            {
+              "numero": 3,
+              "competencia": "Dá a alguém \"um\", \"alguns\", \"muitos\", \"um pouco\", \"todos\", \"mais\" e \"a maioria\".",
+              "descricao": "Entrega ao adulto o número correto de itens quando o adulto pede."
+            },
+            {
+              "numero": 4,
+              "competencia": "Dá a alguém quantidades até 10.",
+              "descricao": "Entrega ao adulto o número correto de itens quando o adulto pede (“Me dá cinco bolachas” ou “Pode me dar duas almofadas”)."
+            },
+            {
+              "numero": 5,
+              "competencia": "Conhece termos de conceitos de quantidade.",
+              "descricao": "Verbaliza dois ou mais conceitos, incluindo “um”, “alguns” ou “todos”."
+            },
+            {
+              "numero": 6,
+              "competencia": "Conhece termos de relações espaciais.",
+              "descricao": "Verbaliza dois oi mais conceitos, incluindo “no meio”, “atrás de” ou “em frente de”."
+            },
+            {
+              "numero": 7,
+              "competencia": "Corresponde e compreende 5-10 associações objeto/palavra.",
+              "descricao": "Corresponde três ou mais objetos com a palavras escrita associada de três a quatro letras."
+            },
+            {
+              "numero": 8,
+              "competencia": "Consegue ler algumas palavras.",
+              "descricao": "Lê e pronuncia 10 ou mais palavras de três a quatro letras para ações ou objetos comuns."
+            },
+            {
+              "numero": 9,
+              "competencia": "Consegue identificar o nome escrito num conjunto de cinco palavras.",
+              "descricao": "Dá, aponta, mostra ou dirige-se para o seu próprio nome quando este é mostrado numa série de três nomes que inclui um nome que começa pela mesma letra que o nome da criança."
+            },
+            {
+              "numero": 10,
+              "competencia": "\"Lê\" sinais e símbolos.",
+              "descricao": "Identifica o significado de três ou mais sinais e símbolos comuns. Ex.: sinal de stop, luz verde, símbolo universal do “não”."
+            },
+            {
+              "numero": 11,
+              "competencia": "Identifica números e letras.",
+              "descricao": "Identifica e nomeia todas as letras do alfabeto e os números de 0 – 30."
+            },
+            {
+              "numero": 12,
+              "competencia": "Percebe opostos e analogias.",
+              "descricao": "Quando o adulto diz um conceito, a criança diz o conceito oposto. Ex.: “O rato é pequeno, mas o elefante é...” e a criança diz, “grande”."
+            }
+          ]
+        },
+        {
+          "nome": "Jogo",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Desenvolve ações de figuras durante o jogo.",
+              "descricao": "Usa figuras e demonstra cinco ou mais ações em três ou mais contextos de jogo. Ex.: “A mamãe dirige até a loja, a irmã corre atrás do irmão e o cachorro come”."
+            },
+            {
+              "numero": 2,
+              "competencia": "Usa objetos substitutos para simbolizar os adereços do jogo.",
+              "descricao": "Usa três ou mais objetos neutros substitutos (neutro = sem identidade própria), Ex.: usar um bloco como telefone; um tubo como garrafa; ou uma caixa pequena como carro."
+            },
+            {
+              "numero": 3,
+              "competencia": "Nomeia as ações e adereços simulados durante o jogo.",
+              "descricao": "Nomeia 10 ou mais ações ou adereços fazendo de conta em três ou mais atividades lúdicas de forma espontânea e em resposta a perguntas."
+            },
+            {
+              "numero": 4,
+              "competencia": "Liga espontaneamente três ou mais comportamentos relacionados num tema de jogo.",
+              "descricao": "Ex.: Despejar água na panela, mexer a comida e colocar a comida numa tigela; colocar o chapéu do bombeiro, dirigir o caminhão e apagar o fogo."
+            },
+            {
+              "numero": 5,
+              "competencia": "Direciona o parceiro no jogo.",
+              "descricao": "Fornece três ou mais instruções relevantes direcionadas para o parceiro para realizar algum aspecto do tema em todo o jogo ao longo de dois ou mais episódios de jogo."
+            },
+            {
+              "numero": 6,
+              "competencia": "Representa vários eventos da vida (p.e., festa de aniversário, McDonald's, médico), incluindo o uso de guiões verbais.",
+              "descricao": "Representa três ou mais eventos da sua vida, cada um contendo pelo menos quatro atividades incorporadas (ver item 4), interagindo com o parceiro através de guiões verbais e ações com objetos."
+            },
+            {
+              "numero": 7,
+              "competencia": "Representa vários temas de histórias no jogo.",
+              "descricao": "Representa três ou mais temas da história com o parceiro usando várias ações e guiões, conforme descrito acima: Chapeuzinho vermelho, Os três porquinhos, O gato de botas."
+            },
+            {
+              "numero": 8,
+              "competencia": "Assume o papel de um personagem e representa-o.",
+              "descricao": "Assume um papel (p.e., “Eu sou a mamãe) e desempenha um evento da vida com um roteiro verbal, atividades e gestos, apropriadas ao papel, com três ou mais trocas com o parceiro."
+            },
+            {
+              "numero": 9,
+              "competencia": "Segue a liderança de outra pessoa durante o jogo.",
+              "descricao": "Segue as diretivas de jogo do parceiro, verbais ou não verbais, cinco ou mais vezes, ao imitar as ações dos parceiros ou respondendo às suas instruções."
+            }
+          ]
+        },
+        {
+          "nome": "Motricidade Fina",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Pinta uma imagem com precisão, com várias cores.",
+              "descricao": "A criança pinta maioritariamente dentro das formas e escolhe cores diferentes para completar a imagem numa página de um livro para colorir."
+            },
+            {
+              "numero": 2,
+              "competencia": "Imita triângulos, letras utilizando material de desenho apropriado.",
+              "descricao": "Copia o círculo, o quadrado, o triângulo e algumas letras do alfabeto de forma reconhecível."
+            },
+            {
+              "numero": 3,
+              "competencia": "Desenha linhas e formas e algumas letras e números de cor.",
+              "descricao": "Começa a desenhar várias formas ou letras/números que são reconhecíveis."
+            },
+            {
+              "numero": 4,
+              "competencia": "Imita e copia uma variedade de letras,números e formas.",
+              "descricao": "Tanto copia como gera quatro a cinco formas, quatro a cinco letras e vários números que são reconhecíveis."
+            },
+            {
+              "numero": 5,
+              "competencia": "Escreve o seu primeiro nome sem modelo.",
+              "descricao": "Autoexplicativo."
+            },
+            {
+              "numero": 6,
+              "competencia": "Traça formas e letras.",
+              "descricao": "Autoexplicativo."
+            },
+            {
+              "numero": 7,
+              "competencia": "Pinta formas desenhadas.",
+              "descricao": "Mantém a cor geralmente dentro dos contornos."
+            },
+            {
+              "numero": 8,
+              "competencia": "Une pontos com material de desenho.",
+              "descricao": "Consegue acompanhar os padrões ponto-a-ponto e segue sequências com números."
+            },
+            {
+              "numero": 9,
+              "competencia": "Desenha linhas para corresponder imagens, palavras ou formas.",
+              "descricao": "Consegue ligar imagens de objetos correspondentes ou relacionados numa linha (como numa atividade escolar)."
+            },
+            {
+              "numero": 10,
+              "competencia": "Copia uma variedade de desenhos representacionais simples (p.e., rosto, árvore, casa, flor).",
+              "descricao": "Copia cinco ou mais desenhos diferentes e faz 2-3 imagens reconhecíveis espontaneamente."
+            },
+            {
+              "numero": 11,
+              "competencia": "Dobra um papel ao meio e coloca-o num envelope.",
+              "descricao": "Autoexplicativo; seguindo o modelo."
+            },
+            {
+              "numero": 12,
+              "competencia": "Recorta ângulos, linhas direitas e curvas.",
+              "descricao": "Corta os cantos e os contornos de grandes formatos (7cm ou mais) com uma tesoura de criança de forma independente."
+            },
+            {
+              "numero": 13,
+              "competencia": "Recorta formas simples.",
+              "descricao": "Corta com sucesso figuras com 7 cm."
+            },
+            {
+              "numero": 14,
+              "competencia": "Completa projetos de expressão plástica de três passos- cortar, colorir e colar.",
+              "descricao": "Assim que o adulto modela a atividade, a criança pode sequenciar a atividade e concluí-la de forma autônoma, desde que cada etapa envolva uma competência em que a criança é totalmente competente."
+            },
+            {
+              "numero": 15,
+              "competencia": "Usa pincel, selos, marcadores, lápis, borrachas para completar atividades de expressão plástica.",
+              "descricao": "Usa uma variedade de materiais de arte em atividades de expressão plástica livres para criar produtos. Também pode imitar o modelo do adulto usando cada uma dessas ferramentas."
+            },
+            {
+              "numero": 16,
+              "competencia": "Usa a preensão tripla para segurar o material de desenho.",
+              "descricao": "Segura consistentemente o material de escrita com uma preensão tripla."
+            },
+            {
+              "numero": 17,
+              "competencia": "Faz construções com uma variedade de materiais de construção com o próprio desenho e copia modelos simples a partir de modelos de imagens 3D.",
+              "descricao": "Reúne uma variedade de materiais de construção em projetos complexos e também pode copiar os projetos dos outros, tanto a partir de modelos 3D como de imagens e desenhos a lápis. Pode demonstrar cinco ou mais modelos diferentes."
+            },
+            {
+              "numero": 18,
+              "competencia": "Resolve puzzles de encaixe, puzzles de chão e puzzles de tabuleiro.",
+              "descricao": "Autoexplicativo."
+            },
+            {
+              "numero": 19,
+              "competencia": "Usa fita-cola, clipes e chaves",
+              "descricao": "Usa todas estas ferramentas de forma apropriadamente. independente."
+            }
+          ]
+        },
+        {
+          "nome": "Motricidade Grossa",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Joga à apanhada com uma bola de recreio com um par.",
+              "descricao": "Pode manter o jogo da apanhada durante seis ou mais tomadas de vez."
+            },
+            {
+              "numero": 2,
+              "competencia": "Atira uma bola de tênis ou de basebol para outra pessoa com direcionalidade por cima da cabeça.",
+              "descricao": "Autoexplicativo."
+            },
+            {
+              "numero": 3,
+              "competencia": "Usa o equipamento do recreio autonomamente, incluindo o balanço e o carrossel.",
+              "descricao": "Autoexplicativo, para todo equipamento adequado para a idade."
+            },
+            {
+              "numero": 4,
+              "competencia": "Pontapeia uma bola em movimento.",
+              "descricao": "A criança ajusta o corpo e dá pontapés com sucesso na bola em movimento."
+            },
+            {
+              "numero": 5,
+              "competencia": "Joga vários jogos com bolas: atira a bola ao cesto, bate na bola com um bastão, lança a bola, joga golfe, lança saquinhos de feijão para acertar no orifício.",
+              "descricao": "Joga cinco ou mais jogos com bola."
+            },
+            {
+              "numero": 6,
+              "competencia": "Anda confiantemente de bicicleta com rodinhas; é capaz de controlar a velocidade, manobrar e travar.",
+              "descricao": "Autoexplicativo."
+            },
+            {
+              "numero": 7,
+              "competencia": "Galopa e salta.",
+              "descricao": "Imita ambos e executa sem problemas."
+            },
+            {
+              "numero": 8,
+              "competencia": "Anda sem perder o equilíbrio numa trave, em carris de combio e no lancil do passeio.",
+              "descricao": "Autoexplicativo; caminha de forma relativamente calma e não muito lentamente."
+            },
+            {
+              "numero": 9,
+              "competencia": "Joga jogos motores típicos (p.e., \"Red Light, Green Light\", \"Red Rover\", \"Freeze Tag\").",
+              "descricao": "Joga cinco ou mais destes jogos – conhece as regras e participa ativamente ao longo do jogo e sem ajudas ou treino."
+            }
+          ]
+        },
+        {
+          "nome": "Independência Pessoal",
+          "itens": [
+            {
+              "numero": 1,
+              "competencia": "Gere todas etapas envolvidas na ida ao banheiro de forma autónoma ao nível dos pares.",
+              "descricao": "Vai ao banheiro conforme necessário (embora o adulto possa solicitar idas ao banheiro), puxa as próprias roupas para baixo e para cima; dá descarga e lava as mãos."
+            },
+            {
+              "numero": 2,
+              "competencia": "Vai ao banheiro sozinha quando precisa.",
+              "descricao": "Vai sozinha ao banheiro (sem precisar da ajuda do adulto)."
+            },
+            {
+              "numero": 3,
+              "competencia": "Lava as mãos de forma autónoma ao nível dos pares.",
+              "descricao": "Abre a torneira, coloca as mãos embaixo da água, coloca sabão, esfrega as mãos, tira o sabão, fecha a torneira e seca as mãos com a toalha."
+            },
+            {
+              "numero": 4,
+              "competencia": "Lava a cara com a esponja autonomamente.",
+              "descricao": "Durante o banho, a criança molha a esponja, aplica o sabão e esfrega o rosto com a esponja."
+            },
+            {
+              "numero": 5,
+              "competencia": "Escova e penteia o cabelo autonomamente.",
+              "descricao": "Quando o adulto pede para criança pentear o cabelo, a criança pega no utensílio passando-o no cabelo. Pode haver exceções apropriadas mediante a idade para as dificuldades com cabelos longos ou encaracolados."
+            },
+            {
+              "numero": 6,
+              "competencia": "Dá assistência ativa no banho, seca-se sozinha depois do banho.",
+              "descricao": "Esfrega o corpo com a esponja, aplica sabão no corpo, e esfrega o próprio couro cabeludo quando o shampoo é aplicado. Seca-se razoavelmente bem; pode precisar de “estímulo”."
+            },
+            {
+              "numero": 7,
+              "competencia": "Realiza todas as etapas de escovação dos dentes de forma autónoma, embora o adulto também possa escovar-lhes os dentes para uma maior perfeição.",
+              "descricao": "Estando a pasta e a escova no lugar próprio, a criança consegue realizar todas as etapas de forma autônoma."
+            },
+            {
+              "numero": 8,
+              "competencia": "Aperta a própria roupabotões, molas e fechos.",
+              "descricao": "Aperta os próprios botões, fechos e molas quando estes estão presentes na sua roupa."
+            },
+            {
+              "numero": 9,
+              "competencia": "Assoa o nariz quando se chama à atenção, usa um lenço quando espirra, tapa a boca quando tosse ou o nariz quando espirra.",
+              "descricao": "Quando o adulto diz, “Assoa o nariz”, a criança pega num lenço e assoa o nariz com o lenço. Quando a criança espirra, cobre a boca com a mão ou o braço."
+            },
+            {
+              "numero": 10,
+              "competencia": "Para na rua, atravessa depois de olhar para os dois lados quando acompanhada.",
+              "descricao": "Ao aproximar da calçada ou rua com o parceiro, a criança para autonomamente, espera, olha e aguarda que o parceiro indique que pode atravessar."
+            },
+            {
+              "numero": 11,
+              "competencia": "Anda em segurança ao lado de um adulto autonomamente em estacionamento, lojas, etc.",
+              "descricao": "Anda sem dar as mãos e fica perto do adulto, monitorando a localização do adulto e mantendo uma proximidade por iniciativa própria."
+            },
+            {
+              "numero": 12,
+              "competencia": "Ajuda a pôr a mesa.",
+              "descricao": "Consegue colocar pratos, copos, guardanapos e talheres nos lugares corretos e de forma autônoma e relativamente ordenada. O adulto pode marcar o local que os itens devem ser colocados e disponibilizar os materiais em cima da mesa."
+            },
+            {
+              "numero": 13,
+              "competencia": "Usa a faca para passar.",
+              "descricao": "Passa geleia ou etc, no pão, sem cortá-lo."
+            },
+            {
+              "numero": 14,
+              "competencia": "Limpa quando derruba ou derrama.",
+              "descricao": "Limpa o que deixou cair, por iniciativa própria e faz o trabalho completo."
+            },
+            {
+              "numero": 15,
+              "competencia": "Serve-se de água de um recipiente pequeno.",
+              "descricao": "Coloca água no copo de uma jarra pequena."
+            },
+            {
+              "numero": 16,
+              "competencia": "Põe os pratos na lava-louça ou balcão ou pia.",
+              "descricao": "Após a refeição, a criança limpa rotineiramente o seu lugar e coloca os utensílios de comer no lugar correto de forma autônoma."
+            },
+            {
+              "numero": 17,
+              "competencia": "Faz um lanche em duas etapas.",
+              "descricao": "Tira dois itens diferentes, passa-os do recipiente para o prato e coloca-os na mesa. Ex.: Prepara vegetais cortados e molho; queijo e biscoitos; passa requeijão na bolacha; cereais com leite."
+            },
+            {
+              "numero": 18,
+              "competencia": "Ajuda nas tarefas de culinária: mexe, despeja, etc.",
+              "descricao": "Participa em vários passos da atividade de culinária com várias etapas como fazer biscoito, panquecas, ovo mexido."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

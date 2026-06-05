@@ -1,0 +1,6 @@
+{
+  "name": "Sistema de Gestão de Clínica",
+  "description": "Um conceito de interface moderno, confiável e de alta fidelidade para gestão de clínicas, pacientes, agendamentos e faturamento médico.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
