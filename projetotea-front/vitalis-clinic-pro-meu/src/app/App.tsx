@@ -1,22 +1,30 @@
-﻿import { useState } from 'react';
+import { useState } from 'react';
 import { Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import AppLayout from './AppLayout';
+import HomePage from '../pages/HomePage';
+import AuthorizedPage from '../pages/AuthorizedPage';
 import DashboardPage from '../pages/DashboardPage';
 import UsersPage from '../pages/UsersPage';
 import AppointmentsPage from '../pages/AppointmentsPage';
 import PaymentsPage from '../pages/PaymentsPage';
+import { hasAuthSession } from '../shared/auth/session';
 
 function getActiveTab(pathname: string) {
   const segment = pathname.split('/')[1];
   return segment || 'dashboard';
 }
 
-export default function App() {
+function AppShell() {
   const navigate = useNavigate();
   const location = useLocation();
   const activeTab = getActiveTab(location.pathname);
   const [searchTerm, setSearchTerm] = useState<string>('');
   const [isScheduleModalOpen, setIsScheduleModalOpen] = useState<boolean>(false);
+  const isAuthenticated = hasAuthSession();
+
+  if (!isAuthenticated) {
+    return <Navigate to="/" replace />;
+  }
 
   const setActiveTab = (tab: string) => {
     navigate(`/${tab}`);
@@ -35,7 +43,6 @@ export default function App() {
       setSearchTerm={setSearchTerm}
     >
       <Routes>
-        <Route path="/" element={<Navigate to="/dashboard" replace />} />
         <Route
           path="/dashboard"
           element={(
@@ -60,5 +67,17 @@ export default function App() {
         <Route path="*" element={<Navigate to="/dashboard" replace />} />
       </Routes>
     </AppLayout>
+  );
+}
+
+export default function App() {
+  const isAuthenticated = hasAuthSession();
+
+  return (
+    <Routes>
+      <Route path="/" element={isAuthenticated ? <Navigate to="/dashboard" replace /> : <HomePage />} />
+      <Route path="/authorized" element={<AuthorizedPage />} />
+      <Route path="/*" element={<AppShell />} />
+    </Routes>
   );
 }
