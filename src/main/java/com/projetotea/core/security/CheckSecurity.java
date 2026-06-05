@@ -39,4 +39,37 @@ public @interface CheckSecurity {
 
 
     }
+
+    public @interface Avaliacao {
+
+        @Retention(RetentionPolicy.RUNTIME)
+        @Target(ElementType.METHOD)
+        @PreAuthorize("hasAuthority('SCOPE_READ') and isAuthenticated()")
+        public @interface PodeListar {}
+
+        @Retention(RetentionPolicy.RUNTIME)
+        @Target(ElementType.METHOD)
+        @PreAuthorize("hasAuthority('SCOPE_WRITE') and isAuthenticated() and @teaSecurity.vinculoComPaciente(#pacienteId)")
+        public @interface PodeCriar {}
+
+        @Retention(RetentionPolicy.RUNTIME)
+        @Target(ElementType.METHOD)
+        @PreAuthorize("hasAuthority('SCOPE_WRITE') and isAuthenticated()")
+        public @interface PodeEditar {}
+
+    }
+
+    public @interface AvaliacaoProtocolo {
+
+        @Retention(RetentionPolicy.RUNTIME)
+        @Target(ElementType.METHOD)
+        @PreAuthorize("hasAuthority('SCOPE_READ') and isAuthenticated()")
+        public @interface PodeListar {}
+
+        @Retention(RetentionPolicy.RUNTIME)
+        @Target(ElementType.METHOD)
+        @PreAuthorize("hasAuthority('SCOPE_WRITE') and isAuthenticated()")
+        public @interface PodeEditar {}
+
+    }
 }
