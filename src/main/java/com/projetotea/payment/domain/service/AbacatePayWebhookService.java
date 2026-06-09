@@ -1,9 +1,5 @@
 package com.projetotea.payment.domain.service;
 
-import com.projetotea.domain.exception.AssinaturaNotFoundException;
-import com.projetotea.infrastructure.repository.AssinaturaRepository;
-import com.projetotea.payment.domain.model.Assinatura;
-import com.projetotea.payment.gateway.abacatepay.dto.response.webhook.AbacatePayWebhookCheckout;
 import com.projetotea.payment.gateway.abacatepay.dto.response.webhook.AbacatePayWebhookEventDTO;
 import com.projetotea.payment.gateway.abacatepay.dto.response.webhook.AbacatePayWebhookSubscription;
 import lombok.RequiredArgsConstructor;

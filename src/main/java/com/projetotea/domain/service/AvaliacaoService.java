@@ -25,6 +25,7 @@ import com.projetotea.infrastructure.repository.AvaliacaoRepository;
 import com.projetotea.infrastructure.repository.AvaliacaoScoreCategoriaRepository;
 import com.projetotea.infrastructure.repository.PacienteRepository;
 import com.projetotea.infrastructure.repository.UsuarioRepository;
+import com.projetotea.payment.domain.service.AssinaturaValidationService;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -50,6 +51,7 @@ public class AvaliacaoService {
     private final TeaSecurity teaSecurity;
     private final AvaliacaoDTOAssembler avaliacaoDTOAssembler;
     private final AvaliacaoRespostaDTODisassembler avaliacaoRespostaDTODisassembler;
+    private final AssinaturaValidationService assinaturaValidationService;
 
     public List<AvaliacaoDTO> listarPorPaciente(Long pacienteId) {
         checarVinculoPaciente(pacienteId);
@@ -68,11 +70,11 @@ public class AvaliacaoService {
     @Transactional
     public AvaliacaoDTO criar(Long pacienteId, AvaliacaoCriarInputDTO inputDTO) {
         checarVinculoPaciente(pacienteId);
-
         Paciente paciente = pacienteRepository.findById(pacienteId)
                 .orElseThrow(PacienteNotFoundException::new);
         Usuario usuario = usuarioRepository.findById(teaSecurity.getUsuarioId())
                 .orElseThrow(UsuarioNotFoundException::new);
+        assinaturaValidationService.validarCriacaoAvaliacao(usuario);
         AvaliacaoProtocolo protocolo = avaliacaoProtocoloRepository.findById(inputDTO.getProtocoloId())
                 .orElseThrow(() -> new AvaliacaoProtocoloNotFoundException(inputDTO.getProtocoloId()));
 

@@ -16,6 +16,7 @@ import com.projetotea.infrastructure.repository.AtendimentoRepository;
 import com.projetotea.infrastructure.repository.PacienteRepository;
 import com.projetotea.infrastructure.repository.UsuarioRepository;
 import com.projetotea.infrastructure.spec.AtendimentoSpec;
+import com.projetotea.payment.domain.service.AssinaturaValidationService;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.cglib.core.Local;
@@ -37,6 +38,7 @@ public class AtendimentoService {
     private final TeaSecurity teaSecurity;
     private final UsuarioRepository usuarioRepository;
     private final PacienteRepository pacienteRepository;
+    private final AssinaturaValidationService assinaturaValidationService;
 
 
     public Page<AtendimentoResponseDTO> buscarComFiltro(AtendimentoFiltroDTO filtro, Pageable pageable) {
@@ -57,6 +59,9 @@ public class AtendimentoService {
 
     @Transactional
     public AtendimentoResponseDTO criar(AtendimentoInputDTO atendimentoInputDTO) {
+        Long usuarioId = teaSecurity.getUsuarioId();
+        Usuario usuario = findUserOrNot(usuarioId);
+        assinaturaValidationService.validarCriacaoAtendimento(usuario);
         Set<Usuario> usuarios = checarUsuarioAtendimento(atendimentoInputDTO);
         Paciente paciente = pacienteRepository.findById(atendimentoInputDTO.getPaciente().getId())
                 .orElseThrow(() -> new PacienteNotFoundException());

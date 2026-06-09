@@ -54,7 +54,7 @@ public @interface CheckSecurity {
 
         @Retention(RetentionPolicy.RUNTIME)
         @Target(ElementType.METHOD)
-        @PreAuthorize("hasAuthority('SCOPE_WRITE') and isAuthenticated()")
+        @PreAuthorize("hasAuthority('SCOPE_WRITE') and isAuthenticated() or hasAuthority('ADMIN')")
         public @interface PodeEditar {}
 
     }
@@ -68,7 +68,7 @@ public @interface CheckSecurity {
 
         @Retention(RetentionPolicy.RUNTIME)
         @Target(ElementType.METHOD)
-        @PreAuthorize("hasAuthority('SCOPE_WRITE') and isAuthenticated()")
+        @PreAuthorize("hasAuthority('SCOPE_WRITE') and hasAuthority('ADMIN')")
         public @interface PodeEditar {}
 
     }

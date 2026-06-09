@@ -1,14 +1,12 @@
 package com.projetotea.payment.domain.service;
 
-import com.projetotea.api.DTO.AssinaturaDTO;
 import com.projetotea.api.assembler.AssinaturaDTOAssembler;
 import com.projetotea.domain.exception.AssinaturaNotFoundException;
 import com.projetotea.domain.model.Plano;
-import com.projetotea.infrastructure.repository.AssinaturaRepository;
+import com.projetotea.payment.domain.repository.AssinaturaRepository;
 import com.projetotea.payment.domain.model.Assinatura;
 import com.projetotea.payment.domain.enums.StatusAssinatura;
 import com.projetotea.payment.gateway.abacatepay.AbacatePayClient;
-import com.projetotea.payment.gateway.abacatepay.dto.response.checkout.AbacatePayBillResponse;
 import com.projetotea.payment.gateway.abacatepay.dto.response.webhook.AbacatePayWebhookCheckout;
 import com.projetotea.payment.gateway.abacatepay.dto.response.webhook.AbacatePayWebhookSubscription;
 import jakarta.transaction.Transactional;

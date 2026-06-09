@@ -1,7 +1,7 @@
-package com.projetotea.domain.service;
+package com.projetotea.payment.domain.service;
 
 import com.projetotea.payment.domain.enums.StatusAssinatura;
-import com.projetotea.infrastructure.repository.AssinaturaRepository;
+import com.projetotea.payment.domain.repository.AssinaturaRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -17,11 +17,19 @@ public class AssinaturaScheduler {
 
     @Scheduled(cron = "0 0 * * * *")
     @Transactional
-    public void expirarAssinatura() {
-        assinaturaRepository.expirarAssinaturas(
+    public void atualizarStatusAssinatura() {
+        OffsetDateTime agora = OffsetDateTime.now();
+        assinaturaRepository.emAtrasoAssinatura(
                 StatusAssinatura.ATIVA,
+                StatusAssinatura.EM_ATRASO,
+                agora
+        );
+
+        assinaturaRepository.expirarAssinatura(
+                StatusAssinatura.EM_ATRASO,
                 StatusAssinatura.EXPIRADA,
-                OffsetDateTime.now()
+                agora.minusDays(3)
         );
     }
+
 }

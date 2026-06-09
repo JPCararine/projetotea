@@ -26,7 +26,7 @@ public class CadastroPacienteService {
     public PacienteDTO cadastroPaciente(PacienteInputDTO inputDTO) {
         Usuario usuario = usuarioService.buscarUsuarioOuFalhar(teaSecurity.getUsuarioId());
 
-        assinatura.validarAssinatura(usuario);
+        assinatura.validarCadastroPaciente(usuario);
 
         Paciente paciente = pacienteService.buscarOuCriar(inputDTO);
 

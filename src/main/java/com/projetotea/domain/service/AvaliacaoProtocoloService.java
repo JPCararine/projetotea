@@ -4,10 +4,13 @@ import com.projetotea.api.DTO.AvaliacaoProtocoloDTO;
 import com.projetotea.api.DTO.AvaliacaoProtocoloInputDTO;
 import com.projetotea.api.assembler.AvaliacaoProtocoloDTOAssembler;
 import com.projetotea.api.assembler.AvaliacaoProtocoloDTODisassembler;
+import com.projetotea.core.security.TeaSecurity;
 import com.projetotea.domain.exception.AvaliacaoProtocoloNotFoundException;
 import com.projetotea.domain.exception.NegocioException;
 import com.projetotea.domain.model.AvaliacaoProtocolo;
+import com.projetotea.domain.model.Usuario;
 import com.projetotea.infrastructure.repository.AvaliacaoProtocoloRepository;
+import com.projetotea.infrastructure.repository.UsuarioRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -21,6 +24,8 @@ public class AvaliacaoProtocoloService {
     private final AvaliacaoProtocoloRepository avaliacaoProtocoloRepository;
     private final AvaliacaoProtocoloDTOAssembler avaliacaoProtocoloDTOAssembler;
     private final AvaliacaoProtocoloDTODisassembler avaliacaoProtocoloDTODisassembler;
+    private final TeaSecurity teaSecurity;
+    private final UsuarioRepository usuarioRepository;
 
     public List<AvaliacaoProtocoloDTO> listarAtivos() {
         return avaliacaoProtocoloRepository.findByAtivoTrueOrderByNomeAscVersaoAsc()

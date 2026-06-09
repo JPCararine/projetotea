@@ -13,7 +13,7 @@ import com.projetotea.payment.domain.model.Assinatura;
 import com.projetotea.domain.model.Plano;
 import com.projetotea.payment.domain.enums.StatusAssinatura;
 import com.projetotea.domain.model.Usuario;
-import com.projetotea.infrastructure.repository.AssinaturaRepository;
+import com.projetotea.payment.domain.repository.AssinaturaRepository;
 import com.projetotea.infrastructure.repository.PlanoRepository;
 import com.projetotea.infrastructure.repository.UsuarioRepository;
 import com.projetotea.payment.gateway.abacatepay.AbacatePayClient;
@@ -21,9 +21,7 @@ import com.projetotea.payment.gateway.abacatepay.dto.request.AbacatePayBillItemR
 import com.projetotea.payment.gateway.abacatepay.dto.request.AbacatePayBillRequest;
 import com.projetotea.payment.gateway.abacatepay.dto.request.AbacatePayCustomerRequest;
 import com.projetotea.payment.gateway.abacatepay.dto.request.AbacatePaySubscriptionCancel;
-import com.projetotea.payment.gateway.abacatepay.dto.response.AbacatePayResponse;
 import com.projetotea.payment.gateway.abacatepay.dto.response.checkout.AbacatePayBillResponse;
-import com.projetotea.payment.gateway.abacatepay.dto.response.checkout.AbacatePayFineResponse;
 import com.projetotea.payment.gateway.abacatepay.dto.response.checkout.AssinaturaCheckoutResponse;
 import com.projetotea.payment.gateway.abacatepay.dto.response.subscription.AbacatePaySubscriptionResponse;
 import com.projetotea.payment.gateway.abacatepay.dto.response.webhook.AbacatePayWebhookSubscription;
