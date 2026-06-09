@@ -7,6 +7,7 @@ public record AbacatePayWebhookData(
         AbacatePayWebhookCheckout checkout,
         AbacatePayWebhookSubscription subscription,
         AbacatePayWebhookCustomer customer,
+        AbacatePayWebhookPayment payment,
         AbacatePayWebhookPayerInformation payerInformation
 ) {
 }

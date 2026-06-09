@@ -20,8 +20,7 @@ import java.time.OffsetDateTime;
 public class AssinaturaPagamentoService {
 
     private final AssinaturaRepository assinaturaRepository;
-    private final AbacatePayClient client;
-    private final AssinaturaDTOAssembler assembler;
+
 
 
     @Transactional
@@ -52,7 +51,7 @@ public class AssinaturaPagamentoService {
 
     private void ativarAssinatura(Assinatura assinatura) {
 
-        if (assinatura.getStatus() == StatusAssinatura.ATIVA) {
+        if (assinatura.getStatus() != StatusAssinatura.PENDENTE) {
             return;
         }
 

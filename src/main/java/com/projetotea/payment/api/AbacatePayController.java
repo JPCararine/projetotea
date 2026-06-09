@@ -2,13 +2,8 @@ package com.projetotea.payment.api;
 
 import com.projetotea.api.DTO.AssinaturaRequest;
 import com.projetotea.payment.domain.service.AbacatePayWebhookService;
-import com.projetotea.payment.domain.service.AssinaturaPagamentoService;
 import com.projetotea.payment.domain.service.AssinaturaService;
-import com.projetotea.payment.gateway.abacatepay.AbacatePayClient;
 import com.projetotea.payment.gateway.abacatepay.AbacatePayWebHookValidator;
-import com.projetotea.payment.gateway.abacatepay.dto.AbacatePayStoreResponse;
-import com.projetotea.payment.gateway.abacatepay.dto.request.AbacatePayBillRequest;
-import com.projetotea.payment.gateway.abacatepay.dto.response.checkout.AbacatePayBillResponse;
 import com.projetotea.payment.gateway.abacatepay.dto.response.checkout.AssinaturaCheckoutResponse;
 import com.projetotea.payment.gateway.abacatepay.dto.response.webhook.AbacatePayWebhookEventDTO;
 import lombok.RequiredArgsConstructor;
@@ -39,7 +34,7 @@ public class AbacatePayController {
             ) {
 
         validator.validarSecret(webhookSecret);
-        System.out.println(payload);
+
         abacatePayWebhookService.processar(payload);
 
         return ResponseEntity.ok().build();
